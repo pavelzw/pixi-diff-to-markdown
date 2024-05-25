@@ -1,0 +1,28 @@
+{
+    "default": {
+        "linux-64": {
+            "polars": {
+                "before": {
+                    "version": "0.10.0",
+                    "build": "herads_0"
+                },
+                "after": {
+                    "version": "0.10.1",
+                    "build": "herads_1"
+                },
+                "type_": "conda"
+            },
+            "python": {
+                "before": {
+                    "version": "0.10.0",
+                    "build": "herads_5"
+                },
+                "after": {
+                    "version": "0.10.1",
+                    "build": "herads_5"
+                },
+                "type_": "conda"
+            }
+        }
+    }
+}
