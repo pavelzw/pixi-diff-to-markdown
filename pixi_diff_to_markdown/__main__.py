@@ -1,40 +1,133 @@
 import json
+from itertools import zip_longest
+from typing import Literal
 
-from pixi_diff_to_markdown.models import Configuration, Environments, UpdateSpec
+from rattler import Version
+
+from pixi_diff_to_markdown.models import (
+    ChangeType,
+    Configuration,
+    Environments,
+    UpdateSpec,
+)
 
 CONFIGURATION: Configuration = {
-    "enable_change_column": True,
-    "enable_package_type_column": True,
+    "enable_change_type_column": True,
+    "enable_package_type_column": False,
     "enable_explicit_implicit_column": True,
-    "split_tables": "platform",
-    "hide_tables": True,
+    "split_tables": "environment",
+    "hide_tables": False,
 }
+
+# TODO: sort
+
+
+def calculate_change_type(update_spec: UpdateSpec) -> ChangeType:
+    old_version = Version(update_spec.before.version)
+    new_version = Version(update_spec.after.version)
+    if old_version == new_version:
+        assert update_spec.before.build != update_spec.after.build
+        return ChangeType.BUILD
+
+    padded_vers = zip_longest(
+        old_version.segments(), new_version.segments(), fillvalue=[0]
+    )
+    for idx_vers_element_differs, vers_element in enumerate(padded_vers):
+        if vers_element[0] != vers_element[1]:
+            break
+    if old_version > new_version:
+        if idx_vers_element_differs == 0:
+            return ChangeType.MAJOR_DOWN
+        elif idx_vers_element_differs == 1:
+            return ChangeType.MINOR_DOWN
+        elif idx_vers_element_differs == 2:
+            return ChangeType.PATCH_DOWN
+        else:
+            return ChangeType.OTHER
+    else:
+        if idx_vers_element_differs == 0:
+            return ChangeType.MAJOR_UP
+        elif idx_vers_element_differs == 1:
+            return ChangeType.MINOR_UP
+        elif idx_vers_element_differs == 2:
+            return ChangeType.PATCH_UP
+        else:
+            return ChangeType.OTHER
 
 
 def update_spec_to_table_line(
-    package_name: str, update_spec: UpdateSpec, add_package_type: bool
+    package_name: str,
+    update_spec: UpdateSpec,
+    add_change_type: bool,
+    add_package_type: bool,
 ) -> str:
-    return f"| {package_name} | {update_spec.before.version} {update_spec.before.build} | {update_spec.after.version} {update_spec.after.build} |{f' {update_spec.type_} |' if add_package_type else ''}"
+    change_type = calculate_change_type(update_spec)
+    before = (
+        update_spec.before.version
+        if change_type != ChangeType.BUILD
+        else update_spec.before.build
+    )
+    after = (
+        update_spec.after.version
+        if change_type != ChangeType.BUILD
+        else update_spec.after.build
+    )
+    return (
+        f"| {package_name} |"
+        f" {before} |"
+        f" {after} |"
+        f"{f" {change_type.value} |" if add_change_type else ""}"
+        f"{f' {update_spec.type_} |' if add_package_type else ''}"
+    )
 
 
 def generate_output(data: Environments) -> str:
     add_package_type = CONFIGURATION["enable_package_type_column"]
+    add_change_type = CONFIGURATION["enable_change_type_column"]
     if CONFIGURATION["split_tables"] == "no":
-        return generate_table_no_split_tables(data, add_package_type)
+        return generate_table_no_split_tables(data, add_change_type, add_package_type)
     elif CONFIGURATION["split_tables"] == "environment":
-        return generate_table_environment_split_tables(data, add_package_type)
+        return generate_table_environment_split_tables(
+            data, add_change_type, add_package_type
+        )
     elif CONFIGURATION["split_tables"] == "platform":
-        return generate_table_platform_split_tables(data, add_package_type)
+        return generate_table_platform_split_tables(
+            data, add_change_type, add_package_type
+        )
 
 
-def generate_table_no_split_tables(data: Environments, add_package_type: bool) -> str:
-    header = f"""| Environment | Dependency | Before | After |{" Package |" if add_package_type else ""}
-| -: | - | - | - |{" - |" if add_package_type else ""}"""
+def generate_header(
+    split_type: Literal["no", "environment", "platform"],
+    add_change_type: bool,
+    add_package_type: bool,
+):
+    if split_type == "no":
+        prefix = "| Environment "
+    elif split_type == "environment":
+        prefix = "| Platform "
+    else:
+        assert split_type == "platform"
+        prefix = ""
+    header_line1 = (
+        f"{prefix}| Dependency | Before | After |"
+        f"{" Change |" if add_change_type else ""}"
+        f"{" Package |" if add_package_type else ""}"
+    )
+    header_line2 = f"{"| -: " if split_type != "platform" else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_package_type else ""}"
+    return header_line1 + "\n" + header_line2
+
+
+def generate_table_no_split_tables(
+    data: Environments, add_change_type: bool, add_package_type: bool
+) -> str:
+    header = generate_header("no", add_change_type, add_package_type)
     lines = []
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, add_package_type)
+                update_spec_to_table_line(
+                    package_name, update_spec, add_change_type, add_package_type
+                )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
             lines_platform[0] = f"| {environment} / {platform} {lines_platform[0]}"
@@ -47,10 +140,9 @@ def generate_table_no_split_tables(data: Environments, add_package_type: bool) -
 
 
 def generate_table_environment_split_tables(
-    data: Environments, add_package_type: bool
+    data: Environments, add_change_type: bool, add_package_type: bool
 ) -> str:
-    header = f"""| Platform | Dependency | Before | After |{" Package |" if add_package_type else ""}
-| -: | - | - | - |{" - |" if add_package_type else ""}"""
+    header = generate_header("environment", add_change_type, add_package_type)
     lines = []
     for environment, platforms in data.root.items():
         if CONFIGURATION["hide_tables"]:
@@ -62,7 +154,9 @@ def generate_table_environment_split_tables(
         lines.append(header)
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, add_package_type)
+                update_spec_to_table_line(
+                    package_name, update_spec, add_change_type, add_package_type
+                )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
             lines_platform[0] = f"| {platform} {lines_platform[0]}"
@@ -79,10 +173,9 @@ def generate_table_environment_split_tables(
 
 
 def generate_table_platform_split_tables(
-    data: Environments, add_package_type: bool
+    data: Environments, add_change_type: bool, add_package_type: bool
 ) -> str:
-    header = f"""| Dependency | Before | After |{" Package |" if add_package_type else ""}
-| - | - | - |{" - |" if add_package_type else ""}"""
+    header = generate_header("platform", add_change_type, add_package_type)
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
@@ -96,7 +189,9 @@ def generate_table_platform_split_tables(
             lines.append("")
             lines.append(header)
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, add_package_type)
+                update_spec_to_table_line(
+                    package_name, update_spec, add_change_type, add_package_type
+                )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
             lines.extend(lines_platform)
@@ -113,9 +208,10 @@ def main():
     with open("test.json") as f:
         data = json.load(f)
     data_parsed = Environments(data)
+    calculate_change_type(data_parsed.root["default"].root["linux-64"].root["polars"])
     print(generate_output(data_parsed))
-    # with open("out.md","w") as f:
-    #     f.writelines(generate_output(data_parsed))
+    with open("out.md", "w") as f:
+        f.writelines(generate_output(data_parsed))
 
 
 if __name__ == "__main__":

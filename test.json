@@ -3,7 +3,7 @@
         "linux-64": {
             "polars": {
                 "before": {
-                    "version": "0.10.0",
+                    "version": "0.10.1",
                     "build": "herads_0"
                 },
                 "after": {

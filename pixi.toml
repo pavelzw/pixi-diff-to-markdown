@@ -10,6 +10,7 @@ pixi-diff-to-markdown = "pixi-diff-to-markdown"
 [dependencies]
 python = ">=3.12"
 pydantic = ">=2.7.1,<2.8"
+py-rattler = ">=0.5.0,<0.6"
 
 [host-dependencies]
 pip = "*"
