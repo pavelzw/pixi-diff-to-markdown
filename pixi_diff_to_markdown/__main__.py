@@ -15,20 +15,19 @@ class UpdateSpec(pydantic.BaseModel):
     type_: Literal["conda"]
 
 
-def update_spec_to_table_line(x: UpdateSpec, package_name: str) -> str:
-    return f"| {package_name} | {x.before.version} {x.before.build} | {x.after.version} {x.after.build} |"
+def update_spec_to_table_line(package_name: str, update_spec: UpdateSpec) -> str:
+    return f"| {package_name} | {update_spec.before.version} {update_spec.before.build} | {update_spec.after.version} {update_spec.after.build} |"
 
 
 def generate_table(x: dict[str, UpdateSpec]) -> str:
     header = """| Dependency | Before | After |
 | - | - | - |"""
-    pass
-    lines = []
-    for item in x:
-        line = update_spec_to_table_line(x[item], item)
-        lines.append(line)
-    mystring = "\n".join(lines)
-    table = header + "\n" + mystring
+    lines = [
+        update_spec_to_table_line(package_name, update_spec)
+        for (package_name, update_spec) in x.items()
+    ]
+    content = "\n".join(lines)
+    table = header + "\n" + content
     return table
 
 
