@@ -7,7 +7,7 @@ class Configuration(TypedDict):
     enable_change_column: bool
     # False implies cursive dependency names
     enable_explicit_implicit_column: bool
-    enable_dependency_type_column: bool
+    enable_package_type_column: bool
     split_tables: Literal["no", "environment", "platform"]
     hide_tables: bool
 
