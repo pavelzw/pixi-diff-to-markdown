@@ -236,7 +236,6 @@ def main():
     with open("test.json") as f:
         data = json.load(f)
     data_parsed = Environments(data)
-    calculate_change_type(data_parsed.root["default"].root["linux-64"].root["polars"])
     print(generate_output(data_parsed))
     with open("out.md", "w") as f:
         f.writelines(generate_output(data_parsed))
