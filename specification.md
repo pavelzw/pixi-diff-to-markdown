@@ -10,4 +10,6 @@
 
 environment | dependency | before | after |change | explicit/implicit | pypi/conda
 
-sort by: environment -> platform -> change -> explicit/implicit -> pypi/conda -> alphabet
+sort by: environment -> platform -> change -> alphabet
+
+pypi support

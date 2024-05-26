@@ -1,58 +1,23 @@
 import json
-from itertools import zip_longest
 from typing import Literal
-
-from rattler import Version
 
 from pixi_diff_to_markdown.models import (
     ChangeType,
     Configuration,
     Environments,
     UpdateSpec,
+    calculate_change_type,
 )
 
 CONFIGURATION: Configuration = {
     "enable_change_type_column": True,
     "enable_package_type_column": False,
     "enable_explicit_type_column": False,
-    "split_tables": "environment",
+    "split_tables": "no",
     "hide_tables": False,
 }
 
 # TODO: sort
-
-
-def calculate_change_type(update_spec: UpdateSpec) -> ChangeType:
-    old_version = Version(update_spec.before.version)
-    new_version = Version(update_spec.after.version)
-    if old_version == new_version:
-        assert update_spec.before.build != update_spec.after.build
-        return ChangeType.BUILD
-
-    padded_vers = zip_longest(
-        old_version.segments(), new_version.segments(), fillvalue=[0]
-    )
-    for idx_vers_element_differs, vers_element in enumerate(padded_vers):
-        if vers_element[0] != vers_element[1]:
-            break
-    if old_version > new_version:
-        if idx_vers_element_differs == 0:
-            return ChangeType.MAJOR_DOWN
-        elif idx_vers_element_differs == 1:
-            return ChangeType.MINOR_DOWN
-        elif idx_vers_element_differs == 2:
-            return ChangeType.PATCH_DOWN
-        else:
-            return ChangeType.OTHER
-    else:
-        if idx_vers_element_differs == 0:
-            return ChangeType.MAJOR_UP
-        elif idx_vers_element_differs == 1:
-            return ChangeType.MINOR_UP
-        elif idx_vers_element_differs == 2:
-            return ChangeType.PATCH_UP
-        else:
-            return ChangeType.OTHER
 
 
 def update_spec_to_table_line(
@@ -140,7 +105,8 @@ def generate_header(
 
 def generate_footnotes() -> str:
     return """[^1]: *Cursive* means explicit dependency.
-    [^2]: Dependency got downgraded."""
+[^2]: Dependency got downgraded.
+"""
 
 
 def generate_table_no_split_tables(
@@ -161,13 +127,17 @@ def generate_table_no_split_tables(
                     add_explicit_type,
                     add_package_type,
                 )
-                for (package_name, update_spec) in dependencies.root.items()
+                for (package_name, update_spec) in sorted(
+                    dependencies.root.items(), key=lambda x: (x[1], x[0])
+                )
             ]
             lines_platform[0] = f"| {environment} / {platform} {lines_platform[0]}"
             for i in range(1, len(lines_platform)):
                 lines_platform[i] = "|" + lines_platform[i]
             lines.extend(lines_platform)
+    lines.append("")
     content = "\n".join(lines)
+
     footnote = generate_footnotes()
     table = header + "\n" + content + "\n" + footnote
     return table
@@ -200,7 +170,9 @@ def generate_table_environment_split_tables(
                     add_explicit_type,
                     add_package_type,
                 )
-                for (package_name, update_spec) in dependencies.root.items()
+                for (package_name, update_spec) in sorted(
+                    dependencies.root.items(), key=lambda x: (x[1], x[0])
+                )
             ]
             lines_platform[0] = f"| {platform} {lines_platform[0]}"
             for i in range(1, len(lines_platform)):
@@ -245,7 +217,9 @@ def generate_table_platform_split_tables(
                     add_explicit_type,
                     add_package_type,
                 )
-                for (package_name, update_spec) in dependencies.root.items()
+                for (package_name, update_spec) in sorted(
+                    dependencies.root.items(), key=lambda x: (x[1], x[0])
+                )
             ]
             lines.extend(lines_platform)
             if CONFIGURATION["hide_tables"]:
