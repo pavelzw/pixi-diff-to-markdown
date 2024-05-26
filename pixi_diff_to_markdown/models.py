@@ -7,7 +7,7 @@ import pydantic
 class Configuration(TypedDict):
     enable_change_type_column: bool
     # False implies cursive dependency names
-    enable_explicit_implicit_column: bool
+    enable_explicit_type_column: bool
     enable_package_type_column: bool
     split_tables: Literal["no", "environment", "platform"]
     hide_tables: bool
@@ -40,6 +40,7 @@ class UpdateSpec(pydantic.BaseModel):
     before: CondaVersion
     after: CondaVersion
     type_: Literal["conda"]
+    explicit: bool
 
 
 class Dependencies(pydantic.RootModel):

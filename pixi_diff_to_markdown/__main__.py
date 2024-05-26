@@ -14,7 +14,7 @@ from pixi_diff_to_markdown.models import (
 CONFIGURATION: Configuration = {
     "enable_change_type_column": True,
     "enable_package_type_column": False,
-    "enable_explicit_implicit_column": True,
+    "enable_explicit_type_column": False,
     "split_tables": "environment",
     "hide_tables": False,
 }
@@ -59,6 +59,7 @@ def update_spec_to_table_line(
     package_name: str,
     update_spec: UpdateSpec,
     add_change_type: bool,
+    add_explicit_type: bool,
     add_package_type: bool,
 ) -> str:
     change_type = calculate_change_type(update_spec)
@@ -72,33 +73,52 @@ def update_spec_to_table_line(
         if change_type != ChangeType.BUILD
         else update_spec.after.build
     )
+    if (
+        change_type == ChangeType.MAJOR_DOWN
+        or change_type == ChangeType.MINOR_DOWN
+        or change_type == ChangeType.PATCH_DOWN
+    ):
+        maybe_downgrade_ref = "[^2]"
+    else:
+        maybe_downgrade_ref = ""
+
+    if not add_explicit_type and update_spec.explicit:
+        package_name_formatted = f"*{package_name}*"
+    else:
+        package_name_formatted = package_name
+
     return (
-        f"| {package_name} |"
+        f"| {package_name_formatted + maybe_downgrade_ref} |"
         f" {before} |"
         f" {after} |"
         f"{f" {change_type.value} |" if add_change_type else ""}"
+        f"{f" {str(update_spec.explicit).lower()} |" if add_explicit_type else ""}"
         f"{f' {update_spec.type_} |' if add_package_type else ''}"
     )
 
 
 def generate_output(data: Environments) -> str:
-    add_package_type = CONFIGURATION["enable_package_type_column"]
     add_change_type = CONFIGURATION["enable_change_type_column"]
+    add_explicit_type = CONFIGURATION["enable_explicit_type_column"]
+    add_package_type = CONFIGURATION["enable_package_type_column"]
     if CONFIGURATION["split_tables"] == "no":
-        return generate_table_no_split_tables(data, add_change_type, add_package_type)
+        return generate_table_no_split_tables(
+            data, add_change_type, add_explicit_type, add_package_type
+        )
     elif CONFIGURATION["split_tables"] == "environment":
         return generate_table_environment_split_tables(
-            data, add_change_type, add_package_type
+            data, add_change_type, add_explicit_type, add_package_type
         )
     elif CONFIGURATION["split_tables"] == "platform":
         return generate_table_platform_split_tables(
-            data, add_change_type, add_package_type
+            data, add_change_type, add_explicit_type, add_package_type
         )
 
 
 def generate_header(
     split_type: Literal["no", "environment", "platform"],
     add_change_type: bool,
+    add_explicit_type: bool,
     add_package_type: bool,
 ):
     if split_type == "no":
@@ -109,24 +129,37 @@ def generate_header(
         assert split_type == "platform"
         prefix = ""
     header_line1 = (
-        f"{prefix}| Dependency | Before | After |"
+        f"{prefix}| Dependency{"[^1]" if not add_explicit_type else ""} | Before | After |"
         f"{" Change |" if add_change_type else ""}"
+        f"{" Explicit |" if add_explicit_type else ""}"
         f"{" Package |" if add_package_type else ""}"
     )
-    header_line2 = f"{"| -: " if split_type != "platform" else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_package_type else ""}"
+    header_line2 = f"{"| -: " if split_type != "platform" else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_explicit_type else ""}{" - |" if add_package_type else ""}"
     return header_line1 + "\n" + header_line2
 
 
+def generate_footnotes() -> str:
+    return """[^1]: *Cursive* means explicit dependency.
+    [^2]: Dependency got downgraded."""
+
+
 def generate_table_no_split_tables(
-    data: Environments, add_change_type: bool, add_package_type: bool
+    data: Environments,
+    add_change_type: bool,
+    add_explicit_type: bool,
+    add_package_type: bool,
 ) -> str:
-    header = generate_header("no", add_change_type, add_package_type)
+    header = generate_header("no", add_change_type, add_explicit_type, add_package_type)
     lines = []
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
             lines_platform = [
                 update_spec_to_table_line(
-                    package_name, update_spec, add_change_type, add_package_type
+                    package_name,
+                    update_spec,
+                    add_change_type,
+                    add_explicit_type,
+                    add_package_type,
                 )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
@@ -135,14 +168,20 @@ def generate_table_no_split_tables(
                 lines_platform[i] = "|" + lines_platform[i]
             lines.extend(lines_platform)
     content = "\n".join(lines)
-    table = header + "\n" + content
+    footnote = generate_footnotes()
+    table = header + "\n" + content + "\n" + footnote
     return table
 
 
 def generate_table_environment_split_tables(
-    data: Environments, add_change_type: bool, add_package_type: bool
+    data: Environments,
+    add_change_type: bool,
+    add_explicit_type: bool,
+    add_package_type: bool,
 ) -> str:
-    header = generate_header("environment", add_change_type, add_package_type)
+    header = generate_header(
+        "environment", add_change_type, add_explicit_type, add_package_type
+    )
     lines = []
     for environment, platforms in data.root.items():
         if CONFIGURATION["hide_tables"]:
@@ -155,7 +194,11 @@ def generate_table_environment_split_tables(
         for platform, dependencies in platforms.root.items():
             lines_platform = [
                 update_spec_to_table_line(
-                    package_name, update_spec, add_change_type, add_package_type
+                    package_name,
+                    update_spec,
+                    add_change_type,
+                    add_explicit_type,
+                    add_package_type,
                 )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
@@ -168,14 +211,20 @@ def generate_table_environment_split_tables(
             lines.append("</details>")
         lines.append("")
     content = "\n".join(lines)
-    table = content
+    footnote = generate_footnotes()
+    table = content + "\n" + footnote
     return table
 
 
 def generate_table_platform_split_tables(
-    data: Environments, add_change_type: bool, add_package_type: bool
+    data: Environments,
+    add_change_type: bool,
+    add_explicit_type: bool,
+    add_package_type: bool,
 ) -> str:
-    header = generate_header("platform", add_change_type, add_package_type)
+    header = generate_header(
+        "platform", add_change_type, add_explicit_type, add_package_type
+    )
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
@@ -190,7 +239,11 @@ def generate_table_platform_split_tables(
             lines.append(header)
             lines_platform = [
                 update_spec_to_table_line(
-                    package_name, update_spec, add_change_type, add_package_type
+                    package_name,
+                    update_spec,
+                    add_change_type,
+                    add_explicit_type,
+                    add_package_type,
                 )
                 for (package_name, update_spec) in dependencies.root.items()
             ]
@@ -200,7 +253,8 @@ def generate_table_platform_split_tables(
                 lines.append("</details>")
             lines.append("")
     content = "\n".join(lines)
-    table = content
+    footnote = generate_footnotes()
+    table = content + "\n" + footnote
     return table
 
 
