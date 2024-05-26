@@ -12,7 +12,7 @@ Example output:
 TODO
 
 > [!TIP]
-> The sorting of the tables is done by `environment`, `platform`, `explicit/implicit`, `pypi/conda`, and alphabetically.
+> The sorting of the tables is done by `environment`, `platform` and alphabetically.
 
 ## Installation
 
@@ -36,7 +36,7 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 split-tables = "platform"
 enable-change-type-column = true
 enable-explicit-column = false
-enable-package-type-column = true
+enable-package-type-column = false
 ```
 
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
