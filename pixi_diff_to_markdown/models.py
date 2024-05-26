@@ -38,6 +38,10 @@ class CondaVersion(pydantic.BaseModel):
     build: str
 
 
+class PyPiVersion(pydantic.BaseModel):
+    version: str
+
+
 def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
     if update_spec.before is None:
         assert update_spec.after is not None
@@ -48,6 +52,8 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
     old_version = Version(update_spec.before.version)
     new_version = Version(update_spec.after.version)
     if old_version == new_version:
+        assert type(update_spec.before) == CondaVersion
+        assert type(update_spec.after) == CondaVersion
         assert update_spec.before.build != update_spec.after.build
         return ChangeType.BUILD
 
@@ -78,9 +84,9 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
 
 
 class UpdateSpec(pydantic.BaseModel):
-    before: CondaVersion | None = None
-    after: CondaVersion | None = None
-    type_: Literal["conda"]
+    before: CondaVersion | PyPiVersion | None = None
+    after: CondaVersion | PyPiVersion | None = None
+    type_: Literal["conda", "pypi"]
     explicit: bool
 
     def __lt__(self, other):

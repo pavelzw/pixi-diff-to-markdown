@@ -7,8 +7,9 @@
 | - | - | - | - |
 | new-package |  | 0.10.1 | true |
 | removed-package | 0.10.1 |  | true |
-| python | 0.10.0 | 0.10.0 | false |
-| polars | herads_0 | herads_0 | true |
+| bpy | 0.10.1 | 2.10.1 | true |
+| python | 0.10.0 | 0.10.1 | false |
+| polars | herads_0 | herads_1 | true |
 
 </details>
 
@@ -17,8 +18,8 @@
 
 | Dependency | Before | After | Explicit |
 | - | - | - | - |
-| polars[^2] | 0.10.0 | 0.10.0 | true |
-| python | 0.10.0 | 0.10.0 | true |
+| polars[^2] | 0.10.0 | 0.9.1 | true |
+| python | 0.10.0 | 0.10.1 | true |
 
 </details>
 
@@ -29,8 +30,8 @@
 
 | Dependency | Before | After | Explicit |
 | - | - | - | - |
-| polars | 0.10.0 | 0.10.0 | true |
-| python | 0.10.0 | 0.10.0 | false |
+| polars | 0.10.0 | 0.10.1 | true |
+| python | 0.10.0 | 0.10.1 | false |
 
 </details>
 

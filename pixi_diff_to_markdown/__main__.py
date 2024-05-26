@@ -24,10 +24,10 @@ def update_spec_to_table_line(
         after = ""
     elif change_type == ChangeType.BUILD:
         before = update_spec.before.build  # type: ignore[union-attr]
-        after = update_spec.before.build  # type: ignore[union-attr]
+        after = update_spec.after.build  # type: ignore[union-attr]
     else:
         before = update_spec.before.version  # type: ignore[union-attr]
-        after = update_spec.before.version  # type: ignore[union-attr]
+        after = update_spec.after.version  # type: ignore[union-attr]
     if (
         change_type == ChangeType.MAJOR_DOWN
         or change_type == ChangeType.MINOR_DOWN
