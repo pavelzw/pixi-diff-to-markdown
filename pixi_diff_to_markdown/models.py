@@ -39,6 +39,12 @@ class CondaVersion(pydantic.BaseModel):
 
 
 def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
+    if update_spec.before is None:
+        assert update_spec.after is not None
+        return ChangeType.ADDED
+    if update_spec.after is None:
+        assert update_spec.before is not None
+        return ChangeType.REMOVED
     old_version = Version(update_spec.before.version)
     new_version = Version(update_spec.after.version)
     if old_version == new_version:
@@ -72,8 +78,8 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
 
 
 class UpdateSpec(pydantic.BaseModel):
-    before: CondaVersion
-    after: CondaVersion
+    before: CondaVersion | None = None
+    after: CondaVersion | None = None
     type_: Literal["conda"]
     explicit: bool
 

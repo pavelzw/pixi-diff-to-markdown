@@ -13,6 +13,22 @@
                 "type_": "conda",
                 "explicit": true
             },
+            "new-package": {
+                "after": {
+                    "version": "0.10.1",
+                    "build": "heraff_1"
+                },
+                "type_": "conda",
+                "explicit": true
+            },
+            "removed-package": {
+                "before": {
+                    "version": "0.10.1",
+                    "build": "heraff_1"
+                },
+                "type_": "conda",
+                "explicit": true
+            },
             "python": {
                 "before": {
                     "version": "0.10.0",

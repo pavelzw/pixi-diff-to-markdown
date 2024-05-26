@@ -9,21 +9,25 @@ from pixi_diff_to_markdown.models import (
     calculate_change_type,
 )
 
+# TODO: pypi support
+
 
 def update_spec_to_table_line(
     package_name: str, update_spec: UpdateSpec, configuration: Configuration
 ) -> str:
     change_type = calculate_change_type(update_spec)
-    before = (
-        update_spec.before.version
-        if change_type != ChangeType.BUILD
-        else update_spec.before.build
-    )
-    after = (
-        update_spec.after.version
-        if change_type != ChangeType.BUILD
-        else update_spec.after.build
-    )
+    if change_type == ChangeType.ADDED:
+        before = ""
+        after = update_spec.after.version  # type: ignore[union-attr]
+    elif change_type == ChangeType.REMOVED:
+        before = update_spec.before.version  # type: ignore[union-attr]
+        after = ""
+    elif change_type == ChangeType.BUILD:
+        before = update_spec.before.build  # type: ignore[union-attr]
+        after = update_spec.before.build  # type: ignore[union-attr]
+    else:
+        before = update_spec.before.version  # type: ignore[union-attr]
+        after = update_spec.before.version  # type: ignore[union-attr]
     if (
         change_type == ChangeType.MAJOR_DOWN
         or change_type == ChangeType.MINOR_DOWN
@@ -188,7 +192,7 @@ def main():
         "split_tables": "no",
         "hide_tables": False,
     }
-    with open("test.json") as f:
+    with open("tests/resources/test.json") as f:
         data = json.load(f)
     data_parsed = Environments(data)
     output = generate_output(data_parsed, configuration)
