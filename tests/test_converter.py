@@ -29,7 +29,9 @@ def test_generate_table(
         data = json.load(f)
     data_parsed = Environments(data)
     actual_output = generate_output(data_parsed, configuration)
-    file_name = f"tests/resources/output/change-type-{enable_change_type_column}_package-type-{enable_package_type_column}_explicit-type-{enable_explicit_type_column}_split-tables-{split_tables}_hide-tables-{hide_tables}.md"
+    file_name = f"tests/resources/output/split-tables-{split_tables}_hide-tables-{hide_tables}_change-type-{enable_change_type_column}_explicit-type-{enable_explicit_type_column}_package-type-{enable_package_type_column}.md"
     with open(file_name) as f:
         expected_output = "".join(f.readlines())
     assert actual_output == expected_output
+    # with open(file_name, "w") as f:
+    #     f.writelines(actual_output)
