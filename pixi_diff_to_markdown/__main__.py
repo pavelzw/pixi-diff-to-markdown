@@ -9,23 +9,9 @@ from pixi_diff_to_markdown.models import (
     calculate_change_type,
 )
 
-CONFIGURATION: Configuration = {
-    "enable_change_type_column": True,
-    "enable_package_type_column": False,
-    "enable_explicit_type_column": False,
-    "split_tables": "no",
-    "hide_tables": False,
-}
-
-# TODO: sort
-
 
 def update_spec_to_table_line(
-    package_name: str,
-    update_spec: UpdateSpec,
-    add_change_type: bool,
-    add_explicit_type: bool,
-    add_package_type: bool,
+    package_name: str, update_spec: UpdateSpec, configuration: Configuration
 ) -> str:
     change_type = calculate_change_type(update_spec)
     before = (
@@ -46,7 +32,9 @@ def update_spec_to_table_line(
         maybe_downgrade_ref = "[^2]"
     else:
         maybe_downgrade_ref = ""
-
+    add_explicit_type = configuration["enable_explicit_type_column"]
+    add_change_type = configuration["enable_change_type_column"]
+    add_package_type = configuration["enable_package_type_column"]
     if not add_explicit_type and update_spec.explicit:
         package_name_formatted = f"*{package_name}*"
     else:
@@ -62,30 +50,21 @@ def update_spec_to_table_line(
     )
 
 
-def generate_output(data: Environments) -> str:
-    add_change_type = CONFIGURATION["enable_change_type_column"]
-    add_explicit_type = CONFIGURATION["enable_explicit_type_column"]
-    add_package_type = CONFIGURATION["enable_package_type_column"]
-    if CONFIGURATION["split_tables"] == "no":
-        return generate_table_no_split_tables(
-            data, add_change_type, add_explicit_type, add_package_type
-        )
-    elif CONFIGURATION["split_tables"] == "environment":
-        return generate_table_environment_split_tables(
-            data, add_change_type, add_explicit_type, add_package_type
-        )
-    elif CONFIGURATION["split_tables"] == "platform":
-        return generate_table_platform_split_tables(
-            data, add_change_type, add_explicit_type, add_package_type
-        )
+def generate_output(data: Environments, configuration: Configuration) -> str:
+    if configuration["split_tables"] == "no":
+        return generate_table_no_split_tables(data, configuration)
+    elif configuration["split_tables"] == "environment":
+        return generate_table_environment_split_tables(data, configuration)
+    elif configuration["split_tables"] == "platform":
+        return generate_table_platform_split_tables(data, configuration)
 
 
 def generate_header(
-    split_type: Literal["no", "environment", "platform"],
-    add_change_type: bool,
-    add_explicit_type: bool,
-    add_package_type: bool,
+    split_type: Literal["no", "environment", "platform"], configuration: Configuration
 ):
+    add_change_type = configuration["enable_change_type_column"]
+    add_explicit_type = configuration["enable_explicit_type_column"]
+    add_package_type = configuration["enable_package_type_column"]
     if split_type == "no":
         prefix = "| Environment "
     elif split_type == "environment":
@@ -110,23 +89,14 @@ def generate_footnotes() -> str:
 
 
 def generate_table_no_split_tables(
-    data: Environments,
-    add_change_type: bool,
-    add_explicit_type: bool,
-    add_package_type: bool,
+    data: Environments, configuration: Configuration
 ) -> str:
-    header = generate_header("no", add_change_type, add_explicit_type, add_package_type)
+    header = generate_header("no", configuration)
     lines = []
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(
-                    package_name,
-                    update_spec,
-                    add_change_type,
-                    add_explicit_type,
-                    add_package_type,
-                )
+                update_spec_to_table_line(package_name, update_spec, configuration)
                 for (package_name, update_spec) in sorted(
                     dependencies.root.items(), key=lambda x: (x[1], x[0])
                 )
@@ -144,17 +114,12 @@ def generate_table_no_split_tables(
 
 
 def generate_table_environment_split_tables(
-    data: Environments,
-    add_change_type: bool,
-    add_explicit_type: bool,
-    add_package_type: bool,
+    data: Environments, configuration: Configuration
 ) -> str:
-    header = generate_header(
-        "environment", add_change_type, add_explicit_type, add_package_type
-    )
+    header = generate_header("environment", configuration)
     lines = []
     for environment, platforms in data.root.items():
-        if CONFIGURATION["hide_tables"]:
+        if configuration["hide_tables"]:
             lines.append("<details>")
             lines.append(f"<summary>{environment}</summary>")
         else:
@@ -163,13 +128,7 @@ def generate_table_environment_split_tables(
         lines.append(header)
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(
-                    package_name,
-                    update_spec,
-                    add_change_type,
-                    add_explicit_type,
-                    add_package_type,
-                )
+                update_spec_to_table_line(package_name, update_spec, configuration)
                 for (package_name, update_spec) in sorted(
                     dependencies.root.items(), key=lambda x: (x[1], x[0])
                 )
@@ -178,7 +137,7 @@ def generate_table_environment_split_tables(
             for i in range(1, len(lines_platform)):
                 lines_platform[i] = "|" + lines_platform[i]
             lines.extend(lines_platform)
-        if CONFIGURATION["hide_tables"]:
+        if configuration["hide_tables"]:
             lines.append("")
             lines.append("</details>")
         lines.append("")
@@ -189,20 +148,15 @@ def generate_table_environment_split_tables(
 
 
 def generate_table_platform_split_tables(
-    data: Environments,
-    add_change_type: bool,
-    add_explicit_type: bool,
-    add_package_type: bool,
+    data: Environments, configuration: Configuration
 ) -> str:
-    header = generate_header(
-        "platform", add_change_type, add_explicit_type, add_package_type
-    )
+    header = generate_header("platform", configuration)
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
         lines.append("")
         for platform, dependencies in platforms.root.items():
-            if CONFIGURATION["hide_tables"]:
+            if configuration["hide_tables"]:
                 lines.append("<details>")
                 lines.append(f"<summary>{platform}</summary>")
             else:
@@ -210,19 +164,13 @@ def generate_table_platform_split_tables(
             lines.append("")
             lines.append(header)
             lines_platform = [
-                update_spec_to_table_line(
-                    package_name,
-                    update_spec,
-                    add_change_type,
-                    add_explicit_type,
-                    add_package_type,
-                )
+                update_spec_to_table_line(package_name, update_spec, configuration)
                 for (package_name, update_spec) in sorted(
                     dependencies.root.items(), key=lambda x: (x[1], x[0])
                 )
             ]
             lines.extend(lines_platform)
-            if CONFIGURATION["hide_tables"]:
+            if configuration["hide_tables"]:
                 lines.append("")
                 lines.append("</details>")
             lines.append("")
@@ -233,12 +181,18 @@ def generate_table_platform_split_tables(
 
 
 def main():
+    configuration: Configuration = {
+        "enable_change_type_column": True,
+        "enable_package_type_column": False,
+        "enable_explicit_type_column": False,
+        "split_tables": "no",
+        "hide_tables": False,
+    }
     with open("test.json") as f:
         data = json.load(f)
     data_parsed = Environments(data)
-    print(generate_output(data_parsed))
-    with open("out.md", "w") as f:
-        f.writelines(generate_output(data_parsed))
+    output = generate_output(data_parsed, configuration)
+    print(output)
 
 
 if __name__ == "__main__":
