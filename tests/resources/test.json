@@ -1,7 +1,8 @@
 {
     "default": {
-        "linux-64": {
-            "polars": {
+        "linux-64": [
+            {
+                "name": "polars",
                 "before": {
                     "version": "0.10.1",
                     "build": "herads_0"
@@ -10,35 +11,39 @@
                     "version": "0.10.1",
                     "build": "herads_1"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": true
             },
-            "bpy": {
+            {
+                "name": "bpy",
                 "before": {
                     "version": "0.10.1"
                 },
                 "after": {
                     "version": "2.10.1"
                 },
-                "type_": "pypi",
+                "type": "pypi",
                 "explicit": true
             },
-            "new-package": {
+            {
+                "name": "new-package",
                 "after": {
                     "version": "0.10.1",
                     "build": "heraff_1"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": true
             },
-            "removed-package": {
+            {
+                "name": "removed-package",
                 "before": {
                     "version": "0.10.1"
                 },
-                "type_": "pypi",
+                "type": "pypi",
                 "explicit": true
             },
-            "python": {
+            {
+                "name": "python",
                 "before": {
                     "version": "0.10.0",
                     "build": "herads_5"
@@ -47,12 +52,13 @@
                     "version": "0.10.1",
                     "build": "herads_5"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": false
             }
-        },
-        "osx-arm64": {
-            "polars": {
+        ],
+        "osx-arm64": [
+            {
+                "name": "polars",
                 "before": {
                     "version": "0.10.0",
                     "build": "herads_0"
@@ -61,10 +67,11 @@
                     "version": "0.9.1",
                     "build": "herads_1"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": true
             },
-            "python": {
+            {
+                "name": "python",
                 "before": {
                     "version": "0.10.0",
                     "build": "herads_5"
@@ -73,14 +80,15 @@
                     "version": "0.10.1",
                     "build": "herads_5"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": true
             }
-        }
+        ]
     },
     "lint": {
-        "linux-64": {
-            "polars": {
+        "linux-64": [
+            {
+                "name": "polars",
                 "before": {
                     "version": "0.10.0",
                     "build": "herads_0"
@@ -89,10 +97,11 @@
                     "version": "0.10.1",
                     "build": "herads_1"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": true
             },
-            "python": {
+            {
+                "name": "python",
                 "before": {
                     "version": "0.10.0",
                     "build": "herads_5"
@@ -101,9 +110,9 @@
                     "version": "0.10.1",
                     "build": "herads_5"
                 },
-                "type_": "conda",
+                "type": "conda",
                 "explicit": false
             }
-        }
+        ]
     }
 }

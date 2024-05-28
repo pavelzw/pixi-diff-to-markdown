@@ -9,9 +9,7 @@ from pixi_diff_to_markdown.models import (
 from pixi_diff_to_markdown.settings import Settings
 
 
-def update_spec_to_table_line(
-    package_name: str, update_spec: UpdateSpec, settings: Settings
-) -> str:
+def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> str:
     change_type = calculate_change_type(update_spec)
     if change_type == ChangeType.ADDED:
         before = ""
@@ -37,9 +35,9 @@ def update_spec_to_table_line(
     add_change_type = settings.change_type_column
     add_package_type = settings.package_type_column
     if not add_explicit and update_spec.explicit:
-        package_name_formatted = f"*{package_name}*"
+        package_name_formatted = f"*{update_spec.name}*"
     else:
-        package_name_formatted = package_name
+        package_name_formatted = update_spec.name
 
     return (
         f"| {package_name_formatted + maybe_downgrade_ref} |"
@@ -47,7 +45,7 @@ def update_spec_to_table_line(
         f" {after} |"
         f"{f" {change_type.value} |" if add_change_type else ""}"
         f"{f" {str(update_spec.explicit).lower()} |" if add_explicit else ""}"
-        f"{f' {update_spec.type_} |' if add_package_type else ''}"
+        f"{f' {update_spec.type} |' if add_package_type else ''}"
     )
 
 
@@ -96,10 +94,8 @@ def generate_table_no_split_tables(data: Environments, settings: Settings) -> st
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, settings)
-                for (package_name, update_spec) in sorted(
-                    dependencies.root.items(), key=lambda x: (x[1], x[0])
-                )
+                update_spec_to_table_line(update_spec, settings)
+                for update_spec in sorted(dependencies.root)
             ]
             lines_platform[0] = f"| {environment} / {platform} {lines_platform[0]}"
             for i in range(1, len(lines_platform)):
@@ -128,10 +124,8 @@ def generate_table_environment_split_tables(
         lines.append(header)
         for platform, dependencies in platforms.root.items():
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, settings)
-                for (package_name, update_spec) in sorted(
-                    dependencies.root.items(), key=lambda x: (x[1], x[0])
-                )
+                update_spec_to_table_line(update_spec, settings)
+                for update_spec in sorted(dependencies.root)
             ]
             lines_platform[0] = f"| {platform} {lines_platform[0]}"
             for i in range(1, len(lines_platform)):
@@ -162,10 +156,8 @@ def generate_table_platform_split_tables(data: Environments, settings: Settings)
             lines.append("")
             lines.append(header)
             lines_platform = [
-                update_spec_to_table_line(package_name, update_spec, settings)
-                for (package_name, update_spec) in sorted(
-                    dependencies.root.items(), key=lambda x: (x[1], x[0])
-                )
+                update_spec_to_table_line(update_spec, settings)
+                for update_spec in sorted(dependencies.root)
             ]
             lines.extend(lines_platform)
             if settings.hide_tables:
