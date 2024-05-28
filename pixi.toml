@@ -38,7 +38,14 @@ typos = "*"
 pre-commit-install = "pre-commit install"
 pre-commit-run = "pre-commit run --all-files"
 
+[feature.build.dependencies]
+python-build = "*"
+twine = "*"
+[feature.build.tasks]
+build-wheel = "python -m build --no-isolation ."
+
 [environments]
 default = ["test", "py312"]
 py312 = ["test", "py312"]
+build = ["build"]
 lint = { features = ["lint"], no-default-feature = true }
