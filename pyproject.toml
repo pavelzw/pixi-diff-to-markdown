@@ -5,13 +5,20 @@ build-backend = "hatchling.build"
 [project]
 name = "pixi-diff-to-markdown"
 description = "Tool for converting `pixi update` diffs to markdown"
-version = "0.0.1"
+version = "0.1.0"
 authors = [{ name = "Pavel Zwerschke", email = "pavelzw@gmail.com" }]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">=3.12"
+dependencies = [
+  "pydantic >=2.7.1,<3",
+  "py-rattler >=0.5.0,<0.6",
+  "ordered-enum >=0.0.8,<0.1",
+  "typer >=0.12.3,<0.13",
+  "pydantic-settings >=2.2.1,<3"
+]
 
 [project.urls]
 repository = "https://github.com/pavelzw/pixi-diff-to-markdown"
