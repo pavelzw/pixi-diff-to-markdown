@@ -41,15 +41,15 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 [tool.pixi-diff-to-markdown]
 split-tables = "platform"
 hide-tables = false
-enable-change-type-column = true
-enable-explicit-column = false
-enable-package-type-column = false
+change-type-column = true
+explicit-column = false
+package-type-column = false
 ```
 
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
 
 ```bash
-pixi update --json | pixi-diff-to-markdown update --split-tables=platform --enable-explicit-column
+pixi update --json | pixi-diff-to-markdown update --split-tables=platform --explicit-column
 ```
 
 ### `split-tables`
@@ -66,18 +66,18 @@ For a large amount of `environments` and `platforms`, it might be easier to read
 
 Whether to hide the tables in a collapsible object ([example true](./tests/resources/output/split-tables-platform_hide-tables-True_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md))
 
-### `enable-change-type-column`
+### `change-type-column`
 
 Whether to enable the `Change` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-False_explicit-type-False_package-type-False.md)).
 
-### `enable-explicit-column`
+### `explicit-column`
 
 Whether to enable the `Explicit` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-True_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
 If a dependency is explicitly defined in `pixi.toml`, it will be marked as `Explicit`. Otherwise, it will be marked as `Implicit`.
 
 If this is set to `false`, the `Explicit` column will be omitted and the explicitly defined dependencies will be marked as *cursive*.
 
-### `enable-package-type-column`
+### `package-type-column`
 
 Whether to enable the `Package Type` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-True.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
 This column will show whether the dependency is a `conda` or `pypi` package.

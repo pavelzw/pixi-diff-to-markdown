@@ -7,11 +7,20 @@ platforms = ["osx-arm64", "linux-64", "win-64"]
 postinstall = "pip install --no-build-isolation --no-deps --disable-pip-version-check -e ."
 pixi-diff-to-markdown = "pixi-diff-to-markdown"
 
+[tool.pixi-diff-to-markdown]
+change-type-column = false
+package-type-column = false
+explicit-column = false
+split-tables = "platform"
+hide-tables = true
+
 [dependencies]
 python = ">=3.12"
 pydantic = ">=2.7.1,<2.8"
 py-rattler = ">=0.5.0,<0.6"
 ordered_enum = ">=0.0.8,<0.1"
+typer = ">=0.12.3,<0.13"
+pydantic-settings = ">=2.2.1,<2.3"
 
 [host-dependencies]
 pip = "*"
