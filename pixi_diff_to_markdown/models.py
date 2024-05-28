@@ -1,18 +1,9 @@
 from itertools import zip_longest
-from typing import Literal, TypedDict
+from typing import Literal
 
 import pydantic
 from ordered_enum import OrderedEnum
 from rattler import Version
-
-
-class Configuration(TypedDict):
-    enable_change_type_column: bool
-    # False implies cursive dependency names
-    enable_explicit_type_column: bool
-    enable_package_type_column: bool
-    split_tables: Literal["no", "environment", "platform"]
-    hide_tables: bool
 
 
 class ChangeType(OrderedEnum):
@@ -84,10 +75,12 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
 
 
 class UpdateSpec(pydantic.BaseModel):
+    name: str
     before: CondaVersion | PyPiVersion | None = None
     after: CondaVersion | PyPiVersion | None = None
-    type_: Literal["conda", "pypi"]
-    explicit: bool
+    type: Literal["conda", "pypi"]
+    # if not set, defaults to default
+    explicit: bool = False
 
     def __lt__(self, other):
         change_type_self = calculate_change_type(self)
@@ -101,7 +94,7 @@ class UpdateSpec(pydantic.BaseModel):
 
 
 class Dependencies(pydantic.RootModel):
-    root: dict[str, UpdateSpec]
+    root: list[UpdateSpec]
 
 
 class Platforms(pydantic.RootModel):
