@@ -3,7 +3,7 @@ import json
 import pytest
 
 from pixi_diff_to_markdown.diff import generate_output
-from pixi_diff_to_markdown.models import Configuration, Environments
+from pixi_diff_to_markdown.models import Environments
 from pixi_diff_to_markdown.settings import Settings, SplitTables
 
 
@@ -17,15 +17,17 @@ def test_generate_table(
     package_type_column: bool,
     explicit_column: bool,
     split_tables: SplitTables,
-    hide_tables: bool
+    hide_tables: bool,
 ):
-    settings = Settings.model_validate({
-        "change-type-column": change_type_column,
-        "package-type-column": package_type_column,
-        "explicit-column": explicit_column,
-        "split-tables": split_tables,
-        "hide-tables": hide_tables,
-    })
+    settings = Settings.model_validate(
+        {
+            "change-type-column": change_type_column,
+            "package-type-column": package_type_column,
+            "explicit-column": explicit_column,
+            "split-tables": split_tables,
+            "hide-tables": hide_tables,
+        }
+    )
     with open("tests/resources/test.json") as f:
         data = json.load(f)
     data_parsed = Environments(data)

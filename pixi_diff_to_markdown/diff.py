@@ -1,4 +1,3 @@
-import json
 from typing import Literal
 
 from pixi_diff_to_markdown.models import (
@@ -8,6 +7,7 @@ from pixi_diff_to_markdown.models import (
     calculate_change_type,
 )
 from pixi_diff_to_markdown.settings import Settings
+
 
 def update_spec_to_table_line(
     package_name: str, update_spec: UpdateSpec, settings: Settings
@@ -56,7 +56,8 @@ def generate_output(data: Environments, settings: Settings) -> str:
         return generate_table_no_split_tables(data, settings)
     elif settings.split_tables == "environment":
         return generate_table_environment_split_tables(data, settings)
-    elif settings.split_tables == "platform":
+    else:
+        assert settings.split_tables == "platform"
         return generate_table_platform_split_tables(data, settings)
 
 
@@ -89,9 +90,7 @@ def generate_footnotes() -> str:
 """
 
 
-def generate_table_no_split_tables(
-    data: Environments, settings: Settings
-) -> str:
+def generate_table_no_split_tables(data: Environments, settings: Settings) -> str:
     header = generate_header("no", settings)
     lines = []
     for environment, platforms in data.root.items():
@@ -148,9 +147,7 @@ def generate_table_environment_split_tables(
     return table
 
 
-def generate_table_platform_split_tables(
-    data: Environments, settings: Settings
-) -> str:
+def generate_table_platform_split_tables(data: Environments, settings: Settings) -> str:
     header = generate_header("platform", settings)
     lines = []
     for environment, platforms in data.root.items():
