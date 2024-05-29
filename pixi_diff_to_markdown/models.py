@@ -2,6 +2,7 @@ from itertools import zip_longest
 from typing import Literal
 
 import pydantic
+from pydantic import field_validator
 from ordered_enum import OrderedEnum
 from rattler import Version
 
@@ -79,8 +80,13 @@ class UpdateSpec(pydantic.BaseModel):
     before: CondaVersion | PyPiVersion | None = None
     after: CondaVersion | PyPiVersion | None = None
     type: Literal["conda", "pypi"]
-    # if not set, defaults to default
-    explicit: bool = False
+    # if not set, defaults to implicit
+    explicit: DependencyType = DependencyType.IMPLICIT
+
+    @field_validator("explicit", mode="before")
+    @classmethod
+    def transform(cls, explicit: bool) -> DependencyType:
+        return DependencyType.EXPLICIT if explicit else DependencyType.IMPLICIT
 
     def __lt__(self, other):
         change_type_self = calculate_change_type(self)

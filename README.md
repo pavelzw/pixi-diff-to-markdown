@@ -58,26 +58,26 @@ Depending on the amount of `environments` and `platforms` you have in your `pixi
 For a large amount of `environments` and `platforms`, it might be easier to read the output if the tables are all merged into one.
 `split-tables` can be set to one of the following values:
 
-- `no`: Don't split the tables, they will all be merged into one ([example](./tests/resources/output/split-tables-no_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
-- `environment`: Create a table for each `environment` ([example](./tests/resources/output/split-tables-environment_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
-- `platform`: Split the tables by `platform` and `environment`, the most fine grained level ([example](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
+- `no`: Don't split the tables, they will all be merged into one ([example](./tests/resources/diff-example/split-tables-no_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
+- `environment`: Create a table for each `environment` ([example](./tests/resources/diff-example/split-tables-environment_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
+- `platform`: Split the tables by `platform` and `environment`, the most fine grained level ([example](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
 
 ### `hide-tables`
 
-Whether to hide the tables in a collapsible object ([example true](./tests/resources/output/split-tables-platform_hide-tables-True_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md))
+Whether to hide the tables in a collapsible object ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-True_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md))
 
 ### `change-type-column`
 
-Whether to enable the `Change` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-False_explicit-type-False_package-type-False.md)).
+Whether to enable the `Change` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-False_explicit-type-False_package-type-False.md)).
 
 ### `explicit-column`
 
-Whether to enable the `Explicit` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-True_package-type-False.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
+Whether to enable the `Explicit` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-True_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
 If a dependency is explicitly defined in `pixi.toml`, it will be marked as `Explicit`. Otherwise, it will be marked as `Implicit`.
 
 If this is set to `false`, the `Explicit` column will be omitted and the explicitly defined dependencies will be marked as *cursive*.
 
 ### `package-type-column`
 
-Whether to enable the `Package Type` column in the output ([example true](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-True.md), [example false](./tests/resources/output/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
+Whether to enable the `Package Type` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-True.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-type-False_package-type-False.md)).
 This column will show whether the dependency is a `conda` or `pypi` package.
