@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "environment": {
+    "default": {
+      "linux-64": [
+        {
+          "name": "polars",
+          "before": {
+            "build": "herads_0"
+          },
+          "after": {
+            "build": "herads_1"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
+          "name": "bpy",
+          "before": {
+            "version": "0.10.1"
+          },
+          "after": {
+            "version": "2.10.1"
+          },
+          "type": "pypi",
+          "explicit": true
+        },
+        {
+          "name": "new-package",
+          "after": {
+            "version": "0.10.1",
+            "build": "heraff_1"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
+          "name": "removed-package",
+          "before": {
+            "version": "0.10.1"
+          },
+          "type": "pypi",
+          "explicit": true
+        },
+        {
+          "name": "python",
+          "before": {
+            "version": "0.10.0"
+          },
+          "after": {
+            "version": "0.10.1"
+          },
+          "type": "conda",
+          "explicit": false
+        }
+      ],
+      "osx-arm64": [
+        {
+          "name": "polars",
+          "before": {
+            "version": "0.10.0",
+            "build": "herads_0"
+          },
+          "after": {
+            "version": "0.9.1",
+            "build": "herads_1"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
+          "name": "python",
+          "before": {
+            "version": "0.10.0",
+            "build": "herads_5"
+          },
+          "after": {
+            "version": "0.10.1",
+            "build": "herads_5"
+          },
+          "type": "conda",
+          "explicit": true
+        }
+      ]
+    },
+    "lint": {
+      "linux-64": [
+        {
+          "name": "polars",
+          "before": {
+            "version": "0.10.0",
+            "build": "herads_0"
+          },
+          "after": {
+            "version": "0.10.1",
+            "build": "herads_1"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
+          "name": "python",
+          "before": {
+            "version": "0.10.0",
+            "build": "herads_5"
+          },
+          "after": {
+            "version": "0.10.1",
+            "build": "herads_5"
+          },
+          "type": "conda",
+          "explicit": false
+        }
+      ]
+    }
+  }
+}

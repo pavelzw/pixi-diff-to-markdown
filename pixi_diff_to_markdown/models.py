@@ -3,6 +3,7 @@ from typing import Literal
 
 import pydantic
 from ordered_enum import OrderedEnum
+from pydantic import field_validator
 from rattler import Version
 
 
@@ -24,13 +25,9 @@ class DependencyType(OrderedEnum):
     IMPLICIT = "Implicit"
 
 
-class CondaVersion(pydantic.BaseModel):
-    version: str
-    build: str
-
-
-class PyPiVersion(pydantic.BaseModel):
-    version: str
+class PackageInformation(pydantic.BaseModel):
+    version: str | None = None
+    build: str | None = None
 
 
 def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
@@ -40,13 +37,16 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
     if update_spec.after is None:
         assert update_spec.before is not None
         return ChangeType.REMOVED
+    if update_spec.before.version is None:
+        assert update_spec.after.version is None
+        assert update_spec.before.build is not None
+        assert update_spec.after.build is not None
+        return ChangeType.BUILD
+
+    assert update_spec.after.version is not None
+    assert update_spec.before.version != update_spec.after.version
     old_version = Version(update_spec.before.version)
     new_version = Version(update_spec.after.version)
-    if old_version == new_version:
-        assert type(update_spec.before) == CondaVersion
-        assert type(update_spec.after) == CondaVersion
-        assert update_spec.before.build != update_spec.after.build
-        return ChangeType.BUILD
 
     padded_vers = zip_longest(
         old_version.segments(), new_version.segments(), fillvalue=[0]
@@ -76,11 +76,16 @@ def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
 
 class UpdateSpec(pydantic.BaseModel):
     name: str
-    before: CondaVersion | PyPiVersion | None = None
-    after: CondaVersion | PyPiVersion | None = None
+    before: PackageInformation | None = None
+    after: PackageInformation | None = None
     type: Literal["conda", "pypi"]
-    # if not set, defaults to default
-    explicit: bool = False
+    # if not set, defaults to implicit
+    explicit: DependencyType = DependencyType.IMPLICIT
+
+    @field_validator("explicit", mode="before")
+    @classmethod
+    def transform(cls, explicit: bool) -> DependencyType:
+        return DependencyType.EXPLICIT if explicit else DependencyType.IMPLICIT
 
     def __lt__(self, other):
         change_type_self = calculate_change_type(self)
@@ -103,3 +108,8 @@ class Platforms(pydantic.RootModel):
 
 class Environments(pydantic.RootModel):
     root: dict[str, Platforms]
+
+
+class Diff(pydantic.BaseModel):
+    environment: Environments
+    version: int

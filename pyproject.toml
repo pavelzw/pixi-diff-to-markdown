@@ -25,7 +25,6 @@ repository = "https://github.com/pavelzw/pixi-diff-to-markdown"
 
 [project.scripts]
 pixi-diff-to-markdown = "pixi_diff_to_markdown.__main__:app"
-# pixi-diff-to-markdown2 = "pixi_diff_to_markdown.cli"
 
 [tool.ruff]
 line-length = 88
@@ -54,3 +53,6 @@ select = [
 python_version = '3.12'
 no_implicit_optional = true
 check_untyped_defs = true
+
+[tool.typos.default.extend-words]
+ba = "ba"

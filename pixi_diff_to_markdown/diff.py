@@ -2,6 +2,7 @@ from typing import Literal
 
 from pixi_diff_to_markdown.models import (
     ChangeType,
+    DependencyType,
     Environments,
     UpdateSpec,
     calculate_change_type,
@@ -11,6 +12,8 @@ from pixi_diff_to_markdown.settings import Settings
 
 def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> str:
     change_type = calculate_change_type(update_spec)
+    before: str | None
+    after: str | None
     if change_type == ChangeType.ADDED:
         before = ""
         after = update_spec.after.version  # type: ignore[union-attr]
@@ -23,6 +26,9 @@ def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> st
     else:
         before = update_spec.before.version  # type: ignore[union-attr]
         after = update_spec.after.version  # type: ignore[union-attr]
+    assert before is not None
+    assert after is not None
+
     if (
         change_type == ChangeType.MAJOR_DOWN
         or change_type == ChangeType.MINOR_DOWN
@@ -34,7 +40,7 @@ def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> st
     add_explicit = settings.explicit_column
     add_change_type = settings.change_type_column
     add_package_type = settings.package_type_column
-    if not add_explicit and update_spec.explicit:
+    if not add_explicit and update_spec.explicit == DependencyType.EXPLICIT:
         package_name_formatted = f"*{update_spec.name}*"
     else:
         package_name_formatted = update_spec.name
@@ -44,7 +50,7 @@ def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> st
         f" {before} |"
         f" {after} |"
         f"{f" {change_type.value} |" if add_change_type else ""}"
-        f"{f" {str(update_spec.explicit).lower()} |" if add_explicit else ""}"
+        f"{f" {str(update_spec.explicit == DependencyType.EXPLICIT).lower()} |" if add_explicit else ""}"
         f"{f' {update_spec.type} |' if add_package_type else ''}"
     )
 
