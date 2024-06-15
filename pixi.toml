@@ -24,6 +24,7 @@ pytest = "*"
 mypy = "*"
 [feature.test.tasks]
 test = "pytest"
+test-write = "pytest --write-results"
 
 [feature.py312.dependencies]
 python = "3.12.*"

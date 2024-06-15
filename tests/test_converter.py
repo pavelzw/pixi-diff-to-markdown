@@ -20,6 +20,7 @@ def test_generate_table(
     explicit_column: bool,
     split_tables: SplitTables,
     hide_tables: bool,
+    write_results: bool,
 ):
     settings = Settings.model_validate(
         {
@@ -34,8 +35,10 @@ def test_generate_table(
     data_parsed = Diff.model_validate_json(diff_path.read_text())
     actual_output = generate_output(data_parsed.environment, settings)
     file_name = f"tests/resources/{diff_file.split(".")[0]}/split-tables-{settings.split_tables.value}_hide-tables-{settings.hide_tables}_change-type-{settings.change_type_column}_explicit-{settings.explicit_column}_package-type-{settings.package_type_column}.md"
-    # with open(file_name) as f:
-    #     expected_output = "".join(f.readlines())
-    # assert actual_output == expected_output
-    with open(file_name, "w") as f:
-        f.writelines(actual_output)
+    if write_results:
+        with open(file_name, "w") as f:
+            f.writelines(actual_output)
+    else:
+        with open(file_name) as f:
+            expected_output = "".join(f.readlines())
+        assert actual_output == expected_output
