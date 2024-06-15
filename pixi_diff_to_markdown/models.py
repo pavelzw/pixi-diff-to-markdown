@@ -1,9 +1,9 @@
 from itertools import zip_longest
-from typing import Literal
+from typing import Literal, Self
 
 import pydantic
 from ordered_enum import OrderedEnum
-from pydantic import ConfigDict, field_validator
+from pydantic import ConfigDict, field_validator, model_validator
 from rattler import Version
 
 
@@ -29,7 +29,16 @@ class PackageInformation(pydantic.BaseModel):
     version: str | None = None
     build: str | None = None
 
-    model_config = ConfigDict(frozen=True)
+    def __hash__(self):
+        return hash((self.version, self.build))
+
+    # two elements where the versions are the same but the hashes aren't should be considered the same
+    # thus, only include the build string if the version is not set (i.e. no version update)
+    @model_validator(mode="after")
+    def transform(self) -> Self:
+        if self.version is not None:
+            self.build = None
+        return self
 
 
 def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
@@ -96,14 +105,18 @@ class UpdateSpec(pydantic.BaseModel):
             return self.explicit < other.explicit
         change_type_self = calculate_change_type(self)
         change_type_other = calculate_change_type(other)
-        return change_type_self < change_type_other
+        if change_type_self != change_type_other:
+            return change_type_self < change_type_other
+        return self.name < other.name
 
     def __gt__(self, other):
         if self.explicit != other.explicit:
             return self.explicit > other.explicit
         change_type_self = calculate_change_type(self)
         change_type_other = calculate_change_type(other)
-        return change_type_self > change_type_other
+        if change_type_self != change_type_other:
+            return change_type_self > change_type_other
+        return self.name > other.name
 
 
 class Dependencies(pydantic.RootModel):

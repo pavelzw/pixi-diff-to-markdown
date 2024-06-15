@@ -2,7 +2,7 @@ from pixi_diff_to_markdown.diff import generate_header, update_spec_to_table_lin
 from pixi_diff_to_markdown.models import Environments, UpdateSpec
 from pixi_diff_to_markdown.settings import Settings
 
-UpdatedEnvironments = dict[str, list[str]]
+UpdatedEnvironments = list[tuple[str, str]]
 
 
 def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironments]:
@@ -10,24 +10,42 @@ def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironmen
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
             for update_spec in dependencies.root:
-                if update_spec not in update_specs:
-                    update_specs[update_spec] = {environment: [platform]}
-                else:
-                    if environment not in update_specs[update_spec]:
-                        update_specs[update_spec][environment] = [platform]
-                    else:
-                        update_specs[update_spec][environment].append(platform)
+                update_specs.setdefault(update_spec, []).append((environment, platform))
     return update_specs
 
 
-def get_platforms_for_environment(environment: str, data: Environments) -> list[str]:
-    return [platform for platform in data.root[environment].root]
-
-
 def environments_to_str(environments: UpdatedEnvironments, data: Environments) -> str:
+    # todo: make prettier
+    # return "all"
+    all_environments = []
+    for environment, platforms in data.root.items():
+        all_environments.extend([(environment, platform) for platform in platforms.root])
+    if len(environments) == len(all_environments):
+        return "all"
+    
+    all_by_environment = {}
+    for environment, platform in all_environments:
+        all_by_environment.setdefault(environment, []).append(platform)
+    all_by_platform = {}
+    for environment, platform in all_environments:
+        all_by_platform.setdefault(platform, []).append(environment)
+
+    by_environment = {}
+    by_platform = {}
+    for environment, platform in environments:
+        by_environment.setdefault(environment, []).append(platform)
+    for environment, platform in environments:
+        by_platform.setdefault(platform, []).append(environment)
+    
+    # check if all environments are covered for only some platforms
+    if all(
+        len(by_platform[platform]) == len(all_by_platform[platform]) for platform in by_platform
+    ):
+        return f"all / {' '.join(by_platform.keys())}"
+
     environment_strings = []
-    for environment, platforms in environments.items():
-        all_platforms = get_platforms_for_environment(environment, data)
+    for environment, platforms in by_environment.items():
+        all_platforms = [platform for platform in data.root[environment].root]
         if len(platforms) == len(all_platforms):
             environment_strings.append(environment)
         elif len(platforms) == 1:
