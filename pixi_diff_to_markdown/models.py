@@ -3,7 +3,7 @@ from typing import Literal
 
 import pydantic
 from ordered_enum import OrderedEnum
-from pydantic import field_validator
+from pydantic import ConfigDict, field_validator
 from rattler import Version
 
 
@@ -28,6 +28,8 @@ class DependencyType(OrderedEnum):
 class PackageInformation(pydantic.BaseModel):
     version: str | None = None
     build: str | None = None
+
+    model_config = ConfigDict(frozen=True)
 
 
 def calculate_change_type(update_spec: "UpdateSpec") -> ChangeType:
@@ -82,17 +84,23 @@ class UpdateSpec(pydantic.BaseModel):
     # if not set, defaults to implicit
     explicit: DependencyType = DependencyType.IMPLICIT
 
+    model_config = ConfigDict(frozen=True)
+
     @field_validator("explicit", mode="before")
     @classmethod
     def transform(cls, explicit: bool) -> DependencyType:
         return DependencyType.EXPLICIT if explicit else DependencyType.IMPLICIT
 
     def __lt__(self, other):
+        if self.explicit != other.explicit:
+            return self.explicit < other.explicit
         change_type_self = calculate_change_type(self)
         change_type_other = calculate_change_type(other)
         return change_type_self < change_type_other
 
     def __gt__(self, other):
+        if self.explicit != other.explicit:
+            return self.explicit > other.explicit
         change_type_self = calculate_change_type(self)
         change_type_other = calculate_change_type(other)
         return change_type_self > change_type_other
@@ -113,3 +121,7 @@ class Environments(pydantic.RootModel):
 class Diff(pydantic.BaseModel):
     environment: Environments
     version: int
+
+
+class EnvironmentOrPlatform(pydantic.RootModel):
+    root: str | tuple[str, str]
