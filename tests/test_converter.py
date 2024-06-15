@@ -7,7 +7,10 @@ from pixi_diff_to_markdown.models import Diff
 from pixi_diff_to_markdown.settings import Settings, SplitTables
 
 
-@pytest.mark.parametrize("diff_file", ["diff-example.json", "diff-polarify.json", "diff-pixi-diff-to-markdown.json"])
+@pytest.mark.parametrize(
+    "diff_file",
+    ["diff-example.json", "diff-polarify.json", "diff-pixi-diff-to-markdown.json"],
+)
 @pytest.mark.parametrize("change_type_column", [True, False])
 @pytest.mark.parametrize("package_type_column", [True, False])
 @pytest.mark.parametrize("explicit_column", [True, False])
