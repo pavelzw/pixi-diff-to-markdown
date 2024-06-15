@@ -5,7 +5,7 @@ from typing import Annotated, Optional
 import typer
 
 from pixi_diff_to_markdown.diff import generate_output
-from pixi_diff_to_markdown.models import Environments
+from pixi_diff_to_markdown.models import Diff
 from pixi_diff_to_markdown.settings import Settings, SplitTables
 
 app = typer.Typer()
@@ -53,6 +53,9 @@ def main(
         {k: v for k, v in settings_dict.items() if v is not None}
     )
     data = "".join(stdin.readlines())
-    data_parsed = Environments.model_validate_json(data)
-    output = generate_output(data_parsed, settings)
+    data_parsed = Diff.model_validate_json(data)
+    if data_parsed.version != 1:
+        msg = f"Only version 1 diffs are supported. Got version {data_parsed.version}."
+        raise ValueError(msg)
+    output = generate_output(data_parsed.environment, settings)
     print(output)

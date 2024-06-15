@@ -12,6 +12,8 @@ from pixi_diff_to_markdown.settings import Settings
 
 def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> str:
     change_type = calculate_change_type(update_spec)
+    before: str | None
+    after: str | None
     if change_type == ChangeType.ADDED:
         before = ""
         after = update_spec.after.version  # type: ignore[union-attr]
@@ -24,6 +26,9 @@ def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> st
     else:
         before = update_spec.before.version  # type: ignore[union-attr]
         after = update_spec.after.version  # type: ignore[union-attr]
+    assert before is not None
+    assert after is not None
+
     if (
         change_type == ChangeType.MAJOR_DOWN
         or change_type == ChangeType.MINOR_DOWN

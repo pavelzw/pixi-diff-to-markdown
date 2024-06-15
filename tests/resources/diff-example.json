@@ -6,11 +6,9 @@
         {
           "name": "polars",
           "before": {
-            "version": "0.10.1",
             "build": "herads_0"
           },
           "after": {
-            "version": "0.10.1",
             "build": "herads_1"
           },
           "type": "conda",
