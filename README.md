@@ -4,7 +4,7 @@
 It reads from the standard input and writes to the standard output.
 
 ```bash
-pixi update --json | pixi-diff-to-markdown update > diff.md
+pixi update --json | pixi-diff-to-markdown > diff.md
 ```
 
 Example output:
@@ -18,7 +18,7 @@ Example output:
 | *polars* | herads_0 | herads_1 | Only build string |
 
 > [!TIP]
-> The sorting of the tables is done by `environment`, `platform` and alphabetically.
+> The sorting of the tables is done by `explicit`/`implicit`, change type and alphabetically.
 
 ## Installation
 
@@ -39,8 +39,8 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 ```toml
 # defaults
 [tool.pixi-diff-to-markdown]
-split-tables = "platform"
-hide-tables = false
+merge-dependencies = "no"
+hide = false
 change-type-column = true
 explicit-column = false
 package-type-column = false
@@ -49,35 +49,37 @@ package-type-column = false
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
 
 ```bash
-pixi update --json | pixi-diff-to-markdown update --split-tables=platform --explicit-column
+pixi update --json | pixi-diff-to-markdown --merge-dependencies=yes --explicit-column
 ```
 
-### `split-tables`
+### `merge-dependencies`
 
-Depending on the amount of `environments` and `platforms` you have in your `pixi.toml`, it might make sense to either split the tables or not.
-For a large amount of `environments` and `platforms`, it might be easier to read the output if the tables are all merged into one.
-`split-tables` can be set to one of the following values:
+Depending on the amount of `environments` and `platforms` you have in your `pixi.toml`, it might make sense to either merge all dependencies into one table, split them by `explicit` and `implicit` dependencies or split them by `environment` and `platform`.
+For a large amount of `environments` and `platforms`, it is recommended to merge the dependencies into one table for deduplication.
+`merge-dependencies` can be set to one of the following values:
 
-- `no`: Don't split the tables, they will all be merged into one ([example](./tests/resources/diff-example/split-tables-no_hide-tables-False_change-type-True_explicit-False_package-type-False.md)).
-- `environment`: Create a table for each `environment` ([example](./tests/resources/diff-example/split-tables-environment_hide-tables-False_change-type-True_explicit-False_package-type-False.md)).
-- `platform`: Split the tables by `platform` and `environment`, the most fine grained level ([example](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-False.md)).
+- `no`: Don't merge the dependencies, each environment will be displayed in their own table. Only recommended for a small amount of environments / platforms ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False)).
+- `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False)).
+- `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-example/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False)).
 
-### `hide-tables`
+The default is `no` when there are less than three environments / platforms and `yes` when there are three or more environments / platforms.
 
-Whether to hide the tables in a collapsible object ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-True_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-False.md))
+### `hide`
+
+Whether to hide the tables in a collapsible object ([example true](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md))
 
 ### `change-type-column`
 
-Whether to enable the `Change` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-False_explicit-False_package-type-False.md)).
+Whether to enable the `Change` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-False_explicit-False_package-type-False.md)).
 
 ### `explicit-column`
 
-Whether to enable the `Explicit` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-True_package-type-False.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-False.md)).
+Whether to enable the `Explicit` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-True_package-type-False.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 If a dependency is explicitly defined in `pixi.toml`, it will be marked as `Explicit`. Otherwise, it will be marked as `Implicit`.
 
 If this is set to `false`, the `Explicit` column will be omitted and the explicitly defined dependencies will be marked as *cursive*.
 
 ### `package-type-column`
 
-Whether to enable the `Package Type` column in the output ([example true](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-True.md), [example false](./tests/resources/diff-example/split-tables-platform_hide-tables-False_change-type-True_explicit-False_package-type-False.md)).
+Whether to enable the `Package Type` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-True.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 This column will show whether the dependency is a `conda` or `pypi` package.
