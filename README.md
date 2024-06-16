@@ -18,7 +18,7 @@ Example output:
 | *polars* | herads_0 | herads_1 | Only build string |
 
 > [!TIP]
-> The sorting of the tables is done by `explicit`/`implicit`, change type and alphabetically.
+> The sorting of the tables is done by explicit/implicit, change type and alphabetically.
 
 ## Installation
 
@@ -39,7 +39,7 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 ```toml
 # defaults
 [tool.pixi-diff-to-markdown]
-merge-dependencies = "no"
+merge-dependencies = "no" # or "yes" when there are three or more environments / platforms
 hide = false
 change-type-column = true
 explicit-column = false
@@ -58,9 +58,9 @@ Depending on the amount of `environments` and `platforms` you have in your `pixi
 For a large amount of `environments` and `platforms`, it is recommended to merge the dependencies into one table for deduplication.
 `merge-dependencies` can be set to one of the following values:
 
-- `no`: Don't merge the dependencies, each environment will be displayed in their own table. Only recommended for a small amount of environments / platforms ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False)).
-- `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False)).
-- `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-example/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False)).
+- `no`: Don't merge the dependencies, each environment will be displayed in their own table. Only recommended for a small amount of environments / platforms ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
+- `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
+- `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-example/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False.md)).
 
 The default is `no` when there are less than three environments / platforms and `yes` when there are three or more environments / platforms.
 
