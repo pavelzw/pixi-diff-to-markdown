@@ -8,7 +8,7 @@ from pixi_diff_to_markdown.models import (
     UpdateSpec,
     calculate_change_type,
 )
-from pixi_diff_to_markdown.settings import Settings
+from pixi_diff_to_markdown.settings import Settings, SplitTables
 
 
 def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> list[str]:
@@ -68,17 +68,17 @@ def generate_output(data: Environments, settings: Settings) -> str:
 
 
 def generate_header(
-    split_type: Literal["no", "environment", "platform"], settings: Settings
+    settings: Settings
 ):
     add_change_type = settings.change_type_column
     add_explicit = settings.explicit_column
     add_package_type = settings.package_type_column
-    if split_type == "no":
+    if settings.split_tables == SplitTables.no:
         prefix = "| Environment "
-    elif split_type == "environment":
+    elif settings.split_tables == SplitTables.environment:
         prefix = "| Platform "
     else:
-        assert split_type == "platform"
+        assert settings.split_tables == SplitTables.platform
         prefix = ""
     header_line1 = (
         f"{prefix}| Dependency{"[^1]" if not add_explicit else ""} | Before | After |"
@@ -86,7 +86,7 @@ def generate_header(
         f"{" Explicit |" if add_explicit else ""}"
         f"{" Package |" if add_package_type else ""}"
     )
-    header_line2 = f"{"| -: " if split_type != "platform" else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_explicit else ""}{" - |" if add_package_type else ""}"
+    header_line2 = f"{"| -: " if settings.split_tables != SplitTables.platform else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_explicit else ""}{" - |" if add_package_type else ""}"
     return header_line1 + "\n" + header_line2
 
 
@@ -97,7 +97,7 @@ def generate_footnotes() -> str:
 
 
 def generate_table_no_split_tables(data: Environments, settings: Settings) -> str:
-    header = generate_header("no", settings)
+    header = generate_header(settings)
     lines = []
     for environment, platforms in data.root.items():
         for platform, dependencies in platforms.root.items():
@@ -120,7 +120,7 @@ def generate_table_no_split_tables(data: Environments, settings: Settings) -> st
 def generate_table_environment_split_tables(
     data: Environments, settings: Settings
 ) -> str:
-    header = generate_header("environment", settings)
+    header = generate_header(settings)
     lines = []
     for environment, platforms in data.root.items():
         if settings.hide_tables:
@@ -150,7 +150,7 @@ def generate_table_environment_split_tables(
 
 
 def generate_table_platform_split_tables(data: Environments, settings: Settings) -> str:
-    header = generate_header("platform", settings)
+    header = generate_header(settings)
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
