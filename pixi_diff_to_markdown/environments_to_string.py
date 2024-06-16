@@ -129,7 +129,7 @@ class SupportMatrix:
     def get_str_representation(self, covers: set[Cover] | None = None) -> str:
         if covers is None:
             covers = self.find_optimal_cover()
-        covers_with_str = sorted((cover, cover.get_str_representation(self.all_environments, self.all_platforms)) for cover in covers)
+        covers_with_str = sorted(((cover, cover.get_str_representation(self.all_environments, self.all_platforms)) for cover in covers), reverse=True)
         return "<br/>".join(cover_str for _, cover_str in covers_with_str)
 
 

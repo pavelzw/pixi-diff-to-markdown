@@ -65,7 +65,7 @@ def test_str_representation(
                 "osx-64": set(),
                 "win-64": {"py312"},
             },
-            "py311 on osx-arm64<br/>py312 on win-64<br/>{py310, py311, py312, py39} on linux-64",
+            "{py310, py311, py312, py39} on linux-64<br/>py312 on win-64<br/>py311 on osx-arm64",
         ),
         (
             [
@@ -83,7 +83,7 @@ def test_str_representation(
                 "osx-64": {"default", "py39"},
                 "win-64": {"default", "py310", "py311", "py312"},
             },
-            "py311 on osx-arm64<br/>{default, py39} on osx-64<br/>{default, py310, py311, py312} on win-64<br/>*all envs* on linux-64<br/>{default, py310, py39} on {linux-aarch64, linux-ppc64le, osx-arm64}",
+            "{default, py310, py39} on {linux-aarch64, linux-ppc64le, osx-arm64}<br/>*all envs* on linux-64<br/>{default, py310, py311, py312} on win-64<br/>{default, py39} on osx-64<br/>py311 on osx-arm64",
         ),
     ],
 )
