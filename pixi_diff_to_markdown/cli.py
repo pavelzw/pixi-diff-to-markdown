@@ -6,7 +6,7 @@ import typer
 
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import Diff
-from pixi_diff_to_markdown.settings import Settings, SplitTables
+from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 app = typer.Typer()
 
@@ -31,9 +31,11 @@ def main(
             help="Enable the explicit (explicit/implicit) column.", show_default=False
         ),
     ] = None,
-    split_tables: Annotated[
-        Optional[SplitTables],
-        typer.Option(help="In what way to split tables.", show_default=False),
+    merge_dependencies: Annotated[
+        Optional[MergeDependencies],
+        typer.Option(
+            help="Whether or not to merge all updates in one table.", show_default=False
+        ),
     ] = None,
     hide_tables: Annotated[
         Optional[bool],
@@ -46,7 +48,7 @@ def main(
         "change-type-column": change_type_column,
         "package-type-column": package_type_column,
         "explicit-column": explicit_column,
-        "split-tables": split_tables,
+        "merge-dependencies": merge_dependencies,
         "hide-tables": hide_tables,
     }
     settings = Settings.model_validate(

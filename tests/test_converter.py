@@ -6,7 +6,7 @@ from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import (
     Diff,
 )
-from pixi_diff_to_markdown.settings import Settings, MergeDependencies
+from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 
 @pytest.mark.parametrize(

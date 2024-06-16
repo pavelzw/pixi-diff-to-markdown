@@ -227,7 +227,13 @@ class DependencyTable:
         if self.use_environment_platform_column:
             columns.append("Environment / Platform")
             orientations.append("right")
-        columns.extend([f"Dependency{'[^1]' if not settings.explicit_column else ''}", "Before", "After"])
+        columns.extend(
+            [
+                f"Dependency{'[^1]' if not settings.explicit_column else ''}",
+                "Before",
+                "After",
+            ]
+        )
         orientations.extend(["left", "left", "left"])
         if settings.change_type_column:
             columns.append("Change")

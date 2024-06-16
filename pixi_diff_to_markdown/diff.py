@@ -120,9 +120,7 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
     ]
 
 
-def generate_table_merge_all(
-    data: Environments, settings: Settings
-) -> str:
+def generate_table_merge_all(data: Environments, settings: Settings) -> str:
     rows = [
         TableRow(update_spec, updated_environments=updated_envs_str)
         for update_spec, updated_envs_str in get_sorted_update_specs(data)
@@ -133,9 +131,7 @@ def generate_table_merge_all(
     return table_str + "\n\n" + footnote
 
 
-def generate_table_split_explicit(
-    data: Environments, settings: Settings
-) -> str:
+def generate_table_split_explicit(data: Environments, settings: Settings) -> str:
     # TODO: ordereddict
     sorted_update_specs = get_sorted_update_specs(data)
     update_specs_explicit = filter(
@@ -159,7 +155,9 @@ def generate_table_split_explicit(
         table_str = dependency_table.to_string(settings)
         if settings.hide_tables:
             lines.append("# Dependencies\n")
-            lines.append(f"<details>\n<summary>{dependency_type} dependencies</summary>")
+            lines.append(
+                f"<details>\n<summary>{dependency_type} dependencies</summary>"
+            )
         else:
             lines.append(f"# {dependency_type} dependencies\n")
         lines.append(table_str)
