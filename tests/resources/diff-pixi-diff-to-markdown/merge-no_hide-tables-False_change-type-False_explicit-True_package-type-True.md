@@ -236,5 +236,5 @@
 |pydantic-core|2.18.2|2.18.4|false|conda|
 |vc|ha32ba9b_20|h8a93ad2_20|false|conda|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

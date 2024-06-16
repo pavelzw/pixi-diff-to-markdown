@@ -3,7 +3,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -26,7 +26,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -47,7 +47,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -72,7 +72,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -91,7 +91,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -107,7 +107,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -129,7 +129,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -155,7 +155,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -178,7 +178,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -208,7 +208,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -231,7 +231,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -252,7 +252,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -272,5 +272,5 @@
 
 </details>
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

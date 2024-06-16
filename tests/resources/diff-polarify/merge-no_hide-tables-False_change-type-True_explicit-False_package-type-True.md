@@ -2,7 +2,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.1|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -38,7 +38,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -77,7 +77,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -113,7 +113,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -153,7 +153,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -189,7 +189,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -227,7 +227,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -263,7 +263,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -303,7 +303,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -339,7 +339,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -377,7 +377,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -413,7 +413,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -453,7 +453,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -486,7 +486,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -521,7 +521,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -554,7 +554,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -591,7 +591,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -624,7 +624,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -659,7 +659,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -692,7 +692,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -729,7 +729,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -761,7 +761,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -795,7 +795,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -827,7 +827,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -863,7 +863,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -896,7 +896,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -930,7 +930,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -963,7 +963,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1000,7 +1000,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1032,7 +1032,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1066,7 +1066,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1098,7 +1098,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1134,7 +1134,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1170,7 +1170,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1209,7 +1209,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1245,7 +1245,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1285,7 +1285,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1319,7 +1319,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1355,7 +1355,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1389,7 +1389,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1427,7 +1427,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**hatchling**|1.21.1|1.24.2|Minor Upgrade|conda|
@@ -1466,7 +1466,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**hatchling**|1.21.1|1.24.2|Minor Upgrade|conda|
@@ -1508,7 +1508,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**hatchling**|1.21.1|1.24.2|Minor Upgrade|conda|
@@ -1547,7 +1547,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**hatchling**|1.21.1|1.24.2|Minor Upgrade|conda|
@@ -1590,7 +1590,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1623,7 +1623,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1658,7 +1658,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1691,7 +1691,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1728,7 +1728,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1764,7 +1764,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1803,7 +1803,7 @@
 
 ## osx-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1839,7 +1839,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|conda|
 |**pytest-cov**|4.1.0|5.0.0|Major Upgrade|conda|
@@ -1875,5 +1875,5 @@
 |liblapack|21_linux64_openblas|22_linux64_openblas|Only build string|conda|
 |libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|Only build string|conda|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

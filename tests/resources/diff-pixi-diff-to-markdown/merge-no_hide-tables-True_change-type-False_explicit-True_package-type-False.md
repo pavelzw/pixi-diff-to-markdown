@@ -272,5 +272,5 @@
 
 </details>
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

@@ -1,6 +1,8 @@
-## Explicit dependencies
+# Dependencies
 
-|Dependency|Before|After|Environments|
+<details>
+<summary>Explicit dependencies</summary>
+|Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|lint on *all platforms*|
 |**ordered_enum**|0.0.8|0.0.9|{build, default, py312} on *all platforms*|
@@ -9,9 +11,13 @@
 |**ruff**|0.4.4|0.4.9|lint on *all platforms*|
 |**py-rattler**|py312h1a1520d_0|py312had01cb0_0|{default, py312} on osx-arm64|
 
-## Implicit dependencies
+</details>
 
-|Dependency|Before|After|Environments|
+# Dependencies
+
+<details>
+<summary>Implicit dependencies</summary>
+|Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |ca-certificates|2024.2.2|2024.6.2|*all*|
 |certifi|2024.2.2|2024.6.2|build on *all platforms*|
@@ -37,5 +43,7 @@
 |libstdcxx-ng|hc0a3c3a_7|hc0a3c3a_9|{build, lint} on linux-64|
 |vc|ha32ba9b_20|h8a93ad2_20|*all envs* on win-64|
 
-[^1]: *Cursive* means explicit dependency.
+</details>
+
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

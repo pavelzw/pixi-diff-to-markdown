@@ -2,7 +2,7 @@
 
 ## win-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -22,7 +22,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -40,7 +40,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -62,7 +62,7 @@
 
 ## win-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**typos**|1.21.0|1.22.7|
 |**ruff**|0.4.4|0.4.9|
@@ -78,7 +78,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**typos**|1.21.0|1.22.7|
 |**ruff**|0.4.4|0.4.9|
@@ -91,7 +91,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**typos**|1.21.0|1.22.7|
 |**ruff**|0.4.4|0.4.9|
@@ -110,7 +110,7 @@
 
 ## win-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -133,7 +133,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -153,7 +153,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -180,7 +180,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -200,7 +200,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -218,7 +218,7 @@
 
 ## win-64
 
-|Dependency|Before|After|
+|Dependency[^1]|Before|After|
 |-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|
 |**pydantic**|2.7.1|2.7.4|
@@ -236,5 +236,5 @@
 |pydantic-core|2.18.2|2.18.4|
 |vc|ha32ba9b_20|h8a93ad2_20|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

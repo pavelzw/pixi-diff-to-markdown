@@ -3,7 +3,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -26,7 +26,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -47,7 +47,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -72,7 +72,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -91,7 +91,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -107,7 +107,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -129,7 +129,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -155,7 +155,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -178,7 +178,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -208,7 +208,7 @@
 <details>
 <summary>linux-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -231,7 +231,7 @@
 <details>
 <summary>osx-arm64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -252,7 +252,7 @@
 <details>
 <summary>win-64</summary>
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -272,5 +272,5 @@
 
 </details>
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

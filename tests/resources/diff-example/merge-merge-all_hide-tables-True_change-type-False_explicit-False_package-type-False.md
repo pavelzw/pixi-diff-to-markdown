@@ -1,4 +1,4 @@
-|Dependency|Before|After|Environments|
+|Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |**new-package**||0.10.1|default on linux-64|
 |**removed-package**|0.10.1||default on linux-64|
@@ -9,5 +9,5 @@
 |**polars**|herads_0|herads_1|default on linux-64|
 |python|0.10.0|0.10.1|*all envs* on linux-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

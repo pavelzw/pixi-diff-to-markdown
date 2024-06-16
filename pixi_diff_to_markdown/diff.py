@@ -23,7 +23,7 @@ def generate_output(data: Environments, settings: Settings) -> str:
 
 
 def generate_footnotes() -> str:
-    return """[^1]: *Cursive* means explicit dependency.
+    return """[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
 """
 
@@ -157,9 +157,15 @@ def generate_table_split_explicit(
         ]
         dependency_table = DependencyTable(rows, use_updated_environment_column=True)
         table_str = dependency_table.to_string(settings)
-        lines.append(f"## {dependency_type} dependencies")
-        lines.append("")
+        if settings.hide_tables:
+            lines.append("# Dependencies\n")
+            lines.append(f"<details>\n<summary>{dependency_type} dependencies</summary>")
+        else:
+            lines.append(f"# {dependency_type} dependencies\n")
         lines.append(table_str)
+        if settings.hide_tables:
+            lines.append("")
+            lines.append("</details>")
         lines.append("")
     content = "\n".join(lines)
     footnote = generate_footnotes()

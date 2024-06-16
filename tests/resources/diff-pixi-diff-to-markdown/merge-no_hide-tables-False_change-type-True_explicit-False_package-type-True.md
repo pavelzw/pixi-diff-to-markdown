@@ -2,7 +2,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -22,7 +22,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -40,7 +40,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -62,7 +62,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -78,7 +78,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -91,7 +91,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
@@ -110,7 +110,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -133,7 +133,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -153,7 +153,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -180,7 +180,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -200,7 +200,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -218,7 +218,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|Package|
+|Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
@@ -236,5 +236,5 @@
 |pydantic-core|2.18.2|2.18.4|Patch Upgrade|conda|
 |vc|ha32ba9b_20|h8a93ad2_20|Only build string|conda|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

@@ -1,4 +1,4 @@
-## Explicit dependencies
+# Explicit dependencies
 
 |Dependency|Before|After|Explicit|Environments|
 |-|-|-|-|-|
@@ -10,11 +10,11 @@
 |python|0.10.0|0.10.1|true|default on osx-arm64|
 |polars|herads_0|herads_1|true|default on linux-64|
 
-## Implicit dependencies
+# Implicit dependencies
 
 |Dependency|Before|After|Explicit|Environments|
 |-|-|-|-|-|
 |python|0.10.0|0.10.1|false|*all envs* on linux-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

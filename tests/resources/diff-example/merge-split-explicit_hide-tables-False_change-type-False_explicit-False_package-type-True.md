@@ -1,6 +1,6 @@
-## Explicit dependencies
+# Explicit dependencies
 
-|Dependency|Before|After|Package|Environments|
+|Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |**new-package**||0.10.1|conda|default on linux-64|
 |**removed-package**|0.10.1||pypi|default on linux-64|
@@ -10,11 +10,11 @@
 |**python**|0.10.0|0.10.1|conda|default on osx-arm64|
 |**polars**|herads_0|herads_1|conda|default on linux-64|
 
-## Implicit dependencies
+# Implicit dependencies
 
-|Dependency|Before|After|Package|Environments|
+|Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |python|0.10.0|0.10.1|conda|*all envs* on linux-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

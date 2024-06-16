@@ -1875,5 +1875,5 @@
 |liblapack|21_linux64_openblas|22_linux64_openblas|false|conda|
 |libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|false|conda|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

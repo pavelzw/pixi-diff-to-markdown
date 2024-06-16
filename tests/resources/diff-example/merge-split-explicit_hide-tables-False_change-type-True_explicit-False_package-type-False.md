@@ -1,6 +1,6 @@
-## Explicit dependencies
+# Explicit dependencies
 
-|Dependency|Before|After|Change|Environments|
+|Dependency[^1]|Before|After|Change|Environments|
 |-|-|-|-|-|
 |**new-package**||0.10.1|Added|default on linux-64|
 |**removed-package**|0.10.1||Removed|default on linux-64|
@@ -10,11 +10,11 @@
 |**python**|0.10.0|0.10.1|Patch Upgrade|default on osx-arm64|
 |**polars**|herads_0|herads_1|Only build string|default on linux-64|
 
-## Implicit dependencies
+# Implicit dependencies
 
-|Dependency|Before|After|Change|Environments|
+|Dependency[^1]|Before|After|Change|Environments|
 |-|-|-|-|-|
 |python|0.10.0|0.10.1|Patch Upgrade|*all envs* on linux-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

@@ -1,4 +1,4 @@
-|Dependency|Before|After|Package|Environments|
+|Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|conda|lint on *all platforms*|
 |**ordered_enum**|0.0.8|0.0.9|conda|{build, default, py312} on *all platforms*|
@@ -30,5 +30,5 @@
 |libstdcxx-ng|hc0a3c3a_7|hc0a3c3a_9|conda|{build, lint} on linux-64|
 |vc|ha32ba9b_20|h8a93ad2_20|conda|*all envs* on win-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

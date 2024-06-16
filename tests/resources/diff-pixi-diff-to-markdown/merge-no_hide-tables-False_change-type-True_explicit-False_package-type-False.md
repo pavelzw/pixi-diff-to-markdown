@@ -2,7 +2,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -22,7 +22,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -40,7 +40,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -62,7 +62,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -78,7 +78,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -91,7 +91,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|
 |**ruff**|0.4.4|0.4.9|Patch Upgrade|
@@ -110,7 +110,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -133,7 +133,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -153,7 +153,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -180,7 +180,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -200,7 +200,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -218,7 +218,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Change|
+|Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
 |**pydantic**|2.7.1|2.7.4|Patch Upgrade|
@@ -236,5 +236,5 @@
 |pydantic-core|2.18.2|2.18.4|Patch Upgrade|
 |vc|ha32ba9b_20|h8a93ad2_20|Only build string|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

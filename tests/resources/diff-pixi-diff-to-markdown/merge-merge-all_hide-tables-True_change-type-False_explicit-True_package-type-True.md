@@ -30,5 +30,5 @@
 |libstdcxx-ng|hc0a3c3a_7|hc0a3c3a_9|false|conda|{build, lint} on linux-64|
 |vc|ha32ba9b_20|h8a93ad2_20|false|conda|*all envs* on win-64|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

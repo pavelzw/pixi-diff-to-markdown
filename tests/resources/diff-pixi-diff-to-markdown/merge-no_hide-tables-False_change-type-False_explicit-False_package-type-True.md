@@ -2,7 +2,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -22,7 +22,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -40,7 +40,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -62,7 +62,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|conda|
 |**ruff**|0.4.4|0.4.9|conda|
@@ -78,7 +78,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|conda|
 |**ruff**|0.4.4|0.4.9|conda|
@@ -91,7 +91,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**typos**|1.21.0|1.22.7|conda|
 |**ruff**|0.4.4|0.4.9|conda|
@@ -110,7 +110,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -133,7 +133,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -153,7 +153,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -180,7 +180,7 @@
 
 ## linux-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -200,7 +200,7 @@
 
 ## osx-arm64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -218,7 +218,7 @@
 
 ## win-64
 
-|Dependency|Before|After|Package|
+|Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**ordered_enum**|0.0.8|0.0.9|conda|
 |**pydantic**|2.7.1|2.7.4|conda|
@@ -236,5 +236,5 @@
 |pydantic-core|2.18.2|2.18.4|conda|
 |vc|ha32ba9b_20|h8a93ad2_20|conda|
 
-[^1]: *Cursive* means explicit dependency.
+[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
