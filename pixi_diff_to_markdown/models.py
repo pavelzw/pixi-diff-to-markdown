@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum
 from itertools import zip_longest
-from typing import Literal, Self
+from typing import Self
 
 import pydantic
 from ordered_enum import OrderedEnum
@@ -214,19 +214,10 @@ class TableRow:
 @dataclass
 class DependencyTable:
     rows: list[TableRow]
-    use_platform_column: bool = False
-    use_environment_platform_column: bool = False
     use_updated_environment_column: bool = False
 
     def generate_header(self, settings: Settings) -> str:
         columns = []
-        orientations: list[Literal["left", "right", "center"]] = []
-        if self.use_platform_column:
-            columns.append("Platform")
-            orientations.append("right")
-        if self.use_environment_platform_column:
-            columns.append("Environment / Platform")
-            orientations.append("right")
         columns.extend(
             [
                 f"Dependency{'[^1]' if not settings.explicit_column else ''}",
@@ -234,20 +225,15 @@ class DependencyTable:
                 "After",
             ]
         )
-        orientations.extend(["left", "left", "left"])
         if settings.change_type_column:
             columns.append("Change")
-            orientations.append("left")
         if settings.explicit_column:
             columns.append("Explicit")
-            orientations.append("left")
         if settings.package_type_column:
             columns.append("Package")
-            orientations.append("left")
         if self.use_updated_environment_column:
             columns.append("Environments")
-            orientations.append("left")
-        return generate_markdown_table_header(columns, orientations)
+        return generate_markdown_table_header(columns)
 
     def to_string(self, settings: Settings) -> str:
         header = self.generate_header(settings)
@@ -272,34 +258,9 @@ class Dependencies(pydantic.RootModel):
 class Platforms(pydantic.RootModel):
     root: dict[str, Dependencies]
 
-    def to_table(self) -> DependencyTable:
-        rows = []
-        for platform, dependencies in self.root.items():
-            for i, (update_spec) in enumerate(sorted(dependencies.root)):
-                table_row = TableRow(
-                    update_spec=update_spec,
-                    platform=platform if i == 0 else "",
-                )
-                rows.append(table_row)
-        return DependencyTable(rows, use_platform_column=True)
-
 
 class Environments(pydantic.RootModel):
     root: dict[str, Platforms]
-
-    def to_table(self) -> DependencyTable:
-        rows = []
-        for environment, platforms in self.root.items():
-            for platform, dependencies in platforms.root.items():
-                for i, update_spec in enumerate(sorted(dependencies.root)):
-                    table_row = TableRow(
-                        update_spec=update_spec,
-                        environment_platform=f"{environment} / {platform}"
-                        if i == 0
-                        else "",
-                    )
-                    rows.append(table_row)
-        return DependencyTable(rows, use_environment_platform_column=True)
 
 
 class Diff(pydantic.BaseModel):
