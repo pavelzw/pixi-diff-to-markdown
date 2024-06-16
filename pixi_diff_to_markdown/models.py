@@ -168,7 +168,6 @@ class TableRow:
         return self.update_spec < other.update_spec
 
     def generate_table_line(self, settings: Settings) -> str:
-        # TODO: fix mypy issue
         change_type = self.update_spec.change_type
         before, after = self.update_spec.before_after_str()
 
@@ -256,7 +255,7 @@ class DependencyTable:
 class Dependencies(pydantic.RootModel):
     root: list[UpdateSpec]
 
-    def to_table(self, settings: Settings) -> DependencyTable:
+    def to_table(self) -> DependencyTable:
         rows: list[TableRow] = []
         for update_spec in self.root:
             table_row = TableRow(update_spec=update_spec)
@@ -267,7 +266,7 @@ class Dependencies(pydantic.RootModel):
 class Platforms(pydantic.RootModel):
     root: dict[str, Dependencies]
 
-    def to_table(self, settings: Settings) -> DependencyTable:
+    def to_table(self) -> DependencyTable:
         rows = []
         for platform, dependencies in self.root.items():
             for i, (update_spec) in enumerate(sorted(dependencies.root)):
@@ -282,7 +281,7 @@ class Platforms(pydantic.RootModel):
 class Environments(pydantic.RootModel):
     root: dict[str, Platforms]
 
-    def to_table(self, settings: Settings) -> DependencyTable:
+    def to_table(self) -> DependencyTable:
         rows = []
         for environment, platforms in self.root.items():
             for platform, dependencies in platforms.root.items():

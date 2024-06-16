@@ -11,12 +11,10 @@ from pixi_diff_to_markdown.pydantic_settings_extension import (
 )
 
 
-class SplitTables(str, Enum):
+class MergeDependencies(str, Enum):
     no = "no"
-    environment = "environment"
-    platform = "platform"
-    merge = "merge"
-    merge_split_explicit = "merge-split-explicit"
+    merge_all = "merge-all"
+    split_explicit = "split-explicit"
 
 
 class Settings(BaseSettings):
@@ -29,7 +27,7 @@ class Settings(BaseSettings):
     change_type_column: bool = True
     package_type_column: bool = True
     explicit_column: bool = False
-    split_tables: SplitTables = SplitTables.platform
+    merge_dependencies: MergeDependencies = MergeDependencies.split_explicit
     hide_tables: bool = False
 
     @classmethod

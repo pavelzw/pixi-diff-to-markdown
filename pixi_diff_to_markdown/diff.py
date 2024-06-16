@@ -9,21 +9,17 @@ from pixi_diff_to_markdown.models import (
     UpdatedEnvironments,
     UpdateSpec,
 )
-from pixi_diff_to_markdown.settings import Settings
+from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 
 def generate_output(data: Environments, settings: Settings) -> str:
-    if settings.split_tables == "no":
-        return generate_table_no_split_tables(data, settings)
-    elif settings.split_tables == "environment":
-        return generate_table_environment_split_tables(data, settings)
-    elif settings.split_tables == "platform":
-        return generate_table_platform_split_tables(data, settings)
-    elif settings.split_tables == "merge":
-        return generate_table_environment_merge_tables(data, settings)
+    if settings.merge_dependencies == MergeDependencies.no:
+        return generate_table_no_merge(data, settings)
+    elif settings.merge_dependencies == MergeDependencies.merge_all:
+        return generate_table_merge_all(data, settings)
     else:
-        assert settings.split_tables == "merge-split-explicit"
-        return generate_table_environment_merge_tables_split_explicit(data, settings)
+        assert settings.merge_dependencies == MergeDependencies.split_explicit
+        return generate_table_split_explicit(data, settings)
 
 
 def generate_footnotes() -> str:
@@ -32,39 +28,7 @@ def generate_footnotes() -> str:
 """
 
 
-def generate_table_no_split_tables(data: Environments, settings: Settings) -> str:
-    dependency_table = data.to_table(settings)
-    table = dependency_table.to_string(settings)
-
-    footnote = generate_footnotes()
-    return table + "\n\n" + footnote
-
-
-def generate_table_environment_split_tables(
-    data: Environments, settings: Settings
-) -> str:
-    lines = []
-    for environment, platforms in data.root.items():
-        if settings.hide_tables:
-            lines.append("<details>")
-            lines.append(f"<summary>{environment}</summary>")
-        else:
-            lines.append(f"## {environment}")
-        lines.append("")
-
-        dependency_table = platforms.to_table(settings)
-        lines.append(dependency_table.to_string(settings))
-        if settings.hide_tables:
-            lines.append("")
-            lines.append("</details>")
-        lines.append("")
-    content = "\n".join(lines)
-    footnote = generate_footnotes()
-    table = content + "\n" + footnote
-    return table
-
-
-def generate_table_platform_split_tables(data: Environments, settings: Settings) -> str:
+def generate_table_no_merge(data: Environments, settings: Settings) -> str:
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
@@ -76,7 +40,7 @@ def generate_table_platform_split_tables(data: Environments, settings: Settings)
             else:
                 lines.append(f"## {platform}")
             lines.append("")
-            dependency_table = dependencies.to_table(settings)
+            dependency_table = dependencies.to_table()
             lines.append(dependency_table.to_string(settings))
             if settings.hide_tables:
                 lines.append("")
@@ -156,7 +120,7 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
     ]
 
 
-def generate_table_environment_merge_tables(
+def generate_table_merge_all(
     data: Environments, settings: Settings
 ) -> str:
     rows = [
@@ -169,7 +133,7 @@ def generate_table_environment_merge_tables(
     return table_str + "\n\n" + footnote
 
 
-def generate_table_environment_merge_tables_split_explicit(
+def generate_table_split_explicit(
     data: Environments, settings: Settings
 ) -> str:
     # TODO: ordereddict
