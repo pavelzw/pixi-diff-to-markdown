@@ -79,13 +79,14 @@ class UpdateSpec(pydantic.BaseModel):
             return NotImplemented
         if self.explicit != other.explicit:
             return self.explicit < other.explicit
-        change_type_self: ChangeType = self.change_type  # type: ignore[assignment]
-        change_type_other: ChangeType = other.change_type  # type: ignore[assignment]
+        change_type_self = self.change_type
+        change_type_other = other.change_type
         if change_type_self != change_type_other:
             return change_type_self < change_type_other
         return self.name < other.name
 
-    @computed_field
+    @computed_field  # type: ignore[misc]
+    @property
     def change_type(self) -> ChangeType:
         if self.before is None:
             assert self.after is not None
@@ -130,7 +131,7 @@ class UpdateSpec(pydantic.BaseModel):
                 return ChangeType.OTHER
 
     def before_after_str(self) -> tuple[str, str]:
-        change_type: ChangeType = self.change_type  # type: ignore[assignment]
+        change_type = self.change_type
         before: str | None
         after: str | None
         if change_type == ChangeType.ADDED:
@@ -168,7 +169,7 @@ class TableRow:
 
     def generate_table_line(self, settings: Settings) -> str:
         # TODO: fix mypy issue
-        change_type: ChangeType = self.update_spec.change_type  # type: ignore[assignment]
+        change_type = self.update_spec.change_type
         before, after = self.update_spec.before_after_str()
 
         if (
