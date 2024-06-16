@@ -14,7 +14,7 @@ from pixi_diff_to_markdown.settings import Settings, SplitTables
 @pytest.mark.parametrize("change_type_column", [True, False])
 @pytest.mark.parametrize("package_type_column", [True, False])
 @pytest.mark.parametrize("explicit_column", [True, False])
-@pytest.mark.parametrize("split_tables", ["no", "environment", "platform"])
+@pytest.mark.parametrize("split_tables", SplitTables.__members__.values())
 @pytest.mark.parametrize("hide_tables", [True, False])
 def test_generate_table(
     diff_file: str,

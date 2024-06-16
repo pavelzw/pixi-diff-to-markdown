@@ -166,7 +166,7 @@ class TableRow:
     environment_platform: str | None = None
     # the updated environments that this update spec applies to
     # if None, it only applies to one environment (the tables are not merged)
-    updated_environments: UpdatedEnvironments | None = None
+    updated_environments: str | None = None
 
     def __lt__(self, other):
         if not isinstance(other, TableRow):
@@ -208,6 +208,8 @@ class TableRow:
             columns.append(str(self.update_spec.explicit == DependencyType.EXPLICIT).lower())
         if settings.package_type_column:
             columns.append(str(self.update_spec.type))
+        if self.updated_environments is not None:
+            columns.append(self.updated_environments)
         return generate_table_line(*columns)
 
 
@@ -239,7 +241,7 @@ class DependencyTable:
             columns.append("Package")
             orientations.append("left")
         if self.use_updated_environment_column:
-            columns.append("Updated")
+            columns.append("Environments")
             orientations.append("left")
         return generate_markdown_table_header(columns, orientations)
 

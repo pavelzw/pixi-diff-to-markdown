@@ -15,6 +15,8 @@ class SplitTables(str, Enum):
     no = "no"
     environment = "environment"
     platform = "platform"
+    merge = "merge"
+    merge_split_explicit = "merge-split-explicit"
 
 
 class Settings(BaseSettings):

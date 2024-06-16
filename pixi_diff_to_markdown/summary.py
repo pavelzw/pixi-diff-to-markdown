@@ -3,13 +3,7 @@ from pixi_diff_to_markdown.models import Environments, UpdatedEnvironments, Upda
 from pixi_diff_to_markdown.settings import Settings
 
 
-def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironments]:
-    update_specs: dict[UpdateSpec, UpdatedEnvironments] = {}
-    for environment, platforms in data.root.items():
-        for platform, dependencies in platforms.root.items():
-            for update_spec in dependencies.root:
-                update_specs.setdefault(update_spec, []).append((environment, platform))
-    return update_specs
+
 
 
 def generate_output_merged(data: Environments, settings: Settings) -> str:
