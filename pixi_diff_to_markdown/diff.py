@@ -1,154 +1,34 @@
-from typing import Literal
+from functools import cmp_to_key, reduce
 
+from pixi_diff_to_markdown.environments_to_string import SupportMatrix
 from pixi_diff_to_markdown.models import (
-    ChangeType,
+    DependencyTable,
     DependencyType,
     Environments,
+    TableRow,
+    UpdatedEnvironments,
     UpdateSpec,
-    calculate_change_type,
 )
-from pixi_diff_to_markdown.settings import Settings
-
-
-def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> str:
-    change_type = calculate_change_type(update_spec)
-    before: str | None
-    after: str | None
-    if change_type == ChangeType.ADDED:
-        before = ""
-        after = update_spec.after.version  # type: ignore[union-attr]
-    elif change_type == ChangeType.REMOVED:
-        before = update_spec.before.version  # type: ignore[union-attr]
-        after = ""
-    elif change_type == ChangeType.BUILD:
-        before = update_spec.before.build  # type: ignore[union-attr]
-        after = update_spec.after.build  # type: ignore[union-attr]
-    else:
-        before = update_spec.before.version  # type: ignore[union-attr]
-        after = update_spec.after.version  # type: ignore[union-attr]
-    assert before is not None
-    assert after is not None
-
-    if (
-        change_type == ChangeType.MAJOR_DOWN
-        or change_type == ChangeType.MINOR_DOWN
-        or change_type == ChangeType.PATCH_DOWN
-    ):
-        maybe_downgrade_ref = "[^2]"
-    else:
-        maybe_downgrade_ref = ""
-    add_explicit = settings.explicit_column
-    add_change_type = settings.change_type_column
-    add_package_type = settings.package_type_column
-    if not add_explicit and update_spec.explicit == DependencyType.EXPLICIT:
-        package_name_formatted = f"*{update_spec.name}*"
-    else:
-        package_name_formatted = update_spec.name
-
-    return (
-        f"| {package_name_formatted + maybe_downgrade_ref} |"
-        f" {before} |"
-        f" {after} |"
-        f"{f" {change_type.value} |" if add_change_type else ""}"
-        f"{f" {str(update_spec.explicit == DependencyType.EXPLICIT).lower()} |" if add_explicit else ""}"
-        f"{f' {update_spec.type} |' if add_package_type else ''}"
-    )
+from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 
 def generate_output(data: Environments, settings: Settings) -> str:
-    if settings.split_tables == "no":
-        return generate_table_no_split_tables(data, settings)
-    elif settings.split_tables == "environment":
-        return generate_table_environment_split_tables(data, settings)
+    if settings.merge_dependencies == MergeDependencies.no:
+        return generate_table_no_merge(data, settings)
+    elif settings.merge_dependencies == MergeDependencies.yes:
+        return generate_table_merge_all(data, settings)
     else:
-        assert settings.split_tables == "platform"
-        return generate_table_platform_split_tables(data, settings)
-
-
-def generate_header(
-    split_type: Literal["no", "environment", "platform"], settings: Settings
-):
-    add_change_type = settings.change_type_column
-    add_explicit = settings.explicit_column
-    add_package_type = settings.package_type_column
-    if split_type == "no":
-        prefix = "| Environment "
-    elif split_type == "environment":
-        prefix = "| Platform "
-    else:
-        assert split_type == "platform"
-        prefix = ""
-    header_line1 = (
-        f"{prefix}| Dependency{"[^1]" if not add_explicit else ""} | Before | After |"
-        f"{" Change |" if add_change_type else ""}"
-        f"{" Explicit |" if add_explicit else ""}"
-        f"{" Package |" if add_package_type else ""}"
-    )
-    header_line2 = f"{"| -: " if split_type != "platform" else ""}| - | - | - |{" - |" if add_change_type else ""}{" - |" if add_explicit else ""}{" - |" if add_package_type else ""}"
-    return header_line1 + "\n" + header_line2
+        assert settings.merge_dependencies == MergeDependencies.split_explicit
+        return generate_table_split_explicit(data, settings)
 
 
 def generate_footnotes() -> str:
-    return """[^1]: *Cursive* means explicit dependency.
+    return """[^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
 """
 
 
-def generate_table_no_split_tables(data: Environments, settings: Settings) -> str:
-    header = generate_header("no", settings)
-    lines = []
-    for environment, platforms in data.root.items():
-        for platform, dependencies in platforms.root.items():
-            lines_platform = [
-                update_spec_to_table_line(update_spec, settings)
-                for update_spec in sorted(dependencies.root)
-            ]
-            lines_platform[0] = f"| {environment} / {platform} {lines_platform[0]}"
-            for i in range(1, len(lines_platform)):
-                lines_platform[i] = "|" + lines_platform[i]
-            lines.extend(lines_platform)
-    lines.append("")
-    content = "\n".join(lines)
-
-    footnote = generate_footnotes()
-    table = header + "\n" + content + "\n" + footnote
-    return table
-
-
-def generate_table_environment_split_tables(
-    data: Environments, settings: Settings
-) -> str:
-    header = generate_header("environment", settings)
-    lines = []
-    for environment, platforms in data.root.items():
-        if settings.hide_tables:
-            lines.append("<details>")
-            lines.append(f"<summary>{environment}</summary>")
-        else:
-            lines.append(f"## {environment}")
-        lines.append("")
-        lines.append(header)
-        for platform, dependencies in platforms.root.items():
-            lines_platform = [
-                update_spec_to_table_line(update_spec, settings)
-                for update_spec in sorted(dependencies.root)
-            ]
-            lines_platform[0] = f"| {platform} {lines_platform[0]}"
-            for i in range(1, len(lines_platform)):
-                lines_platform[i] = "|" + lines_platform[i]
-            lines.extend(lines_platform)
-        if settings.hide_tables:
-            lines.append("")
-            lines.append("</details>")
-        lines.append("")
-    content = "\n".join(lines)
-    footnote = generate_footnotes()
-    table = content + "\n" + footnote
-    return table
-
-
-def generate_table_platform_split_tables(data: Environments, settings: Settings) -> str:
-    header = generate_header("platform", settings)
+def generate_table_no_merge(data: Environments, settings: Settings) -> str:
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
@@ -160,12 +40,8 @@ def generate_table_platform_split_tables(data: Environments, settings: Settings)
             else:
                 lines.append(f"## {platform}")
             lines.append("")
-            lines.append(header)
-            lines_platform = [
-                update_spec_to_table_line(update_spec, settings)
-                for update_spec in sorted(dependencies.root)
-            ]
-            lines.extend(lines_platform)
+            dependency_table = dependencies.to_table()
+            lines.append(dependency_table.to_string(settings))
             if settings.hide_tables:
                 lines.append("")
                 lines.append("</details>")
@@ -174,3 +50,122 @@ def generate_table_platform_split_tables(data: Environments, settings: Settings)
     footnote = generate_footnotes()
     table = content + "\n" + footnote
     return table
+
+
+def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironments]:
+    update_specs: dict[UpdateSpec, UpdatedEnvironments] = {}
+    for environment, platforms in data.root.items():
+        for platform, dependencies in platforms.root.items():
+            for update_spec in dependencies.root:
+                update_specs.setdefault(update_spec, []).append((environment, platform))
+    return update_specs
+
+
+def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
+    def compare_merged_update_specs(
+        a: tuple[UpdateSpec, int, str],
+        b: tuple[UpdateSpec, int, str],
+    ) -> int:
+        """
+        Custom sorting for merged update specs.
+        1. Sort by explicit
+        2. Sort by change type
+        3. Sort by name
+        4. Sort by after string (descending)
+        5. Sort by number of environments (descending)
+        6. Sort by before string (ascending)
+        7. Sort by package type
+        """
+
+        def cmp(a, b) -> int:
+            return (a > b) - (a < b)
+
+        if a[0].explicit != b[0].explicit:
+            return cmp(a[0].explicit, b[0].explicit)
+        if a[0].change_type != b[0].change_type:
+            return cmp(a[0].change_type, b[0].change_type)
+        if a[0].name != b[0].name:
+            return cmp(a[0].name, b[0].name)
+        a_before, a_after = a[0].before_after_str()
+        b_before, b_after = b[0].before_after_str()
+        if a_after != b_after:
+            return cmp(b_after, a_after)
+        if a[1] != b[1]:
+            return cmp(b[1], a[1])
+        if a_before != b_before:
+            return cmp(a_before, b_before)
+        if a[0].type != b[0].type:
+            return cmp(a[0].type, b[0].type)
+        return 0
+
+    all_environments = set(data.root.keys())
+    all_platforms: set[str] = reduce(
+        set.union,
+        (set(environments.root.keys()) for environments in data.root.values()),
+    )
+    merged_update_specs = merge_update_specs(data)
+    update_specs_with_envs = []
+    for update_spec, environments in merged_update_specs.items():
+        support_matrix = SupportMatrix(environments, all_environments, all_platforms)
+        updated_envs_str = support_matrix.get_str_representation()
+        update_specs_with_envs.append(
+            (update_spec, len(support_matrix), updated_envs_str)
+        )
+    sorted_update_specs = sorted(
+        update_specs_with_envs, key=cmp_to_key(compare_merged_update_specs)
+    )
+    return [
+        (update_spec, updated_envs_str)
+        for update_spec, _, updated_envs_str in sorted_update_specs
+    ]
+
+
+def generate_table_merge_all(data: Environments, settings: Settings) -> str:
+    rows = [
+        TableRow(update_spec, updated_environments=updated_envs_str)
+        for update_spec, updated_envs_str in get_sorted_update_specs(data)
+    ]
+    dependency_table = DependencyTable(rows, use_updated_environment_column=True)
+    table_str = dependency_table.to_string(settings)
+    footnote = generate_footnotes()
+    return table_str + "\n\n" + footnote
+
+
+def generate_table_split_explicit(data: Environments, settings: Settings) -> str:
+    # TODO: ordereddict
+    sorted_update_specs = get_sorted_update_specs(data)
+    update_specs_explicit = filter(
+        lambda x: x[0].explicit == DependencyType.EXPLICIT, sorted_update_specs
+    )
+    update_specs_implicit = filter(
+        lambda x: x[0].explicit == DependencyType.IMPLICIT, sorted_update_specs
+    )
+
+    lines = []
+    if settings.hide_tables:
+        lines.append("# Dependencies\n")
+
+    for dependency_type, update_specs in [
+        ("Explicit", update_specs_explicit),
+        ("Implicit", update_specs_implicit),
+    ]:
+        rows = [
+            TableRow(update_spec, updated_environments=updated_envs_str)
+            for update_spec, updated_envs_str in update_specs
+        ]
+        dependency_table = DependencyTable(rows, use_updated_environment_column=True)
+        table_str = dependency_table.to_string(settings)
+        if settings.hide_tables:
+            lines.append(
+                f"<details>\n<summary>{dependency_type} dependencies</summary>\n"
+            )
+        else:
+            lines.append(f"# {dependency_type} dependencies\n")
+        lines.append(table_str)
+        if settings.hide_tables:
+            lines.append("")
+            lines.append("</details>")
+        lines.append("")
+    content = "\n".join(lines)
+    footnote = generate_footnotes()
+    return content + "\n" + footnote
