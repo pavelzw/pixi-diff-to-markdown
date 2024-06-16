@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from pixi_diff_to_markdown.diff import generate_output
-from pixi_diff_to_markdown.models import Diff
+from pixi_diff_to_markdown.models import Diff, PackageInformation, PackageType, UpdateSpec
 from pixi_diff_to_markdown.settings import Settings, SplitTables
 
 
@@ -45,3 +45,8 @@ def test_generate_table(
         with open(file_name) as f:
             expected_output = "".join(f.readlines())
         assert actual_output == expected_output
+
+
+def test_setting_selection():
+    assert True
+    # TODO: ensure best settings are selected by default

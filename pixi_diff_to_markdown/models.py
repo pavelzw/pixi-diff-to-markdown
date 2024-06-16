@@ -81,16 +81,6 @@ class UpdateSpec(pydantic.BaseModel):
             return change_type_self < change_type_other
         return self.name < other.name
 
-    def __gt__(self, other):
-        if not isinstance(other, UpdateSpec):
-            return NotImplemented
-        if self.explicit != other.explicit:
-            return self.explicit > other.explicit
-        change_type_self: ChangeType = self.change_type  # type: ignore[assignment]
-        change_type_other: ChangeType = other.change_type  # type: ignore[assignment]
-        if change_type_self != change_type_other:
-            return change_type_self > change_type_other
-        return self.name > other.name
 
     @computed_field
     def change_type(self) -> ChangeType:

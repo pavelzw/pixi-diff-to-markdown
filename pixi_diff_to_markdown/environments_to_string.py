@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from functools import reduce
+from functools import cache, reduce
 
 import more_itertools
 
@@ -29,7 +29,7 @@ class Cover:
         else:
             platforms_str = f"{{{', '.join(sorted(list(self.platforms)))}}}"
         return f"{environments_str} on {platforms_str}"
-    
+
     def __len__(self) -> int:
         return len(self.environments) * len(self.platforms)
 
@@ -89,6 +89,7 @@ class SupportMatrix:
         return residuals | {merged}
 
 
+    @cache
     def find_optimal_cover(self) -> set[Cover]:
         # start out with all all columns as groups
         # then merge the groups with the best objective
@@ -134,6 +135,9 @@ class SupportMatrix:
 
     def __str__(self) -> str:
         return self.get_str_representation()
+
+    def __len__(self) -> int:
+        return sum(len(cover) for cover in self.find_optimal_cover())
 
 
 # TODO: fett drucken, tabellen splitten, package spalte raus
