@@ -97,56 +97,49 @@ def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironmen
     return update_specs
 
 
-def compare_merged_update_specs(
-    a: tuple[UpdateSpec, int, str],
-    b: tuple[UpdateSpec, int, str],
-) -> int:
-    """
-    Custom sorting for merged update specs.
-    1. Sort by explicit
-    2. Sort by change type
-    3. Sort by name
-    4. Sort by after string (descending)
-    5. Sort by number of environments (descending)
-    6. Sort by before string (ascending)
-    7. Sort by package type
-    """
+def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
+    def compare_merged_update_specs(
+        a: tuple[UpdateSpec, int, str],
+        b: tuple[UpdateSpec, int, str],
+    ) -> int:
+        """
+        Custom sorting for merged update specs.
+        1. Sort by explicit
+        2. Sort by change type
+        3. Sort by name
+        4. Sort by after string (descending)
+        5. Sort by number of environments (descending)
+        6. Sort by before string (ascending)
+        7. Sort by package type
+        """
 
-    def cmp(a, b) -> int:
-        return (a > b) - (a < b)
+        def cmp(a, b) -> int:
+            return (a > b) - (a < b)
 
-    if a[0].explicit != b[0].explicit:
-        return cmp(a[0].explicit, b[0].explicit)
-    if a[0].change_type != b[0].change_type:
-        return cmp(a[0].change_type, b[0].change_type)
-    if a[0].name != b[0].name:
-        return cmp(a[0].name, b[0].name)
-    a_before, a_after = a[0].before_after_str()
-    b_before, b_after = b[0].before_after_str()
-    if a_after != b_after:
-        return cmp(b_after, a_after)
-    if a[1] != b[1]:
-        return cmp(b[1], a[1])
-    if a_before != b_before:
-        return cmp(a_before, b_before)
-    if a[0].type != b[0].type:
-        return cmp(a[0].type, b[0].type)
-    return 0
+        if a[0].explicit != b[0].explicit:
+            return cmp(a[0].explicit, b[0].explicit)
+        if a[0].change_type != b[0].change_type:
+            return cmp(a[0].change_type, b[0].change_type)
+        if a[0].name != b[0].name:
+            return cmp(a[0].name, b[0].name)
+        a_before, a_after = a[0].before_after_str()
+        b_before, b_after = b[0].before_after_str()
+        if a_after != b_after:
+            return cmp(b_after, a_after)
+        if a[1] != b[1]:
+            return cmp(b[1], a[1])
+        if a_before != b_before:
+            return cmp(a_before, b_before)
+        if a[0].type != b[0].type:
+            return cmp(a[0].type, b[0].type)
+        return 0
 
-
-def generate_table_environment_merge_tables(
-    data: Environments, settings: Settings
-) -> str:
     all_environments = set(data.root.keys())
     all_platforms: set[str] = reduce(
         set.union,
         (set(environments.root.keys()) for environments in data.root.values()),
     )
-    rows = []
-
     merged_update_specs = merge_update_specs(data)
-
-    # TODO: ordereddict
     update_specs_with_envs = []
     for update_spec, environments in merged_update_specs.items():
         support_matrix = SupportMatrix(environments, all_environments, all_platforms)
@@ -157,8 +150,19 @@ def generate_table_environment_merge_tables(
     sorted_update_specs = sorted(
         update_specs_with_envs, key=cmp_to_key(compare_merged_update_specs)
     )
-    for update_spec, _, updated_envs_str in sorted_update_specs:
-        rows.append(TableRow(update_spec, updated_environments=updated_envs_str))
+    return [
+        (update_spec, updated_envs_str)
+        for update_spec, _, updated_envs_str in sorted_update_specs
+    ]
+
+
+def generate_table_environment_merge_tables(
+    data: Environments, settings: Settings
+) -> str:
+    rows = [
+        TableRow(update_spec, updated_environments=updated_envs_str)
+        for update_spec, updated_envs_str in get_sorted_update_specs(data)
+    ]
     dependency_table = DependencyTable(rows, use_updated_environment_column=True)
     table_str = dependency_table.to_string(settings)
     footnote = generate_footnotes()
@@ -168,47 +172,25 @@ def generate_table_environment_merge_tables(
 def generate_table_environment_merge_tables_split_explicit(
     data: Environments, settings: Settings
 ) -> str:
-    all_environments = set(data.root.keys())
-    all_platforms: set[str] = reduce(
-        set.union,
-        (set(environments.root.keys()) for environments in data.root.values()),
+    # TODO: ordereddict
+    sorted_update_specs = get_sorted_update_specs(data)
+    update_specs_explicit = filter(
+        lambda x: x[0].explicit == DependencyType.EXPLICIT, sorted_update_specs
+    )
+    update_specs_implicit = filter(
+        lambda x: x[0].explicit == DependencyType.IMPLICIT, sorted_update_specs
     )
 
-    merged_update_specs = merge_update_specs(data)
-
-    # TODO: ordereddict
-    update_specs_with_envs = []
-    for update_spec, environments in merged_update_specs.items():
-        support_matrix = SupportMatrix(environments, all_environments, all_platforms)
-        updated_envs_str = support_matrix.get_str_representation()
-        update_specs_with_envs.append(
-            (update_spec, len(support_matrix), updated_envs_str)
-        )
-    sorted_update_specs = sorted(
-        update_specs_with_envs, key=cmp_to_key(compare_merged_update_specs)
-    )
-
-    sorted_update_specs_explicit = [
-        (update_spec, num_environments, environments)
-        for update_spec, num_environments, environments in sorted_update_specs
-        if update_spec.explicit == DependencyType.EXPLICIT
-    ]
-    sorted_update_specs_implicit = [
-        (update_spec, num_environments, environments)
-        for update_spec, num_environments, environments in sorted_update_specs
-        if update_spec.explicit == DependencyType.IMPLICIT
-    ]
-
-    # TODO: ordereddict
     lines = []
-    for dependency_type, sorted_update_specs in [
-        ("Explicit", sorted_update_specs_explicit),
-        ("Implicit", sorted_update_specs_implicit),
+    for dependency_type, update_specs in [
+        ("Explicit", update_specs_explicit),
+        ("Implicit", update_specs_implicit),
     ]:
         # TODO: make collapsible as well
-        rows = []
-        for update_spec, _, updated_envs_str in sorted_update_specs:
-            rows.append(TableRow(update_spec, updated_environments=updated_envs_str))
+        rows = [
+            TableRow(update_spec, updated_environments=updated_envs_str)
+            for update_spec, updated_envs_str in update_specs
+        ]
         dependency_table = DependencyTable(rows, use_updated_environment_column=True)
         table_str = dependency_table.to_string(settings)
         lines.append(f"## {dependency_type} dependencies")
