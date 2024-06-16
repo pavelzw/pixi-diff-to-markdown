@@ -30,7 +30,9 @@ class Settings(BaseSettings):
     merge_dependencies: MergeDependencies
     hide_tables: bool = False
 
-    def __init__(self, inferred_merge_dependencies: MergeDependencies | None = None, **data):
+    def __init__(
+        self, inferred_merge_dependencies: MergeDependencies | None = None, **data
+    ):
         if "merge-dependencies" not in data and inferred_merge_dependencies is not None:
             data["merge-dependencies"] = inferred_merge_dependencies
         super().__init__(**data)

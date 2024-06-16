@@ -48,10 +48,15 @@ def main(
     data = "".join(stdin.readlines())
     data_parsed = Diff.model_validate_json(data)
 
-    num_environments = len(data_parsed.environment.root) * len(reduce(
-        set.union,
-        (set(environments.root.keys()) for environments in data_parsed.environment.root.values()),
-    ))
+    num_environments = len(data_parsed.environment.root) * len(
+        reduce(
+            set.union,
+            (
+                set(environments.root.keys())
+                for environments in data_parsed.environment.root.values()
+            ),
+        )
+    )
 
     settings_dict = {
         "change-type-column": change_type_column,
@@ -59,7 +64,9 @@ def main(
         "explicit-column": explicit_column,
         "merge-dependencies": merge_dependencies,
         "hide-tables": hide_tables,
-        "inferred_merge_dependencies": MergeDependencies.yes if num_environments > 2 else MergeDependencies.no,
+        "inferred_merge_dependencies": MergeDependencies.yes
+        if num_environments > 2
+        else MergeDependencies.no,
     }
     settings = Settings.model_validate(
         {k: v for k, v in settings_dict.items() if v is not None}
