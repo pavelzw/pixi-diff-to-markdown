@@ -45,6 +45,7 @@ python-build = "*"
 twine = "*"
 [feature.build.tasks]
 build-wheel = "python -m build --no-isolation ."
+check-wheel = "twine check dist/*"
 
 [environments]
 default = ["test", "py312"]
