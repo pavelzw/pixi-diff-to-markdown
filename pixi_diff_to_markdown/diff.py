@@ -1,15 +1,15 @@
-from functools import cmp_to_key
+from functools import cmp_to_key, reduce
+
 from pixi_diff_to_markdown.environments_to_string import SupportMatrix
 from pixi_diff_to_markdown.models import (
     DependencyTable,
     DependencyType,
     Environments,
     TableRow,
-    UpdateSpec,
     UpdatedEnvironments,
+    UpdateSpec,
 )
 from pixi_diff_to_markdown.settings import Settings
-
 
 
 def generate_output(data: Environments, settings: Settings) -> str:
@@ -98,8 +98,8 @@ def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironmen
 
 
 def compare_merged_update_specs(
-    a: tuple[UpdateSpec, int, UpdatedEnvironments],
-    b: tuple[UpdateSpec, int, UpdatedEnvironments],
+    a: tuple[UpdateSpec, int, str],
+    b: tuple[UpdateSpec, int, str],
 ) -> int:
     """
     Custom sorting for merged update specs.
@@ -111,6 +111,7 @@ def compare_merged_update_specs(
     6. Sort by before string (ascending)
     7. Sort by package type
     """
+
     def cmp(a, b) -> int:
         return (a > b) - (a < b)
 
@@ -136,12 +137,11 @@ def compare_merged_update_specs(
 def generate_table_environment_merge_tables(
     data: Environments, settings: Settings
 ) -> str:
-    all_environments = list(data.root.keys())
-    all_platforms_set = set()
-    # TODO: reduce union
-    for environments in data.root.values():
-        all_platforms_set |= set(environments.root.keys())
-    all_platforms = list(all_platforms_set)
+    all_environments = set(data.root.keys())
+    all_platforms: set[str] = reduce(
+        set.union,
+        (set(environments.root.keys()) for environments in data.root.values()),
+    )
     rows = []
 
     merged_update_specs = merge_update_specs(data)
@@ -151,10 +151,11 @@ def generate_table_environment_merge_tables(
     for update_spec, environments in merged_update_specs.items():
         support_matrix = SupportMatrix(environments, all_environments, all_platforms)
         updated_envs_str = support_matrix.get_str_representation()
-        update_specs_with_envs.append((update_spec, len(support_matrix), updated_envs_str))
+        update_specs_with_envs.append(
+            (update_spec, len(support_matrix), updated_envs_str)
+        )
     sorted_update_specs = sorted(
-        update_specs_with_envs,
-        key=cmp_to_key(compare_merged_update_specs)
+        update_specs_with_envs, key=cmp_to_key(compare_merged_update_specs)
     )
     for update_spec, _, updated_envs_str in sorted_update_specs:
         rows.append(TableRow(update_spec, updated_environments=updated_envs_str))
@@ -167,12 +168,11 @@ def generate_table_environment_merge_tables(
 def generate_table_environment_merge_tables_split_explicit(
     data: Environments, settings: Settings
 ) -> str:
-    all_environments = list(data.root.keys())
-    all_platforms_set = set()
-    # TODO: reduce union
-    for environments in data.root.values():
-        all_platforms_set |= set(environments.root.keys())
-    all_platforms = list(all_platforms_set)
+    all_environments = set(data.root.keys())
+    all_platforms: set[str] = reduce(
+        set.union,
+        (set(environments.root.keys()) for environments in data.root.values()),
+    )
 
     merged_update_specs = merge_update_specs(data)
 
@@ -181,19 +181,22 @@ def generate_table_environment_merge_tables_split_explicit(
     for update_spec, environments in merged_update_specs.items():
         support_matrix = SupportMatrix(environments, all_environments, all_platforms)
         updated_envs_str = support_matrix.get_str_representation()
-        update_specs_with_envs.append((update_spec, len(support_matrix), updated_envs_str))
+        update_specs_with_envs.append(
+            (update_spec, len(support_matrix), updated_envs_str)
+        )
     sorted_update_specs = sorted(
-        update_specs_with_envs,
-        key=cmp_to_key(compare_merged_update_specs)
+        update_specs_with_envs, key=cmp_to_key(compare_merged_update_specs)
     )
 
     sorted_update_specs_explicit = [
         (update_spec, num_environments, environments)
-        for update_spec, num_environments, environments in sorted_update_specs if update_spec.explicit == DependencyType.EXPLICIT
+        for update_spec, num_environments, environments in sorted_update_specs
+        if update_spec.explicit == DependencyType.EXPLICIT
     ]
     sorted_update_specs_implicit = [
         (update_spec, num_environments, environments)
-        for update_spec, num_environments, environments in sorted_update_specs if update_spec.explicit == DependencyType.IMPLICIT
+        for update_spec, num_environments, environments in sorted_update_specs
+        if update_spec.explicit == DependencyType.IMPLICIT
     ]
 
     # TODO: ordereddict

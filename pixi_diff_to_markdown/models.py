@@ -8,7 +8,10 @@ from ordered_enum import OrderedEnum
 from pydantic import ConfigDict, computed_field, field_validator, model_validator
 from rattler import Version
 
-from pixi_diff_to_markdown.markdown import generate_markdown_table_header, generate_table_line
+from pixi_diff_to_markdown.markdown import (
+    generate_markdown_table_header,
+    generate_table_line,
+)
 from pixi_diff_to_markdown.settings import Settings
 
 UpdatedEnvironments = list[tuple[str, str]]
@@ -38,6 +41,7 @@ class PackageType(Enum):
 
     def __str__(self):
         return self.value
+
 
 class PackageInformation(pydantic.BaseModel):
     version: str | None = None
@@ -80,7 +84,6 @@ class UpdateSpec(pydantic.BaseModel):
         if change_type_self != change_type_other:
             return change_type_self < change_type_other
         return self.name < other.name
-
 
     @computed_field
     def change_type(self) -> ChangeType:
@@ -181,7 +184,10 @@ class TableRow:
             columns.append(self.platform)
         if self.environment_platform is not None:
             columns.append(self.environment_platform)
-        if not settings.explicit_column and self.update_spec.explicit == DependencyType.EXPLICIT:
+        if (
+            not settings.explicit_column
+            and self.update_spec.explicit == DependencyType.EXPLICIT
+        ):
             package_name_formatted = f"**{self.update_spec.name}**"
         else:
             package_name_formatted = self.update_spec.name
@@ -195,7 +201,9 @@ class TableRow:
         if settings.change_type_column:
             columns.append(change_type.value)
         if settings.explicit_column:
-            columns.append(str(self.update_spec.explicit == DependencyType.EXPLICIT).lower())
+            columns.append(
+                str(self.update_spec.explicit == DependencyType.EXPLICIT).lower()
+            )
         if settings.package_type_column:
             columns.append(str(self.update_spec.type))
         if self.updated_environments is not None:
@@ -237,7 +245,12 @@ class DependencyTable:
 
     def to_string(self, settings: Settings) -> str:
         header = self.generate_header(settings)
-        return header + "\n" + "\n".join([row.generate_table_line(settings) for row in self.rows])
+        return (
+            header
+            + "\n"
+            + "\n".join([row.generate_table_line(settings) for row in self.rows])
+        )
+
 
 class Dependencies(pydantic.RootModel):
     root: list[UpdateSpec]
@@ -275,7 +288,9 @@ class Environments(pydantic.RootModel):
                 for i, update_spec in enumerate(sorted(dependencies.root)):
                     table_row = TableRow(
                         update_spec=update_spec,
-                        environment_platform=f"{environment} / {platform}" if i == 0 else "",
+                        environment_platform=f"{environment} / {platform}"
+                        if i == 0
+                        else "",
                     )
                     rows.append(table_row)
         return DependencyTable(rows, use_environment_platform_column=True)

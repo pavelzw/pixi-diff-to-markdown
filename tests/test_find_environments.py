@@ -1,7 +1,8 @@
 from itertools import product
-import pytest
-from pixi_diff_to_markdown.environments_to_string import Cover, SupportMatrix
 
+import pytest
+
+from pixi_diff_to_markdown.environments_to_string import Cover, SupportMatrix
 
 all_environments = ["default", "py39", "py310", "py311", "py312"]
 all_platforms = [
@@ -43,7 +44,10 @@ def test_str_representation(
         frozenset(environments),
         frozenset(platforms),
     )
-    assert cover.get_str_representation(all_environments, all_platforms) == expected
+    assert (
+        cover.get_str_representation(set(all_environments), set(all_platforms))
+        == expected
+    )
 
 
 @pytest.mark.parametrize(
@@ -93,10 +97,14 @@ def test_support_matrix(
     str_representation: str,
 ):
     active_elements = []
-    for (i, environment), (j, platform) in product(enumerate(all_environments), enumerate(all_platforms)):
+    for (i, environment), (j, platform) in product(
+        enumerate(all_environments), enumerate(all_platforms)
+    ):
         if active_matrix[i][j]:
             active_elements.append((environment, platform))
-    support_matrix = SupportMatrix(active_elements, all_environments, all_platforms)
+    support_matrix = SupportMatrix(
+        active_elements, set(all_environments), set(all_platforms)
+    )
 
     for platform, environments in environments_for_platform.items():
         assert support_matrix.platforms[platform] == environments
