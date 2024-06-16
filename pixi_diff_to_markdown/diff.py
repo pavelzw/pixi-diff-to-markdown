@@ -142,6 +142,9 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
     )
 
     lines = []
+    if settings.hide_tables:
+        lines.append("# Dependencies\n")
+
     for dependency_type, update_specs in [
         ("Explicit", update_specs_explicit),
         ("Implicit", update_specs_implicit),
@@ -154,9 +157,8 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
         dependency_table = DependencyTable(rows, use_updated_environment_column=True)
         table_str = dependency_table.to_string(settings)
         if settings.hide_tables:
-            lines.append("# Dependencies\n")
             lines.append(
-                f"<details>\n<summary>{dependency_type} dependencies</summary>"
+                f"<details>\n<summary>{dependency_type} dependencies</summary>\n"
             )
         else:
             lines.append(f"# {dependency_type} dependencies\n")

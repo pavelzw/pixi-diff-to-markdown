@@ -2,6 +2,7 @@
 
 <details>
 <summary>Explicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |**new-package**||0.10.1|default on linux-64|
@@ -14,10 +15,9 @@
 
 </details>
 
-# Dependencies
-
 <details>
 <summary>Implicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |python|0.10.0|0.10.1|*all envs* on linux-64|

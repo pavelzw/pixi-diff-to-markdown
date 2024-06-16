@@ -2,6 +2,7 @@
 
 <details>
 <summary>Explicit dependencies</summary>
+
 |Dependency|Before|After|Change|Explicit|Environments|
 |-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|*all envs* on {linux-64, osx-64, win-64}<br/>{lint, pl014, pl015, pl016, pl017, pl018, pl019, pl020, py310, py311, py312, py39} on osx-arm64|
@@ -24,10 +25,9 @@
 
 </details>
 
-# Dependencies
-
 <details>
 <summary>Implicit dependencies</summary>
+
 |Dependency|Before|After|Change|Explicit|Environments|
 |-|-|-|-|-|-|
 |typing_extensions|4.9.0||Removed|false|{default, lint, py311, py312} on win-64|

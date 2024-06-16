@@ -2,6 +2,7 @@
 
 <details>
 <summary>Explicit dependencies</summary>
+
 |Dependency|Before|After|Explicit|Environments|
 |-|-|-|-|-|
 |typos|1.21.0|1.22.7|true|lint on *all platforms*|
@@ -13,10 +14,9 @@
 
 </details>
 
-# Dependencies
-
 <details>
 <summary>Implicit dependencies</summary>
+
 |Dependency|Before|After|Explicit|Environments|
 |-|-|-|-|-|
 |ca-certificates|2024.2.2|2024.6.2|false|*all*|

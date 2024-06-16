@@ -2,6 +2,7 @@
 
 <details>
 <summary>Explicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |**new-package**||0.10.1|conda|default on linux-64|
@@ -14,10 +15,9 @@
 
 </details>
 
-# Dependencies
-
 <details>
 <summary>Implicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |python|0.10.0|0.10.1|conda|*all envs* on linux-64|

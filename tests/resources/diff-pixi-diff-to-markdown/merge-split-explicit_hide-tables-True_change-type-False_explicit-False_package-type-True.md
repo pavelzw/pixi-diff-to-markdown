@@ -2,6 +2,7 @@
 
 <details>
 <summary>Explicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|conda|lint on *all platforms*|
@@ -13,10 +14,9 @@
 
 </details>
 
-# Dependencies
-
 <details>
 <summary>Implicit dependencies</summary>
+
 |Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
 |ca-certificates|2024.2.2|2024.6.2|conda|*all*|
