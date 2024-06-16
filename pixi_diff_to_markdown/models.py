@@ -6,6 +6,8 @@ from ordered_enum import OrderedEnum
 from pydantic import ConfigDict, field_validator, model_validator
 from rattler import Version
 
+UpdatedEnvironments = list[tuple[str, str]]
+
 
 class ChangeType(OrderedEnum):
     ADDED = "Added"
