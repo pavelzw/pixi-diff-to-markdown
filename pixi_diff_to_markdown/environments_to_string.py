@@ -161,6 +161,3 @@ class SupportMatrix:
 
     def __len__(self) -> int:
         return sum(len(cover) for cover in self.find_optimal_cover())
-
-
-# TODO: fett drucken, tabellen splitten, package spalte raus
