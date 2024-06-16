@@ -1,9 +1,9 @@
 <details>
 <summary>default</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| win-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|win-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -18,7 +18,7 @@
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
 ||pydantic-core|2.18.2|2.18.4|Patch Upgrade|false|
 ||vc|ha32ba9b_20|h8a93ad2_20|Only build string|false|
-| osx-arm64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|osx-arm64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||py-rattler|py312h1a1520d_0|py312had01cb0_0|Only build string|true|
@@ -31,7 +31,7 @@
 ||zipp|3.17.0|3.19.2|Minor Upgrade|false|
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
 ||pydantic-core|2.18.2|2.18.4|Patch Upgrade|false|
-| linux-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|linux-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -52,9 +52,9 @@
 <details>
 <summary>lint</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| win-64 |typos|1.21.0|1.22.7|Minor Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|win-64|typos|1.21.0|1.22.7|Minor Upgrade|true|
 ||ruff|0.4.4|0.4.9|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||filelock|3.14.0|3.15.1|Minor Upgrade|false|
@@ -65,7 +65,7 @@
 ||vs2015_runtime|14.38.33135|14.40.33810|Minor Upgrade|false|
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
 ||vc|ha32ba9b_20|h8a93ad2_20|Only build string|false|
-| osx-arm64 |typos|1.21.0|1.22.7|Minor Upgrade|true|
+|osx-arm64|typos|1.21.0|1.22.7|Minor Upgrade|true|
 ||ruff|0.4.4|0.4.9|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||filelock|3.14.0|3.15.1|Minor Upgrade|false|
@@ -73,7 +73,7 @@
 ||libzlib|1.2.13|1.3.1|Minor Upgrade|false|
 ||nodeenv|1.8.0|1.9.1|Minor Upgrade|false|
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
-| linux-64 |typos|1.21.0|1.22.7|Minor Upgrade|true|
+|linux-64|typos|1.21.0|1.22.7|Minor Upgrade|true|
 ||ruff|0.4.4|0.4.9|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||filelock|3.14.0|3.15.1|Minor Upgrade|false|
@@ -91,9 +91,9 @@
 <details>
 <summary>build</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| win-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|win-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||certifi|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -111,7 +111,7 @@
 ||pydantic-core|2.18.2|2.18.4|Patch Upgrade|false|
 ||requests|2.32.2|2.32.3|Patch Upgrade|false|
 ||vc|ha32ba9b_20|h8a93ad2_20|Only build string|false|
-| osx-arm64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|osx-arm64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||certifi|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -126,7 +126,7 @@
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
 ||pydantic-core|2.18.2|2.18.4|Patch Upgrade|false|
 ||requests|2.32.2|2.32.3|Patch Upgrade|false|
-| linux-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|linux-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
 ||certifi|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -152,9 +152,9 @@
 <details>
 <summary>py312</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| linux-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|linux-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|
@@ -169,7 +169,7 @@
 ||ld_impl_linux-64|hf3520f5_1|hf3520f5_4|Only build string|false|
 ||libgcc-ng|h77fa898_7|h77fa898_9|Only build string|false|
 ||libgomp|h77fa898_7|h77fa898_9|Only build string|false|
-| osx-arm64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|osx-arm64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||py-rattler|py312h1a1520d_0|py312had01cb0_0|Only build string|true|
@@ -182,7 +182,7 @@
 ||zipp|3.17.0|3.19.2|Minor Upgrade|false|
 ||openssl|3.3.0|3.3.1|Patch Upgrade|false|
 ||pydantic-core|2.18.2|2.18.4|Patch Upgrade|false|
-| win-64 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
+|win-64|ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|
 ||pydantic|2.7.1|2.7.4|Patch Upgrade|true|
 ||pytest|8.2.1|8.2.2|Patch Upgrade|true|
 ||ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|

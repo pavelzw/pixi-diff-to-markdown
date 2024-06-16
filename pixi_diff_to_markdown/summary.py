@@ -1,4 +1,3 @@
-from pixi_diff_to_markdown.diff import generate_header, update_spec_to_table_line
 from pixi_diff_to_markdown.environments_to_string import SupportMatrix
 from pixi_diff_to_markdown.models import Environments, UpdatedEnvironments, UpdateSpec
 from pixi_diff_to_markdown.settings import Settings

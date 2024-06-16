@@ -1,15 +1,11 @@
+from typing import Literal
+
 def generate_table_line(*columns: str) -> str:
     return "|" + "|".join(columns) + "|"
 
-def generate_header(*columns: str) -> str:
+def generate_markdown_table_header(columns: list[str], orientations: list[Literal["left", "right", "center"]]) -> str:
+    assert len(columns) == len(orientations)
     first_line = "|" + "|".join(columns) + "|"
-    second_line = "|-" * len(columns) + "|"
+    orientation_mapping = {"left": "-", "right": "-:", "center": ":-:"}
+    second_line = "|" + "|".join(orientation_mapping[orientation] for orientation in orientations) + "|"
     return first_line + "\n" + second_line
-
-
-def generate_table(columns: list[str], lines: dict[str, list[str]]) -> str:
-    header = generate_header(*columns)
-    table_lines = []
-    for i in range(len(lines[columns[0]])):
-        table_lines.append(generate_table_line(*[lines[column][i] for column in columns]))
-    return header + "\n" + "\n".join(table_lines) + "\n"

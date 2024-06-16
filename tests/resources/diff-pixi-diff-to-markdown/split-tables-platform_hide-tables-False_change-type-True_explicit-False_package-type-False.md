@@ -2,11 +2,11 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|
@@ -22,12 +22,12 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|Only build string|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|Only build string|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|
@@ -40,11 +40,11 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|
@@ -62,10 +62,10 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |filelock|3.14.0|3.15.1|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -78,10 +78,10 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |filelock|3.14.0|3.15.1|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -91,10 +91,10 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |filelock|3.14.0|3.15.1|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -110,10 +110,10 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -133,10 +133,10 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -153,10 +153,10 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
@@ -180,11 +180,11 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|
@@ -200,12 +200,12 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|Only build string|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|Only build string|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|
@@ -218,11 +218,11 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|
+|Dependency|Before|After|Change|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|

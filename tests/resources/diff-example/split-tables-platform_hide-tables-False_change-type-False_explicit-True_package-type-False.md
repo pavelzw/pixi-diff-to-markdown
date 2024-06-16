@@ -2,8 +2,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |new-package||0.10.1|true|
 |removed-package|0.10.1||true|
 |bpy|0.10.1|2.10.1|true|
@@ -12,8 +12,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |polars[^2]|0.10.0|0.9.1|true|
 |python|0.10.0|0.10.1|true|
 
@@ -21,8 +21,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |polars|0.10.0|0.10.1|true|
 |python|0.10.0|0.10.1|false|
 

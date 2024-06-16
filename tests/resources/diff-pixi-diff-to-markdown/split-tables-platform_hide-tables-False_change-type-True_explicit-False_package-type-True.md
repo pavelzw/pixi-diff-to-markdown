@@ -2,11 +2,11 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|
@@ -22,12 +22,12 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|
@@ -40,11 +40,11 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|
@@ -62,10 +62,10 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|conda|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |filelock|3.14.0|3.15.1|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -78,10 +78,10 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|conda|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |filelock|3.14.0|3.15.1|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -91,10 +91,10 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*typos*|1.21.0|1.22.7|Minor Upgrade|conda|
-|*ruff*|0.4.4|0.4.9|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**typos**|1.21.0|1.22.7|Minor Upgrade|conda|
+|**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |filelock|3.14.0|3.15.1|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -110,10 +110,10 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -133,10 +133,10 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -153,10 +153,10 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
@@ -180,11 +180,11 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|
@@ -200,12 +200,12 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|
@@ -218,11 +218,11 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Change | Package |
-| - | - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|Patch Upgrade|conda|
-|*pydantic*|2.7.1|2.7.4|Patch Upgrade|conda|
-|*pytest*|8.2.1|8.2.2|Patch Upgrade|conda|
+|Dependency|Before|After|Change|Package|
+|-|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|
+|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|
+|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|
 |libsqlite|3.45.3|3.46.0|Minor Upgrade|conda|
 |libzlib|1.2.13|1.3.1|Minor Upgrade|conda|

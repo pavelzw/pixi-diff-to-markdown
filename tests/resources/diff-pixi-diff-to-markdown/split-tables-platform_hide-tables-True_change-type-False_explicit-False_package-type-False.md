@@ -3,11 +3,11 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|
@@ -26,12 +26,12 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|
@@ -47,11 +47,11 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|
@@ -72,10 +72,10 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*typos*|1.21.0|1.22.7|
-|*ruff*|0.4.4|0.4.9|
+|Dependency|Before|After|
+|-|-|-|
+|**typos**|1.21.0|1.22.7|
+|**ruff**|0.4.4|0.4.9|
 |ca-certificates|2024.2.2|2024.6.2|
 |filelock|3.14.0|3.15.1|
 |libsqlite|3.45.3|3.46.0|
@@ -91,10 +91,10 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*typos*|1.21.0|1.22.7|
-|*ruff*|0.4.4|0.4.9|
+|Dependency|Before|After|
+|-|-|-|
+|**typos**|1.21.0|1.22.7|
+|**ruff**|0.4.4|0.4.9|
 |ca-certificates|2024.2.2|2024.6.2|
 |filelock|3.14.0|3.15.1|
 |libsqlite|3.45.3|3.46.0|
@@ -107,10 +107,10 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*typos*|1.21.0|1.22.7|
-|*ruff*|0.4.4|0.4.9|
+|Dependency|Before|After|
+|-|-|-|
+|**typos**|1.21.0|1.22.7|
+|**ruff**|0.4.4|0.4.9|
 |ca-certificates|2024.2.2|2024.6.2|
 |filelock|3.14.0|3.15.1|
 |libsqlite|3.45.3|3.46.0|
@@ -129,10 +129,10 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
 |ca-certificates|2024.2.2|2024.6.2|
 |certifi|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
@@ -155,10 +155,10 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
 |ca-certificates|2024.2.2|2024.6.2|
 |certifi|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
@@ -178,10 +178,10 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
 |ca-certificates|2024.2.2|2024.6.2|
 |certifi|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
@@ -208,11 +208,11 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|
@@ -231,12 +231,12 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|
@@ -252,11 +252,11 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|
-|*pydantic*|2.7.1|2.7.4|
-|*pytest*|8.2.1|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|
+|**pydantic**|2.7.1|2.7.4|
+|**pytest**|8.2.1|8.2.2|
 |ca-certificates|2024.2.2|2024.6.2|
 |libsqlite|3.45.3|3.46.0|
 |libzlib|1.2.13|1.3.1|

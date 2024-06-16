@@ -1,12 +1,12 @@
-| Environment | Dependency[^1] | Before | After | Package |
-| -: | - | - | - | - |
-| default / osx-arm64 |*pip*|23.3.1|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.3|0.20.31|conda|
-||*python*|3.12.0|3.12.3|conda|
+|Environment / Platform|Dependency|Before|After|Package|
+|-:|-|-|-|-|
+|default / osx-arm64|**pip**|23.3.1|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.3|0.20.31|conda|
+||**python**|3.12.0|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.5|18.1.7|conda|
@@ -31,13 +31,13 @@
 ||libgfortran|13_2_0_hd922786_1|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_1|hf226fd6_3|conda|
 ||liblapack|20_osxarm64_openblas|22_osxarm64_openblas|conda|
-| default / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|default / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||typing_extensions|4.9.0||conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
@@ -65,13 +65,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| default / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|default / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -96,13 +96,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| default / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|default / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -129,13 +129,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| py39 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.9.18|3.9.19|conda|
+|py39 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.9.18|3.9.19|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -160,13 +160,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| py39 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.9.18|3.9.19|conda|
+|py39 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.9.18|3.9.19|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -193,13 +193,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| py39 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.9.18|3.9.19|conda|
+|py39 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.9.18|3.9.19|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -224,13 +224,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| py39 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.9.18|3.9.19|conda|
+|py39 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.9.18|3.9.19|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -257,13 +257,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| py310 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.10.13|3.10.14|conda|
+|py310 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.10.13|3.10.14|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -288,13 +288,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| py310 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.10.13|3.10.14|conda|
+|py310 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.10.13|3.10.14|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -321,45 +321,16 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| py310 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.10.13|3.10.14|conda|
+|py310 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.10.13|3.10.14|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
-||packaging|23.2|24.1|conda|
-||setuptools|69.0.3|70.0.0|conda|
-||tzdata|2023d|2024a|conda|
-||coverage|7.4.4|7.5.3|conda|
-||importlib-metadata|7.0.1|7.1.0|conda|
-||libsqlite|3.44.2|3.46.0|conda|
-||libzlib|1.2.13|1.3.1|conda|
-||ncurses|6.4|6.5|conda|
-||openssl|3.2.1|3.3.1|conda|
-||pluggy|1.4.0|1.5.0|conda|
-||trove-classifiers|2024.1.8|2024.5.22|conda|
-||typing_extensions|4.9.0|4.12.2|conda|
-||wheel|0.42.0|0.43.0|conda|
-||zipp|3.17.0|3.19.2|conda|
-||libopenblas|0.3.26|0.3.27|conda|
-||numpy|1.26.3|1.26.4|conda|
-||libblas|21_osx64_openblas|22_osx64_openblas|conda|
-||libcblas|21_osx64_openblas|22_osx64_openblas|conda|
-||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
-||libgfortran5|h2873a65_2|h2873a65_3|conda|
-||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| py310 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.10.13|3.10.14|conda|
-||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
 ||tzdata|2023d|2024a|conda|
@@ -376,6 +347,35 @@
 ||zipp|3.17.0|3.19.2|conda|
 ||libopenblas|0.3.26|0.3.27|conda|
 ||numpy|1.26.3|1.26.4|conda|
+||libblas|21_osx64_openblas|22_osx64_openblas|conda|
+||libcblas|21_osx64_openblas|22_osx64_openblas|conda|
+||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
+||libgfortran5|h2873a65_2|h2873a65_3|conda|
+||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
+|py310 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.10.13|3.10.14|conda|
+||ca-certificates|2023.11.17|2024.6.2|conda|
+||packaging|23.2|24.1|conda|
+||setuptools|69.0.3|70.0.0|conda|
+||tzdata|2023d|2024a|conda|
+||coverage|7.4.4|7.5.3|conda|
+||importlib-metadata|7.0.1|7.1.0|conda|
+||libsqlite|3.44.2|3.46.0|conda|
+||libzlib|1.2.13|1.3.1|conda|
+||ncurses|6.4|6.5|conda|
+||openssl|3.2.1|3.3.1|conda|
+||pluggy|1.4.0|1.5.0|conda|
+||trove-classifiers|2024.1.8|2024.5.22|conda|
+||typing_extensions|4.9.0|4.12.2|conda|
+||wheel|0.42.0|0.43.0|conda|
+||zipp|3.17.0|3.19.2|conda|
+||libopenblas|0.3.26|0.3.27|conda|
+||numpy|1.26.3|1.26.4|conda|
 ||ld_impl_linux-64|h41732ed_0|hf3520f5_4|conda|
 ||libblas|21_linux64_openblas|22_linux64_openblas|conda|
 ||libcblas|21_linux64_openblas|22_linux64_openblas|conda|
@@ -385,11 +385,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl017 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl017 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -413,11 +413,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl017 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl017 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -443,11 +443,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl017 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl017 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -471,11 +471,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl017 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl017 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -501,11 +501,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl018 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl018 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -529,11 +529,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl018 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl018 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -559,11 +559,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl018 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl018 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -587,11 +587,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl018 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl018 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -617,11 +617,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl014 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.2|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl014 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.2|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -644,11 +644,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl014 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl014 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -673,11 +673,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl014 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl014 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -700,11 +700,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl014 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl014 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -729,11 +729,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl019 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl019 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -757,11 +757,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl019 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl019 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -786,11 +786,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl019 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl019 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -814,11 +814,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl019 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl019 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -844,11 +844,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl015 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.2|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl015 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.2|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -871,11 +871,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl015 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl015 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -900,11 +900,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl015 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl015 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -927,11 +927,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl015 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl015 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -956,13 +956,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| py312 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|py312 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -987,13 +987,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| py312 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|py312 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||typing_extensions|4.9.0||conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
@@ -1021,13 +1021,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| py312 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|py312 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1052,13 +1052,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| py312 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|py312 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1085,12 +1085,12 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl020 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.16|0.20.31|conda|
+|pl020 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.16|0.20.31|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1114,12 +1114,12 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl020 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
+|pl020 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1145,12 +1145,12 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl020 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.16|0.20.31|conda|
+|pl020 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.16|0.20.31|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1174,12 +1174,12 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl020 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.16|0.20.31|conda|
+|pl020 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.16|0.20.31|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1205,11 +1205,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| lint / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*pre-commit*|3.6.0|3.7.1|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|lint / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**pre-commit**|3.6.0|3.7.1|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1239,11 +1239,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| lint / win-64 |*pip*|23.3.2|24.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*pre-commit*|3.6.0|3.7.1|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|lint / win-64|**pip**|23.3.2|24.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**pre-commit**|3.6.0|3.7.1|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||typing_extensions|4.9.0||conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
@@ -1276,11 +1276,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| lint / osx-64 |*pip*|23.3.2|24.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*pre-commit*|3.6.0|3.7.1|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|lint / osx-64|**pip**|23.3.2|24.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**pre-commit**|3.6.0|3.7.1|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1310,11 +1310,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| lint / linux-64 |*pip*|23.3.2|24.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*pre-commit*|3.6.0|3.7.1|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.12.1|3.12.3|conda|
+|lint / linux-64|**pip**|23.3.2|24.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**pre-commit**|3.6.0|3.7.1|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.12.1|3.12.3|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1346,11 +1346,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| pl016 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.2|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl016 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.2|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1374,11 +1374,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| pl016 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl016 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1404,11 +1404,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| pl016 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl016 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1432,11 +1432,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| pl016 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
+|pl016 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|
@@ -1462,13 +1462,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|conda|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|conda|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|conda|
-| py311 / osx-arm64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.1|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.11.7|3.11.9|conda|
+|py311 / osx-arm64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.1|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.11.7|3.11.9|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1493,13 +1493,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|conda|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|conda|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|conda|
-| py311 / win-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.11.7|3.11.9|conda|
+|py311 / win-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.11.7|3.11.9|conda|
 ||typing_extensions|4.9.0||conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
@@ -1527,13 +1527,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|conda|
 ||liblapack|21_win64_mkl|22_win64_mkl|conda|
 ||vc|hcf57466_18|h8a93ad2_20|conda|
-| py311 / osx-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.11.7|3.11.9|conda|
+|py311 / osx-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.11.7|3.11.9|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||libcxx|16.0.6|17.0.6|conda|
 ||llvm-openmp|17.0.6|18.1.7|conda|
@@ -1558,13 +1558,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|conda|
 ||libgfortran5|h2873a65_2|h2873a65_3|conda|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|conda|
-| py311 / linux-64 |*pip*|23.3.2|24.0|conda|
-||*pytest-cov*|4.1.0|5.0.0|conda|
-||*hatchling*|1.21.1|1.24.2|conda|
-||*hypothesis*|6.97.4|6.103.2|conda|
-||*pytest*|8.0.0|8.2.2|conda|
-||*polars*|0.20.6|0.20.31|conda|
-||*python*|3.11.7|3.11.9|conda|
+|py311 / linux-64|**pip**|23.3.2|24.0|conda|
+||**pytest-cov**|4.1.0|5.0.0|conda|
+||**hatchling**|1.21.1|1.24.2|conda|
+||**hypothesis**|6.97.4|6.103.2|conda|
+||**pytest**|8.0.0|8.2.2|conda|
+||**polars**|0.20.6|0.20.31|conda|
+||**python**|3.11.7|3.11.9|conda|
 ||ca-certificates|2023.11.17|2024.6.2|conda|
 ||packaging|23.2|24.1|conda|
 ||setuptools|69.0.3|70.0.0|conda|

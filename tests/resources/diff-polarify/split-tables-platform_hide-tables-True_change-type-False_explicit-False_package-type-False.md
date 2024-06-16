@@ -3,15 +3,15 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.1|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.3|0.20.31|
-|*python*|3.12.0|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.1|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.3|0.20.31|
+|**python**|3.12.0|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.5|18.1.7|
@@ -42,15 +42,15 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |typing_extensions|4.9.0||
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
@@ -84,15 +84,15 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -123,15 +123,15 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -166,15 +166,15 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.9.18|3.9.19|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.9.18|3.9.19|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -205,15 +205,15 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.9.18|3.9.19|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.9.18|3.9.19|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -246,15 +246,15 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.9.18|3.9.19|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.9.18|3.9.19|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -285,15 +285,15 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.9.18|3.9.19|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.9.18|3.9.19|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -328,15 +328,15 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.10.13|3.10.14|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.10.13|3.10.14|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -367,15 +367,15 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.10.13|3.10.14|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.10.13|3.10.14|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -408,15 +408,15 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.10.13|3.10.14|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.10.13|3.10.14|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -447,15 +447,15 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.10.13|3.10.14|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.10.13|3.10.14|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -490,13 +490,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -526,13 +526,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -564,13 +564,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -600,13 +600,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -640,13 +640,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -676,13 +676,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -714,13 +714,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -750,13 +750,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -790,13 +790,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.2|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.2|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -825,13 +825,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -862,13 +862,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -897,13 +897,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -936,13 +936,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -972,13 +972,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1009,13 +1009,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1045,13 +1045,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1085,13 +1085,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.2|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.2|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1120,13 +1120,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1157,13 +1157,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1192,13 +1192,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1231,15 +1231,15 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1270,15 +1270,15 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |typing_extensions|4.9.0||
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
@@ -1312,15 +1312,15 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1351,15 +1351,15 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1394,14 +1394,14 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.16|0.20.31|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.16|0.20.31|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1431,14 +1431,14 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1470,14 +1470,14 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.16|0.20.31|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.16|0.20.31|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1507,14 +1507,14 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.16|0.20.31|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.16|0.20.31|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1548,13 +1548,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*hatchling*|1.21.1|1.24.2|
-|*pre-commit*|3.6.0|3.7.1|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**hatchling**|1.21.1|1.24.2|
+|**pre-commit**|3.6.0|3.7.1|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1590,13 +1590,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*hatchling*|1.21.1|1.24.2|
-|*pre-commit*|3.6.0|3.7.1|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**hatchling**|1.21.1|1.24.2|
+|**pre-commit**|3.6.0|3.7.1|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |typing_extensions|4.9.0||
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
@@ -1635,13 +1635,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*hatchling*|1.21.1|1.24.2|
-|*pre-commit*|3.6.0|3.7.1|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**hatchling**|1.21.1|1.24.2|
+|**pre-commit**|3.6.0|3.7.1|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1677,13 +1677,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*hatchling*|1.21.1|1.24.2|
-|*pre-commit*|3.6.0|3.7.1|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.12.1|3.12.3|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**hatchling**|1.21.1|1.24.2|
+|**pre-commit**|3.6.0|3.7.1|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.12.1|3.12.3|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1723,13 +1723,13 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.2|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.2|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1759,13 +1759,13 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1797,13 +1797,13 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1833,13 +1833,13 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|
@@ -1873,15 +1873,15 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.1|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.11.7|3.11.9|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.1|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.11.7|3.11.9|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1912,15 +1912,15 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.11.7|3.11.9|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.11.7|3.11.9|
 |typing_extensions|4.9.0||
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
@@ -1954,15 +1954,15 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.11.7|3.11.9|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.11.7|3.11.9|
 |ca-certificates|2023.11.17|2024.6.2|
 |libcxx|16.0.6|17.0.6|
 |llvm-openmp|17.0.6|18.1.7|
@@ -1993,15 +1993,15 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After |
-| - | - | - |
-|*pip*|23.3.2|24.0|
-|*pytest-cov*|4.1.0|5.0.0|
-|*hatchling*|1.21.1|1.24.2|
-|*hypothesis*|6.97.4|6.103.2|
-|*pytest*|8.0.0|8.2.2|
-|*polars*|0.20.6|0.20.31|
-|*python*|3.11.7|3.11.9|
+|Dependency|Before|After|
+|-|-|-|
+|**pip**|23.3.2|24.0|
+|**pytest-cov**|4.1.0|5.0.0|
+|**hatchling**|1.21.1|1.24.2|
+|**hypothesis**|6.97.4|6.103.2|
+|**pytest**|8.0.0|8.2.2|
+|**polars**|0.20.6|0.20.31|
+|**python**|3.11.7|3.11.9|
 |ca-certificates|2023.11.17|2024.6.2|
 |packaging|23.2|24.1|
 |setuptools|69.0.3|70.0.0|

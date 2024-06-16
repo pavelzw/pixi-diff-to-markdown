@@ -2,8 +2,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.1|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -38,8 +38,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -77,8 +77,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -113,8 +113,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -153,8 +153,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -189,8 +189,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -227,8 +227,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -263,8 +263,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -303,8 +303,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -339,8 +339,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -377,8 +377,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -413,8 +413,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -453,8 +453,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -486,8 +486,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -521,8 +521,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -554,8 +554,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -591,8 +591,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -624,8 +624,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -659,8 +659,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -692,8 +692,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -729,8 +729,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -761,8 +761,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -795,8 +795,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -827,8 +827,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -863,8 +863,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -896,8 +896,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -930,8 +930,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -963,8 +963,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1000,8 +1000,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1032,8 +1032,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1066,8 +1066,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1098,8 +1098,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1134,8 +1134,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1170,8 +1170,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1209,8 +1209,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1245,8 +1245,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1285,8 +1285,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1319,8 +1319,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1355,8 +1355,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1389,8 +1389,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1427,8 +1427,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|conda|
@@ -1466,8 +1466,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|conda|
@@ -1508,8 +1508,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|conda|
@@ -1547,8 +1547,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|conda|
@@ -1590,8 +1590,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1623,8 +1623,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1658,8 +1658,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1691,8 +1691,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1728,8 +1728,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1764,8 +1764,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1803,8 +1803,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|
@@ -1839,8 +1839,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|conda|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|conda|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|conda|

@@ -3,8 +3,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|
@@ -26,8 +26,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|
@@ -47,8 +47,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|
@@ -72,8 +72,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |typos|1.21.0|1.22.7|true|
 |ruff|0.4.4|0.4.9|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -91,8 +91,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |typos|1.21.0|1.22.7|true|
 |ruff|0.4.4|0.4.9|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -107,8 +107,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |typos|1.21.0|1.22.7|true|
 |ruff|0.4.4|0.4.9|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -129,8 +129,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -155,8 +155,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -178,8 +178,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |ca-certificates|2024.2.2|2024.6.2|false|
@@ -208,8 +208,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|
@@ -231,8 +231,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|
@@ -252,8 +252,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|true|
 |pydantic|2.7.1|2.7.4|true|
 |pytest|8.2.1|8.2.2|true|

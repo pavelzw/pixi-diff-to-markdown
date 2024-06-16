@@ -3,8 +3,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.1|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -42,8 +42,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -84,8 +84,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -123,8 +123,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -166,8 +166,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -205,8 +205,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -246,8 +246,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -285,8 +285,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -328,8 +328,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -367,8 +367,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -408,8 +408,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -447,8 +447,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -490,8 +490,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -526,8 +526,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -564,8 +564,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -600,8 +600,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -640,8 +640,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -676,8 +676,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -714,8 +714,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -750,8 +750,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -790,8 +790,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -825,8 +825,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -862,8 +862,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -897,8 +897,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -936,8 +936,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -972,8 +972,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1009,8 +1009,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1045,8 +1045,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1085,8 +1085,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1120,8 +1120,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1157,8 +1157,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1192,8 +1192,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1231,8 +1231,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1270,8 +1270,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1312,8 +1312,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1351,8 +1351,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1394,8 +1394,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1431,8 +1431,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1470,8 +1470,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1507,8 +1507,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1548,8 +1548,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
@@ -1590,8 +1590,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
@@ -1635,8 +1635,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
@@ -1677,8 +1677,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 |pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
@@ -1723,8 +1723,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1759,8 +1759,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1797,8 +1797,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1833,8 +1833,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1873,8 +1873,8 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1912,8 +1912,8 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1954,8 +1954,8 @@
 <details>
 <summary>osx-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|
@@ -1993,8 +1993,8 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |pip|23.3.2|24.0|Major Upgrade|true|
 |pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 |hatchling|1.21.1|1.24.2|Minor Upgrade|true|

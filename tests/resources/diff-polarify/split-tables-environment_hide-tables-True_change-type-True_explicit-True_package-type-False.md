@@ -1,9 +1,9 @@
 <details>
 <summary>default</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.1|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.1|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -34,7 +34,7 @@
 ||libgfortran|13_2_0_hd922786_1|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_1|hf226fd6_3|Only build string|false|
 ||liblapack|20_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -68,7 +68,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -99,7 +99,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -138,9 +138,9 @@
 <details>
 <summary>py39</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -171,7 +171,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -204,7 +204,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -235,7 +235,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -274,9 +274,9 @@
 <details>
 <summary>py310</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -307,7 +307,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -340,7 +340,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -371,7 +371,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -410,9 +410,9 @@
 <details>
 <summary>pl017</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -440,7 +440,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -470,7 +470,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -498,7 +498,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -534,9 +534,9 @@
 <details>
 <summary>pl018</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -564,7 +564,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -594,7 +594,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -622,7 +622,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -658,9 +658,9 @@
 <details>
 <summary>pl014</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.2|6.103.2|Minor Upgrade|true|
@@ -687,7 +687,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -716,7 +716,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -743,7 +743,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -778,9 +778,9 @@
 <details>
 <summary>pl019</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -808,7 +808,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -837,7 +837,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -865,7 +865,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -901,9 +901,9 @@
 <details>
 <summary>pl015</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.2|6.103.2|Minor Upgrade|true|
@@ -930,7 +930,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -959,7 +959,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -986,7 +986,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1021,9 +1021,9 @@
 <details>
 <summary>py312</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -1054,7 +1054,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1088,7 +1088,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1119,7 +1119,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1158,9 +1158,9 @@
 <details>
 <summary>pl020</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -1189,7 +1189,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1220,7 +1220,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1249,7 +1249,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1286,9 +1286,9 @@
 <details>
 <summary>lint</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
 ||polars|0.20.6|0.20.31|Patch Upgrade|true|
@@ -1322,7 +1322,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
 ||polars|0.20.6|0.20.31|Patch Upgrade|true|
@@ -1359,7 +1359,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
 ||polars|0.20.6|0.20.31|Patch Upgrade|true|
@@ -1393,7 +1393,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||pre-commit|3.6.0|3.7.1|Minor Upgrade|true|
 ||polars|0.20.6|0.20.31|Patch Upgrade|true|
@@ -1435,9 +1435,9 @@
 <details>
 <summary>pl016</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.2|6.103.2|Minor Upgrade|true|
@@ -1465,7 +1465,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1495,7 +1495,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1523,7 +1523,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1559,9 +1559,9 @@
 <details>
 <summary>py311</summary>
 
-| Platform | Dependency | Before | After | Change | Explicit |
-| -: | - | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|Major Upgrade|true|
+|Platform|Dependency|Before|After|Change|Explicit|
+|-:|-|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.1|6.103.2|Minor Upgrade|true|
@@ -1592,7 +1592,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|false|
-| win-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|win-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1626,7 +1626,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|false|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|false|
-| osx-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|osx-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|
@@ -1657,7 +1657,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|false|
-| linux-64 |pip|23.3.2|24.0|Major Upgrade|true|
+|linux-64|pip|23.3.2|24.0|Major Upgrade|true|
 ||pytest-cov|4.1.0|5.0.0|Major Upgrade|true|
 ||hatchling|1.21.1|1.24.2|Minor Upgrade|true|
 ||hypothesis|6.97.4|6.103.2|Minor Upgrade|true|

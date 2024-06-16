@@ -1,12 +1,12 @@
-| Environment | Dependency[^1] | Before | After |
-| -: | - | - | - |
-| default / osx-arm64 |*pip*|23.3.1|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.3|0.20.31|
-||*python*|3.12.0|3.12.3|
+|Environment / Platform|Dependency|Before|After|
+|-:|-|-|-|
+|default / osx-arm64|**pip**|23.3.1|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.3|0.20.31|
+||**python**|3.12.0|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.5|18.1.7|
@@ -31,13 +31,13 @@
 ||libgfortran|13_2_0_hd922786_1|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_1|hf226fd6_3|
 ||liblapack|20_osxarm64_openblas|22_osxarm64_openblas|
-| default / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|default / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||typing_extensions|4.9.0||
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
@@ -65,13 +65,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| default / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|default / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -96,13 +96,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| default / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|default / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -129,13 +129,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| py39 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.9.18|3.9.19|
+|py39 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.9.18|3.9.19|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -160,13 +160,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| py39 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.9.18|3.9.19|
+|py39 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.9.18|3.9.19|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -193,13 +193,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| py39 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.9.18|3.9.19|
+|py39 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.9.18|3.9.19|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -224,13 +224,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| py39 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.9.18|3.9.19|
+|py39 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.9.18|3.9.19|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -257,13 +257,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| py310 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.10.13|3.10.14|
+|py310 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.10.13|3.10.14|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -288,13 +288,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| py310 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.10.13|3.10.14|
+|py310 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.10.13|3.10.14|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -321,45 +321,16 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| py310 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.10.13|3.10.14|
+|py310 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.10.13|3.10.14|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
-||packaging|23.2|24.1|
-||setuptools|69.0.3|70.0.0|
-||tzdata|2023d|2024a|
-||coverage|7.4.4|7.5.3|
-||importlib-metadata|7.0.1|7.1.0|
-||libsqlite|3.44.2|3.46.0|
-||libzlib|1.2.13|1.3.1|
-||ncurses|6.4|6.5|
-||openssl|3.2.1|3.3.1|
-||pluggy|1.4.0|1.5.0|
-||trove-classifiers|2024.1.8|2024.5.22|
-||typing_extensions|4.9.0|4.12.2|
-||wheel|0.42.0|0.43.0|
-||zipp|3.17.0|3.19.2|
-||libopenblas|0.3.26|0.3.27|
-||numpy|1.26.3|1.26.4|
-||libblas|21_osx64_openblas|22_osx64_openblas|
-||libcblas|21_osx64_openblas|22_osx64_openblas|
-||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
-||libgfortran5|h2873a65_2|h2873a65_3|
-||liblapack|21_osx64_openblas|22_osx64_openblas|
-| py310 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.10.13|3.10.14|
-||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
 ||tzdata|2023d|2024a|
@@ -376,6 +347,35 @@
 ||zipp|3.17.0|3.19.2|
 ||libopenblas|0.3.26|0.3.27|
 ||numpy|1.26.3|1.26.4|
+||libblas|21_osx64_openblas|22_osx64_openblas|
+||libcblas|21_osx64_openblas|22_osx64_openblas|
+||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
+||libgfortran5|h2873a65_2|h2873a65_3|
+||liblapack|21_osx64_openblas|22_osx64_openblas|
+|py310 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.10.13|3.10.14|
+||ca-certificates|2023.11.17|2024.6.2|
+||packaging|23.2|24.1|
+||setuptools|69.0.3|70.0.0|
+||tzdata|2023d|2024a|
+||coverage|7.4.4|7.5.3|
+||importlib-metadata|7.0.1|7.1.0|
+||libsqlite|3.44.2|3.46.0|
+||libzlib|1.2.13|1.3.1|
+||ncurses|6.4|6.5|
+||openssl|3.2.1|3.3.1|
+||pluggy|1.4.0|1.5.0|
+||trove-classifiers|2024.1.8|2024.5.22|
+||typing_extensions|4.9.0|4.12.2|
+||wheel|0.42.0|0.43.0|
+||zipp|3.17.0|3.19.2|
+||libopenblas|0.3.26|0.3.27|
+||numpy|1.26.3|1.26.4|
 ||ld_impl_linux-64|h41732ed_0|hf3520f5_4|
 ||libblas|21_linux64_openblas|22_linux64_openblas|
 ||libcblas|21_linux64_openblas|22_linux64_openblas|
@@ -385,11 +385,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl017 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl017 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -413,11 +413,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl017 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl017 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -443,11 +443,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl017 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl017 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -471,11 +471,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl017 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl017 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -501,11 +501,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl018 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl018 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -529,11 +529,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl018 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl018 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -559,11 +559,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl018 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl018 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -587,11 +587,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl018 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl018 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -617,11 +617,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl014 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.2|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl014 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.2|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -644,11 +644,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl014 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl014 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -673,11 +673,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl014 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl014 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -700,11 +700,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl014 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl014 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -729,11 +729,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl019 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl019 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -757,11 +757,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl019 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl019 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -786,11 +786,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl019 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl019 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -814,11 +814,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl019 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl019 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -844,11 +844,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl015 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.2|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl015 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.2|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -871,11 +871,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl015 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl015 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -900,11 +900,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl015 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl015 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -927,11 +927,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl015 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl015 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -956,13 +956,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| py312 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|py312 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -987,13 +987,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| py312 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|py312 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||typing_extensions|4.9.0||
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
@@ -1021,13 +1021,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| py312 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|py312 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1052,13 +1052,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| py312 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|py312 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1085,12 +1085,12 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl020 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.16|0.20.31|
+|pl020 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.16|0.20.31|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1114,12 +1114,12 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl020 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
+|pl020 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1145,12 +1145,12 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl020 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.16|0.20.31|
+|pl020 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.16|0.20.31|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1174,12 +1174,12 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl020 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.16|0.20.31|
+|pl020 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.16|0.20.31|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1205,11 +1205,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| lint / osx-arm64 |*pip*|23.3.2|24.0|
-||*hatchling*|1.21.1|1.24.2|
-||*pre-commit*|3.6.0|3.7.1|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|lint / osx-arm64|**pip**|23.3.2|24.0|
+||**hatchling**|1.21.1|1.24.2|
+||**pre-commit**|3.6.0|3.7.1|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1239,11 +1239,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| lint / win-64 |*pip*|23.3.2|24.0|
-||*hatchling*|1.21.1|1.24.2|
-||*pre-commit*|3.6.0|3.7.1|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|lint / win-64|**pip**|23.3.2|24.0|
+||**hatchling**|1.21.1|1.24.2|
+||**pre-commit**|3.6.0|3.7.1|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||typing_extensions|4.9.0||
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
@@ -1276,11 +1276,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| lint / osx-64 |*pip*|23.3.2|24.0|
-||*hatchling*|1.21.1|1.24.2|
-||*pre-commit*|3.6.0|3.7.1|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|lint / osx-64|**pip**|23.3.2|24.0|
+||**hatchling**|1.21.1|1.24.2|
+||**pre-commit**|3.6.0|3.7.1|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1310,11 +1310,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| lint / linux-64 |*pip*|23.3.2|24.0|
-||*hatchling*|1.21.1|1.24.2|
-||*pre-commit*|3.6.0|3.7.1|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.12.1|3.12.3|
+|lint / linux-64|**pip**|23.3.2|24.0|
+||**hatchling**|1.21.1|1.24.2|
+||**pre-commit**|3.6.0|3.7.1|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.12.1|3.12.3|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1346,11 +1346,11 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| pl016 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.2|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl016 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.2|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1374,11 +1374,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| pl016 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl016 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1404,11 +1404,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| pl016 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl016 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1432,11 +1432,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| pl016 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
+|pl016 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|
@@ -1462,13 +1462,13 @@
 ||libgomp|h807b86a_4|h77fa898_9|
 ||liblapack|21_linux64_openblas|22_linux64_openblas|
 ||libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|
-| py311 / osx-arm64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.1|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.11.7|3.11.9|
+|py311 / osx-arm64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.1|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.11.7|3.11.9|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1493,13 +1493,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|
-| py311 / win-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.11.7|3.11.9|
+|py311 / win-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.11.7|3.11.9|
 ||typing_extensions|4.9.0||
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
@@ -1527,13 +1527,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|
 ||liblapack|21_win64_mkl|22_win64_mkl|
 ||vc|hcf57466_18|h8a93ad2_20|
-| py311 / osx-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.11.7|3.11.9|
+|py311 / osx-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.11.7|3.11.9|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||libcxx|16.0.6|17.0.6|
 ||llvm-openmp|17.0.6|18.1.7|
@@ -1558,13 +1558,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|
 ||libgfortran5|h2873a65_2|h2873a65_3|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|
-| py311 / linux-64 |*pip*|23.3.2|24.0|
-||*pytest-cov*|4.1.0|5.0.0|
-||*hatchling*|1.21.1|1.24.2|
-||*hypothesis*|6.97.4|6.103.2|
-||*pytest*|8.0.0|8.2.2|
-||*polars*|0.20.6|0.20.31|
-||*python*|3.11.7|3.11.9|
+|py311 / linux-64|**pip**|23.3.2|24.0|
+||**pytest-cov**|4.1.0|5.0.0|
+||**hatchling**|1.21.1|1.24.2|
+||**hypothesis**|6.97.4|6.103.2|
+||**pytest**|8.0.0|8.2.2|
+||**polars**|0.20.6|0.20.31|
+||**python**|3.11.7|3.11.9|
 ||ca-certificates|2023.11.17|2024.6.2|
 ||packaging|23.2|24.1|
 ||setuptools|69.0.3|70.0.0|

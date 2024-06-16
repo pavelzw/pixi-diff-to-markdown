@@ -2,15 +2,15 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.1|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.3|0.20.31|conda|
-|*python*|3.12.0|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.1|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.3|0.20.31|conda|
+|**python**|3.12.0|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.5|18.1.7|conda|
@@ -38,15 +38,15 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |typing_extensions|4.9.0||conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
@@ -77,15 +77,15 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -113,15 +113,15 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -153,15 +153,15 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.9.18|3.9.19|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.9.18|3.9.19|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -189,15 +189,15 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.9.18|3.9.19|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.9.18|3.9.19|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -227,15 +227,15 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.9.18|3.9.19|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.9.18|3.9.19|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -263,15 +263,15 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.9.18|3.9.19|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.9.18|3.9.19|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -303,15 +303,15 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.10.13|3.10.14|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.10.13|3.10.14|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -339,15 +339,15 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.10.13|3.10.14|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.10.13|3.10.14|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -377,15 +377,15 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.10.13|3.10.14|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.10.13|3.10.14|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -413,15 +413,15 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.10.13|3.10.14|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.10.13|3.10.14|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -453,13 +453,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -486,13 +486,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -521,13 +521,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -554,13 +554,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -591,13 +591,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -624,13 +624,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -659,13 +659,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -692,13 +692,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -729,13 +729,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.2|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.2|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -761,13 +761,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -795,13 +795,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -827,13 +827,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -863,13 +863,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -896,13 +896,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -930,13 +930,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -963,13 +963,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1000,13 +1000,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.2|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.2|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1032,13 +1032,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1066,13 +1066,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1098,13 +1098,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1134,15 +1134,15 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1170,15 +1170,15 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |typing_extensions|4.9.0||conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
@@ -1209,15 +1209,15 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1245,15 +1245,15 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1285,14 +1285,14 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.16|0.20.31|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.16|0.20.31|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1319,14 +1319,14 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1355,14 +1355,14 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.16|0.20.31|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.16|0.20.31|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1389,14 +1389,14 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.16|0.20.31|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.16|0.20.31|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1427,13 +1427,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*pre-commit*|3.6.0|3.7.1|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**pre-commit**|3.6.0|3.7.1|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1466,13 +1466,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*pre-commit*|3.6.0|3.7.1|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**pre-commit**|3.6.0|3.7.1|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |typing_extensions|4.9.0||conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
@@ -1508,13 +1508,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*pre-commit*|3.6.0|3.7.1|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**pre-commit**|3.6.0|3.7.1|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1547,13 +1547,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*pre-commit*|3.6.0|3.7.1|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.12.1|3.12.3|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**pre-commit**|3.6.0|3.7.1|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.12.1|3.12.3|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1590,13 +1590,13 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.2|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.2|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1623,13 +1623,13 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1658,13 +1658,13 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1691,13 +1691,13 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|
@@ -1728,15 +1728,15 @@
 
 ## osx-arm64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.1|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.11.7|3.11.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.1|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.11.7|3.11.9|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1764,15 +1764,15 @@
 
 ## win-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.11.7|3.11.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.11.7|3.11.9|conda|
 |typing_extensions|4.9.0||conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
@@ -1803,15 +1803,15 @@
 
 ## osx-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.11.7|3.11.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.11.7|3.11.9|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |libcxx|16.0.6|17.0.6|conda|
 |llvm-openmp|17.0.6|18.1.7|conda|
@@ -1839,15 +1839,15 @@
 
 ## linux-64
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*pip*|23.3.2|24.0|conda|
-|*pytest-cov*|4.1.0|5.0.0|conda|
-|*hatchling*|1.21.1|1.24.2|conda|
-|*hypothesis*|6.97.4|6.103.2|conda|
-|*pytest*|8.0.0|8.2.2|conda|
-|*polars*|0.20.6|0.20.31|conda|
-|*python*|3.11.7|3.11.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**pip**|23.3.2|24.0|conda|
+|**pytest-cov**|4.1.0|5.0.0|conda|
+|**hatchling**|1.21.1|1.24.2|conda|
+|**hypothesis**|6.97.4|6.103.2|conda|
+|**pytest**|8.0.0|8.2.2|conda|
+|**polars**|0.20.6|0.20.31|conda|
+|**python**|3.11.7|3.11.9|conda|
 |ca-certificates|2023.11.17|2024.6.2|conda|
 |packaging|23.2|24.1|conda|
 |setuptools|69.0.3|70.0.0|conda|

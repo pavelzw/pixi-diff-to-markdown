@@ -1,8 +1,8 @@
-| Environment | Dependency[^1] | Before | After |
-| -: | - | - | - |
-| default / win-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
+|Environment / Platform|Dependency|Before|After|
+|-:|-|-|-|
+|default / win-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
@@ -15,10 +15,10 @@
 ||openssl|3.3.0|3.3.1|
 ||pydantic-core|2.18.2|2.18.4|
 ||vc|ha32ba9b_20|h8a93ad2_20|
-| default / osx-arm64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
-||*py-rattler*|py312h1a1520d_0|py312had01cb0_0|
+|default / osx-arm64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
+||**py-rattler**|py312h1a1520d_0|py312had01cb0_0|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
@@ -28,9 +28,9 @@
 ||zipp|3.17.0|3.19.2|
 ||openssl|3.3.0|3.3.1|
 ||pydantic-core|2.18.2|2.18.4|
-| default / linux-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
+|default / linux-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
@@ -43,8 +43,8 @@
 ||ld_impl_linux-64|hf3520f5_1|hf3520f5_4|
 ||libgcc-ng|h77fa898_7|h77fa898_9|
 ||libgomp|h77fa898_7|h77fa898_9|
-| lint / win-64 |*typos*|1.21.0|1.22.7|
-||*ruff*|0.4.4|0.4.9|
+|lint / win-64|**typos**|1.21.0|1.22.7|
+||**ruff**|0.4.4|0.4.9|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||filelock|3.14.0|3.15.1|
 ||libsqlite|3.45.3|3.46.0|
@@ -54,16 +54,16 @@
 ||vs2015_runtime|14.38.33135|14.40.33810|
 ||openssl|3.3.0|3.3.1|
 ||vc|ha32ba9b_20|h8a93ad2_20|
-| lint / osx-arm64 |*typos*|1.21.0|1.22.7|
-||*ruff*|0.4.4|0.4.9|
+|lint / osx-arm64|**typos**|1.21.0|1.22.7|
+||**ruff**|0.4.4|0.4.9|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||filelock|3.14.0|3.15.1|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
 ||nodeenv|1.8.0|1.9.1|
 ||openssl|3.3.0|3.3.1|
-| lint / linux-64 |*typos*|1.21.0|1.22.7|
-||*ruff*|0.4.4|0.4.9|
+|lint / linux-64|**typos**|1.21.0|1.22.7|
+||**ruff**|0.4.4|0.4.9|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||filelock|3.14.0|3.15.1|
 ||libsqlite|3.45.3|3.46.0|
@@ -74,8 +74,8 @@
 ||libgcc-ng|h77fa898_7|h77fa898_9|
 ||libgomp|h77fa898_7|h77fa898_9|
 ||libstdcxx-ng|hc0a3c3a_7|hc0a3c3a_9|
-| build / win-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
+|build / win-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||certifi|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
@@ -92,8 +92,8 @@
 ||pydantic-core|2.18.2|2.18.4|
 ||requests|2.32.2|2.32.3|
 ||vc|ha32ba9b_20|h8a93ad2_20|
-| build / osx-arm64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
+|build / osx-arm64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||certifi|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
@@ -107,8 +107,8 @@
 ||openssl|3.3.0|3.3.1|
 ||pydantic-core|2.18.2|2.18.4|
 ||requests|2.32.2|2.32.3|
-| build / linux-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
+|build / linux-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||certifi|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
@@ -127,9 +127,9 @@
 ||libgcc-ng|h77fa898_7|h77fa898_9|
 ||libgomp|h77fa898_7|h77fa898_9|
 ||libstdcxx-ng|hc0a3c3a_7|hc0a3c3a_9|
-| py312 / linux-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
+|py312 / linux-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
@@ -142,10 +142,10 @@
 ||ld_impl_linux-64|hf3520f5_1|hf3520f5_4|
 ||libgcc-ng|h77fa898_7|h77fa898_9|
 ||libgomp|h77fa898_7|h77fa898_9|
-| py312 / osx-arm64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
-||*py-rattler*|py312h1a1520d_0|py312had01cb0_0|
+|py312 / osx-arm64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
+||**py-rattler**|py312h1a1520d_0|py312had01cb0_0|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|
@@ -155,9 +155,9 @@
 ||zipp|3.17.0|3.19.2|
 ||openssl|3.3.0|3.3.1|
 ||pydantic-core|2.18.2|2.18.4|
-| py312 / win-64 |*ordered_enum*|0.0.8|0.0.9|
-||*pydantic*|2.7.1|2.7.4|
-||*pytest*|8.2.1|8.2.2|
+|py312 / win-64|**ordered_enum**|0.0.8|0.0.9|
+||**pydantic**|2.7.1|2.7.4|
+||**pytest**|8.2.1|8.2.2|
 ||ca-certificates|2024.2.2|2024.6.2|
 ||libsqlite|3.45.3|3.46.0|
 ||libzlib|1.2.13|1.3.1|

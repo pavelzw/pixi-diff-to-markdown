@@ -3,11 +3,11 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|
@@ -26,12 +26,12 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|
@@ -47,11 +47,11 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|
@@ -72,10 +72,10 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|conda|
-|*ruff*|0.4.4|0.4.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|conda|
+|**ruff**|0.4.4|0.4.9|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |filelock|3.14.0|3.15.1|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -91,10 +91,10 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|conda|
-|*ruff*|0.4.4|0.4.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|conda|
+|**ruff**|0.4.4|0.4.9|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |filelock|3.14.0|3.15.1|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -107,10 +107,10 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*typos*|1.21.0|1.22.7|conda|
-|*ruff*|0.4.4|0.4.9|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**typos**|1.21.0|1.22.7|conda|
+|**ruff**|0.4.4|0.4.9|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |filelock|3.14.0|3.15.1|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -129,10 +129,10 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |certifi|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -155,10 +155,10 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |certifi|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -178,10 +178,10 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |certifi|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
@@ -208,11 +208,11 @@
 <details>
 <summary>linux-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|
@@ -231,12 +231,12 @@
 <details>
 <summary>osx-arm64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
-|*py-rattler*|py312h1a1520d_0|py312had01cb0_0|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
+|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|
@@ -252,11 +252,11 @@
 <details>
 <summary>win-64</summary>
 
-| Dependency[^1] | Before | After | Package |
-| - | - | - | - |
-|*ordered_enum*|0.0.8|0.0.9|conda|
-|*pydantic*|2.7.1|2.7.4|conda|
-|*pytest*|8.2.1|8.2.2|conda|
+|Dependency|Before|After|Package|
+|-|-|-|-|
+|**ordered_enum**|0.0.8|0.0.9|conda|
+|**pydantic**|2.7.1|2.7.4|conda|
+|**pytest**|8.2.1|8.2.2|conda|
 |ca-certificates|2024.2.2|2024.6.2|conda|
 |libsqlite|3.45.3|3.46.0|conda|
 |libzlib|1.2.13|1.3.1|conda|

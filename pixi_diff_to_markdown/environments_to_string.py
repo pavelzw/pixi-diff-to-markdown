@@ -40,6 +40,8 @@ class Cover:
         # this is a hack to allow better sorting
         # this is not a total order but a total quasi-order
         # `sorted` needs `__eq__` to be consistent with `__lt__` in order for sorting tuples to work
+        if not isinstance(other, Cover):
+            return NotImplemented
         return len(self) == len(other)
 
 

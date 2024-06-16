@@ -2,8 +2,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|
@@ -22,8 +22,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|
@@ -40,8 +40,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|
@@ -62,8 +62,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |typos|1.21.0|1.22.7|Minor Upgrade|true|conda|
 |ruff|0.4.4|0.4.9|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -78,8 +78,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |typos|1.21.0|1.22.7|Minor Upgrade|true|conda|
 |ruff|0.4.4|0.4.9|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -91,8 +91,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |typos|1.21.0|1.22.7|Minor Upgrade|true|conda|
 |ruff|0.4.4|0.4.9|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -110,8 +110,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -133,8 +133,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -153,8 +153,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|false|conda|
@@ -180,8 +180,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|
@@ -200,8 +200,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|
@@ -218,8 +218,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Change | Explicit | Package |
-| - | - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|Package|
+|-|-|-|-|-|-|
 |ordered_enum|0.0.8|0.0.9|Patch Upgrade|true|conda|
 |pydantic|2.7.1|2.7.4|Patch Upgrade|true|conda|
 |pytest|8.2.1|8.2.2|Patch Upgrade|true|conda|

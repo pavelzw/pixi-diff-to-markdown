@@ -1,8 +1,8 @@
 ## default
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.1|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.1|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -33,7 +33,7 @@
 ||libgfortran|13_2_0_hd922786_1|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_1|hf226fd6_3|false|
 ||liblapack|20_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -67,7 +67,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -98,7 +98,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -134,9 +134,9 @@
 
 ## py39
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -167,7 +167,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -200,7 +200,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -231,7 +231,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -267,9 +267,9 @@
 
 ## py310
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -300,7 +300,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -333,7 +333,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -364,7 +364,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -400,9 +400,9 @@
 
 ## pl017
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -430,7 +430,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -460,7 +460,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -488,7 +488,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -521,9 +521,9 @@
 
 ## pl018
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -551,7 +551,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -581,7 +581,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -609,7 +609,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -642,9 +642,9 @@
 
 ## pl014
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.2|6.103.2|true|
@@ -671,7 +671,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -700,7 +700,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -727,7 +727,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -759,9 +759,9 @@
 
 ## pl019
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -789,7 +789,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -818,7 +818,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -846,7 +846,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -879,9 +879,9 @@
 
 ## pl015
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.2|6.103.2|true|
@@ -908,7 +908,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -937,7 +937,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -964,7 +964,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -996,9 +996,9 @@
 
 ## py312
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -1029,7 +1029,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1063,7 +1063,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1094,7 +1094,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1130,9 +1130,9 @@
 
 ## pl020
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -1161,7 +1161,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1192,7 +1192,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1221,7 +1221,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1255,9 +1255,9 @@
 
 ## lint
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||pre-commit|3.6.0|3.7.1|true|
 ||polars|0.20.6|0.20.31|true|
@@ -1291,7 +1291,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||pre-commit|3.6.0|3.7.1|true|
 ||polars|0.20.6|0.20.31|true|
@@ -1328,7 +1328,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||pre-commit|3.6.0|3.7.1|true|
 ||polars|0.20.6|0.20.31|true|
@@ -1362,7 +1362,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||pre-commit|3.6.0|3.7.1|true|
 ||polars|0.20.6|0.20.31|true|
@@ -1401,9 +1401,9 @@
 
 ## pl016
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.2|6.103.2|true|
@@ -1431,7 +1431,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1461,7 +1461,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1489,7 +1489,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1522,9 +1522,9 @@
 
 ## py311
 
-| Platform | Dependency | Before | After | Explicit |
-| -: | - | - | - | - |
-| osx-arm64 |pip|23.3.2|24.0|true|
+|Platform|Dependency|Before|After|Explicit|
+|-:|-|-|-|-|
+|osx-arm64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.1|6.103.2|true|
@@ -1555,7 +1555,7 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|false|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|false|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|false|
-| win-64 |pip|23.3.2|24.0|true|
+|win-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1589,7 +1589,7 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|false|
 ||liblapack|21_win64_mkl|22_win64_mkl|false|
 ||vc|hcf57466_18|h8a93ad2_20|false|
-| osx-64 |pip|23.3.2|24.0|true|
+|osx-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|
@@ -1620,7 +1620,7 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|false|
 ||libgfortran5|h2873a65_2|h2873a65_3|false|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|false|
-| linux-64 |pip|23.3.2|24.0|true|
+|linux-64|pip|23.3.2|24.0|true|
 ||pytest-cov|4.1.0|5.0.0|true|
 ||hatchling|1.21.1|1.24.2|true|
 ||hypothesis|6.97.4|6.103.2|true|

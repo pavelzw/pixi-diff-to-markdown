@@ -1,14 +1,14 @@
 ## default
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.1|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.3|0.20.31|Patch Upgrade|
-||*python*|3.12.0|3.12.3|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.1|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.3|0.20.31|Patch Upgrade|
+||**python**|3.12.0|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.5|18.1.7|Major Upgrade|
@@ -33,13 +33,13 @@
 ||libgfortran|13_2_0_hd922786_1|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_1|hf226fd6_3|Only build string|
 ||liblapack|20_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||typing_extensions|4.9.0||Removed|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
@@ -67,13 +67,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -98,13 +98,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -134,15 +134,15 @@
 
 ## py39
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.9.18|3.9.19|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.9.18|3.9.19|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -167,13 +167,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.9.18|3.9.19|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.9.18|3.9.19|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -200,13 +200,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.9.18|3.9.19|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.9.18|3.9.19|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -231,13 +231,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.9.18|3.9.19|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.9.18|3.9.19|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -267,15 +267,15 @@
 
 ## py310
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.10.13|3.10.14|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.10.13|3.10.14|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -300,13 +300,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.10.13|3.10.14|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.10.13|3.10.14|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -333,13 +333,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.10.13|3.10.14|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.10.13|3.10.14|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -364,13 +364,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.10.13|3.10.14|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.10.13|3.10.14|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -400,13 +400,13 @@
 
 ## pl017
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -430,11 +430,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -460,11 +460,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -488,11 +488,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -521,13 +521,13 @@
 
 ## pl018
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -551,11 +551,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -581,11 +581,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -609,11 +609,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -642,13 +642,13 @@
 
 ## pl014
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.2|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.2|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -671,11 +671,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -700,11 +700,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -727,11 +727,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -759,13 +759,13 @@
 
 ## pl019
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -789,11 +789,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -818,11 +818,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -846,11 +846,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -879,13 +879,13 @@
 
 ## pl015
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.2|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.2|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -908,11 +908,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -937,11 +937,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -964,11 +964,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -996,15 +996,15 @@
 
 ## py312
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1029,13 +1029,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||typing_extensions|4.9.0||Removed|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
@@ -1063,13 +1063,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1094,13 +1094,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1130,14 +1130,14 @@
 
 ## pl020
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.16|0.20.31|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.16|0.20.31|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1161,12 +1161,12 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1192,12 +1192,12 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.16|0.20.31|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.16|0.20.31|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1221,12 +1221,12 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.16|0.20.31|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.16|0.20.31|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1255,13 +1255,13 @@
 
 ## lint
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*pre-commit*|3.6.0|3.7.1|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**pre-commit**|3.6.0|3.7.1|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1291,11 +1291,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*pre-commit*|3.6.0|3.7.1|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**pre-commit**|3.6.0|3.7.1|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||typing_extensions|4.9.0||Removed|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
@@ -1328,11 +1328,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*pre-commit*|3.6.0|3.7.1|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**pre-commit**|3.6.0|3.7.1|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1362,11 +1362,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*pre-commit*|3.6.0|3.7.1|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.12.1|3.12.3|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**pre-commit**|3.6.0|3.7.1|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.12.1|3.12.3|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1401,13 +1401,13 @@
 
 ## pl016
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.2|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.2|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1431,11 +1431,11 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1461,11 +1461,11 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1489,11 +1489,11 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|
@@ -1522,15 +1522,15 @@
 
 ## py311
 
-| Platform | Dependency[^1] | Before | After | Change |
-| -: | - | - | - | - |
-| osx-arm64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.1|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.11.7|3.11.9|Patch Upgrade|
+|Platform|Dependency|Before|After|Change|
+|-:|-|-|-|-|
+|osx-arm64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.1|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.11.7|3.11.9|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1555,13 +1555,13 @@
 ||libgfortran|13_2_0_hd922786_2|13_2_0_hd922786_3|Only build string|
 ||libgfortran5|hf226fd6_2|hf226fd6_3|Only build string|
 ||liblapack|21_osxarm64_openblas|22_osxarm64_openblas|Only build string|
-| win-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.11.7|3.11.9|Patch Upgrade|
+|win-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.11.7|3.11.9|Patch Upgrade|
 ||typing_extensions|4.9.0||Removed|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
@@ -1589,13 +1589,13 @@
 ||libcblas|21_win64_mkl|22_win64_mkl|Only build string|
 ||liblapack|21_win64_mkl|22_win64_mkl|Only build string|
 ||vc|hcf57466_18|h8a93ad2_20|Only build string|
-| osx-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.11.7|3.11.9|Patch Upgrade|
+|osx-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.11.7|3.11.9|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||libcxx|16.0.6|17.0.6|Major Upgrade|
 ||llvm-openmp|17.0.6|18.1.7|Major Upgrade|
@@ -1620,13 +1620,13 @@
 ||libgfortran|13_2_0_h97931a8_2|13_2_0_h97931a8_3|Only build string|
 ||libgfortran5|h2873a65_2|h2873a65_3|Only build string|
 ||liblapack|21_osx64_openblas|22_osx64_openblas|Only build string|
-| linux-64 |*pip*|23.3.2|24.0|Major Upgrade|
-||*pytest-cov*|4.1.0|5.0.0|Major Upgrade|
-||*hatchling*|1.21.1|1.24.2|Minor Upgrade|
-||*hypothesis*|6.97.4|6.103.2|Minor Upgrade|
-||*pytest*|8.0.0|8.2.2|Minor Upgrade|
-||*polars*|0.20.6|0.20.31|Patch Upgrade|
-||*python*|3.11.7|3.11.9|Patch Upgrade|
+|linux-64|**pip**|23.3.2|24.0|Major Upgrade|
+||**pytest-cov**|4.1.0|5.0.0|Major Upgrade|
+||**hatchling**|1.21.1|1.24.2|Minor Upgrade|
+||**hypothesis**|6.97.4|6.103.2|Minor Upgrade|
+||**pytest**|8.0.0|8.2.2|Minor Upgrade|
+||**polars**|0.20.6|0.20.31|Patch Upgrade|
+||**python**|3.11.7|3.11.9|Patch Upgrade|
 ||ca-certificates|2023.11.17|2024.6.2|Major Upgrade|
 ||packaging|23.2|24.1|Major Upgrade|
 ||setuptools|69.0.3|70.0.0|Major Upgrade|

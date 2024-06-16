@@ -2,8 +2,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |new-package||0.10.1|Added|true|
 |removed-package|0.10.1||Removed|true|
 |bpy|0.10.1|2.10.1|Major Upgrade|true|
@@ -12,8 +12,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |polars[^2]|0.10.0|0.9.1|Minor Downgrade|true|
 |python|0.10.0|0.10.1|Patch Upgrade|true|
 
@@ -21,8 +21,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Change | Explicit |
-| - | - | - | - | - |
+|Dependency|Before|After|Change|Explicit|
+|-|-|-|-|-|
 |polars|0.10.0|0.10.1|Patch Upgrade|true|
 |python|0.10.0|0.10.1|Patch Upgrade|false|
 

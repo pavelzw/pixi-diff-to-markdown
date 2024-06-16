@@ -2,8 +2,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.1|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -38,8 +38,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -77,8 +77,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -113,8 +113,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -153,8 +153,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -189,8 +189,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -227,8 +227,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -263,8 +263,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -303,8 +303,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -339,8 +339,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -377,8 +377,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -413,8 +413,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -453,8 +453,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -486,8 +486,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -521,8 +521,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -554,8 +554,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -591,8 +591,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -624,8 +624,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -659,8 +659,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -692,8 +692,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -729,8 +729,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -761,8 +761,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -795,8 +795,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -827,8 +827,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -863,8 +863,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -896,8 +896,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -930,8 +930,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -963,8 +963,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1000,8 +1000,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1032,8 +1032,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1066,8 +1066,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1098,8 +1098,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1134,8 +1134,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1170,8 +1170,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1209,8 +1209,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1245,8 +1245,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1285,8 +1285,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1319,8 +1319,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1355,8 +1355,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1389,8 +1389,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1427,8 +1427,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |hatchling|1.21.1|1.24.2|true|
 |pre-commit|3.6.0|3.7.1|true|
@@ -1466,8 +1466,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |hatchling|1.21.1|1.24.2|true|
 |pre-commit|3.6.0|3.7.1|true|
@@ -1508,8 +1508,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |hatchling|1.21.1|1.24.2|true|
 |pre-commit|3.6.0|3.7.1|true|
@@ -1547,8 +1547,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |hatchling|1.21.1|1.24.2|true|
 |pre-commit|3.6.0|3.7.1|true|
@@ -1590,8 +1590,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1623,8 +1623,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1658,8 +1658,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1691,8 +1691,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1728,8 +1728,8 @@
 
 ## osx-arm64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1764,8 +1764,8 @@
 
 ## win-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1803,8 +1803,8 @@
 
 ## osx-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
@@ -1839,8 +1839,8 @@
 
 ## linux-64
 
-| Dependency | Before | After | Explicit |
-| - | - | - | - |
+|Dependency|Before|After|Explicit|
+|-|-|-|-|
 |pip|23.3.2|24.0|true|
 |pytest-cov|4.1.0|5.0.0|true|
 |hatchling|1.21.1|1.24.2|true|
