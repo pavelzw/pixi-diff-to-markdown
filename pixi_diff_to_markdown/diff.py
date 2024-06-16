@@ -149,7 +149,6 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
         ("Explicit", update_specs_explicit),
         ("Implicit", update_specs_implicit),
     ]:
-        # TODO: make collapsible as well
         rows = [
             TableRow(update_spec, updated_environments=updated_envs_str)
             for update_spec, updated_envs_str in update_specs
