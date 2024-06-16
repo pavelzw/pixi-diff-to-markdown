@@ -13,7 +13,7 @@ from pixi_diff_to_markdown.pydantic_settings_extension import (
 
 class MergeDependencies(str, Enum):
     no = "no"
-    merge_all = "merge-all"
+    yes = "yes"
     split_explicit = "split-explicit"
 
 
@@ -25,10 +25,15 @@ class Settings(BaseSettings):
         alias_generator=lambda x: x.replace("_", "-"),
     )
     change_type_column: bool = True
-    package_type_column: bool = True
+    package_type_column: bool = False
     explicit_column: bool = False
-    merge_dependencies: MergeDependencies = MergeDependencies.split_explicit
+    merge_dependencies: MergeDependencies
     hide_tables: bool = False
+
+    def __init__(self, inferred_merge_dependencies: MergeDependencies | None = None, **data):
+        if "merge-dependencies" not in data and inferred_merge_dependencies is not None:
+            data["merge-dependencies"] = inferred_merge_dependencies
+        super().__init__(**data)
 
     @classmethod
     def settings_customise_sources(

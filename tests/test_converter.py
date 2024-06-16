@@ -39,7 +39,7 @@ def test_generate_table(
     diff_path = Path(f"tests/resources/{diff_file}")
     data_parsed = Diff.model_validate_json(diff_path.read_text())
     actual_output = generate_output(data_parsed.environment, settings)
-    file_name = f"tests/resources/{diff_file.split(".")[0]}/merge-{settings.merge_dependencies.value}_hide-tables-{settings.hide_tables}_change-type-{settings.change_type_column}_explicit-{settings.explicit_column}_package-type-{settings.package_type_column}.md"
+    file_name = f"tests/resources/{diff_file.split(".")[0]}/merge-{settings.merge_dependencies.value}_hide-{settings.hide_tables}_change-type-{settings.change_type_column}_explicit-{settings.explicit_column}_package-type-{settings.package_type_column}.md"
     if write_results:
         with open(file_name, "w") as f:
             f.writelines(actual_output)
@@ -47,8 +47,3 @@ def test_generate_table(
         with open(file_name) as f:
             expected_output = "".join(f.readlines())
         assert actual_output == expected_output
-
-
-def test_setting_selection():
-    assert True
-    # TODO: ensure best settings are selected by default

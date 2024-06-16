@@ -15,7 +15,7 @@ from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 def generate_output(data: Environments, settings: Settings) -> str:
     if settings.merge_dependencies == MergeDependencies.no:
         return generate_table_no_merge(data, settings)
-    elif settings.merge_dependencies == MergeDependencies.merge_all:
+    elif settings.merge_dependencies == MergeDependencies.yes:
         return generate_table_merge_all(data, settings)
     else:
         assert settings.merge_dependencies == MergeDependencies.split_explicit
