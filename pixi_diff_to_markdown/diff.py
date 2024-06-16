@@ -1,5 +1,6 @@
 from typing import Literal
 
+from pixi_diff_to_markdown.markdown import generate_table_line
 from pixi_diff_to_markdown.models import (
     ChangeType,
     DependencyType,
@@ -10,7 +11,7 @@ from pixi_diff_to_markdown.models import (
 from pixi_diff_to_markdown.settings import Settings
 
 
-def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> str:
+def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> list[str]:
     change_type = calculate_change_type(update_spec)
     before: str | None
     after: str | None
@@ -45,14 +46,15 @@ def update_spec_to_table_line(update_spec: UpdateSpec, settings: Settings) -> st
     else:
         package_name_formatted = update_spec.name
 
-    return (
-        f"| {package_name_formatted + maybe_downgrade_ref} |"
-        f" {before} |"
-        f" {after} |"
-        f"{f" {change_type.value} |" if add_change_type else ""}"
-        f"{f" {str(update_spec.explicit == DependencyType.EXPLICIT).lower()} |" if add_explicit else ""}"
-        f"{f' {update_spec.type} |' if add_package_type else ''}"
-    )
+    columns = [
+        package_name_formatted + maybe_downgrade_ref,
+        before,
+        after,
+        *([change_type.value] if add_change_type else []),
+        *([str(update_spec.explicit == DependencyType.EXPLICIT).lower()] if add_explicit else []),
+        *([update_spec.type] if add_package_type else []),
+    ]
+    return generate_table_line(*columns)
 
 
 def generate_output(data: Environments, settings: Settings) -> str:

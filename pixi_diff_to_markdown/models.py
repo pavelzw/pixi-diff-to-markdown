@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from itertools import zip_longest
 from typing import Literal, Self
 
@@ -140,3 +141,10 @@ class Diff(pydantic.BaseModel):
 
 class EnvironmentOrPlatform(pydantic.RootModel):
     root: str | tuple[str, str]
+
+
+@dataclass
+class MarkdownTable:
+    columns: list[str]
+    centered: list[bool]
+    lines: dict[list[str]]

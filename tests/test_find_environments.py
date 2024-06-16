@@ -1,6 +1,6 @@
 from itertools import product
 import pytest
-from pixi_diff_to_markdown.find_environments import Cover, SupportMatrix
+from pixi_diff_to_markdown.environments_to_string import Cover, SupportMatrix
 
 
 all_environments = ["default", "py39", "py310", "py311", "py312"]
@@ -26,14 +26,14 @@ all_platforms = [
         (["py39", "py310", "py311"], ["linux-64"], "{py310, py311, py39} on linux-64"),
         (["py39"], ["linux-64", "osx-arm64"], "py39 on {linux-64, osx-arm64}"),
         (["py39"], ["linux-64"], "py39 on linux-64"),
-        (all_environments, ["linux-64"], "all envs on linux-64"),
+        (all_environments, ["linux-64"], "*all envs* on linux-64"),
         (
             all_environments,
             ["linux-64", "osx-arm64"],
-            "all envs on {linux-64, osx-arm64}",
+            "*all envs* on {linux-64, osx-arm64}",
         ),
-        (["py39"], all_platforms, "py39 on all platforms"),
-        (all_environments, all_platforms, "all"),
+        (["py39"], all_platforms, "py39 on *all platforms*"),
+        (all_environments, all_platforms, "*all*"),
     ],
 )
 def test_str_representation(
@@ -65,7 +65,7 @@ def test_str_representation(
                 "osx-64": set(),
                 "win-64": {"py312"},
             },
-            76,
+            82,
         ),
         (
             [
@@ -83,7 +83,7 @@ def test_str_representation(
                 "osx-64": {"default", "py39"},
                 "win-64": {"default", "py310", "py311", "py312"},
             },
-            178,
+            192,
         ),
     ],
 )
@@ -97,8 +97,7 @@ def test_support_matrix(
         if active_matrix[i][j]:
             active_elements.append((environment, platform))
     support_matrix = SupportMatrix(active_elements, all_environments, all_platforms)
-    assert support_matrix.active_matrix == active_matrix
 
     for platform, environments in environments_for_platform.items():
-        assert support_matrix.get_environments_for_platform(platform) == environments
+        assert support_matrix.platforms[platform] == environments
     assert len(support_matrix.get_str_representation()) == len_str_representation, support_matrix.get_str_representation()
