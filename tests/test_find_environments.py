@@ -47,7 +47,7 @@ def test_str_representation(
 
 
 @pytest.mark.parametrize(
-    "active_matrix,environments_for_platform,len_str_representation",
+    "active_matrix,environments_for_platform,str_representation",
     [
         (
             [
@@ -65,7 +65,7 @@ def test_str_representation(
                 "osx-64": set(),
                 "win-64": {"py312"},
             },
-            82,
+            "py311 on osx-arm64<br/>py312 on win-64<br/>{py310, py311, py312, py39} on linux-64",
         ),
         (
             [
@@ -83,14 +83,14 @@ def test_str_representation(
                 "osx-64": {"default", "py39"},
                 "win-64": {"default", "py310", "py311", "py312"},
             },
-            192,
+            "py311 on osx-arm64<br/>{default, py39} on osx-64<br/>{default, py310, py311, py312} on win-64<br/>*all envs* on linux-64<br/>{default, py310, py39} on {linux-aarch64, linux-ppc64le, osx-arm64}",
         ),
     ],
 )
 def test_support_matrix(
     active_matrix: list[list[bool]],
     environments_for_platform: dict[str, list[str]],
-    len_str_representation: int,
+    str_representation: str,
 ):
     active_elements = []
     for (i, environment), (j, platform) in product(enumerate(all_environments), enumerate(all_platforms)):
@@ -100,4 +100,4 @@ def test_support_matrix(
 
     for platform, environments in environments_for_platform.items():
         assert support_matrix.platforms[platform] == environments
-    assert len(support_matrix.get_str_representation()) == len_str_representation, support_matrix.get_str_representation()
+    assert str(support_matrix) == str_representation

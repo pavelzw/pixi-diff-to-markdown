@@ -5,7 +5,6 @@ import more_itertools
 
 from pixi_diff_to_markdown.models import UpdatedEnvironments
 
-
 @dataclass(frozen=True)
 class Cover:
     environments: frozenset[str]
@@ -30,6 +29,18 @@ class Cover:
         else:
             platforms_str = f"{{{', '.join(sorted(list(self.platforms)))}}}"
         return f"{environments_str} on {platforms_str}"
+    
+    def __len__(self) -> int:
+        return len(self.environments) * len(self.platforms)
+
+    def __lt__(self, other: "Cover") -> bool:
+        return len(self) < len(other)
+
+    def __eq__(self, other: object) -> bool:
+        # this is a hack to allow better sorting
+        # this is not a total order but a total quasi-order
+        # `sorted` needs `__eq__` to be consistent with `__lt__` in order for sorting tuples to work
+        return len(self) == len(other)
 
 
 class SupportMatrix:
@@ -115,8 +126,12 @@ class SupportMatrix:
     def get_str_representation(self, covers: set[Cover] | None = None) -> str:
         if covers is None:
             covers = self.find_optimal_cover()
-        return "<br/>".join(cover.get_str_representation(self.all_environments, self.all_platforms) for cover in covers)
+        covers_with_str = sorted((cover, cover.get_str_representation(self.all_environments, self.all_platforms)) for cover in covers)
+        return "<br/>".join(cover_str for _, cover_str in covers_with_str)
 
+
+    def __str__(self) -> str:
+        return self.get_str_representation()
 
 
 # TODO: fett drucken, tabellen splitten, package spalte raus
