@@ -11,11 +11,11 @@ Example output:
 
 | Dependency | Before | After | Change |
 | - | - | - | - |
-| *new-package* |  | 0.10.1 | Added |
-| *removed-package* | 0.10.1 |  | Removed |
-| *bpy* | 0.10.1 | 2.10.1 | Major Upgrade |
+| **new-package** |  | 0.10.1 | Added |
+| **removed-package** | 0.10.1 |  | Removed |
+| **bpy** | 0.10.1 | 2.10.1 | Major Upgrade |
+| **polars** | herads_0 | herads_1 | Only build string |
 | python | 0.10.0 | 0.10.1 | Patch Upgrade |
-| *polars* | herads_0 | herads_1 | Only build string |
 
 > [!TIP]
 > The sorting of the tables is done by explicit/implicit, change type and alphabetically.
