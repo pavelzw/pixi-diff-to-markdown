@@ -7,6 +7,9 @@ It reads from the standard input and writes to the standard output.
 pixi update --json | pixi-diff-to-markdown > diff.md
 ```
 
+> [!TIP]
+> If you don't care about the environment being installed and only want to update the lockfile (for example in a CI pipeline), you can use `pixi update --json --no-install` to generate the diff.
+
 Example output:
 
 | Dependency | Before | After | Change |
