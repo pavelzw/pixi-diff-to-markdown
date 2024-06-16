@@ -59,8 +59,8 @@ For a large amount of `environments` and `platforms`, it is recommended to merge
 `merge-dependencies` can be set to one of the following values:
 
 - `no`: Don't merge the dependencies, each environment will be displayed in their own table. Only recommended for a small amount of environments / platforms ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
-- `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
-- `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-example/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False.md)).
+- `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-polarify/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
+- `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-polarify/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False.md)).
 
 The default is `no` when there are less than three environments / platforms and `yes` when there are three or more environments / platforms.
 
