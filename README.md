@@ -42,7 +42,7 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 ```toml
 # defaults
 [tool.pixi-diff-to-markdown]
-merge-dependencies = "no" # or "yes" when there are three or more environments / platforms
+merge-dependencies = "no" # or "split-explicit" when there are three or more environments / platforms
 hide = false
 change-type-column = true
 explicit-column = false
@@ -65,7 +65,7 @@ For a large amount of `environments` and `platforms`, it is recommended to merge
 - `yes`: Merge all dependencies into one table and deduplicate them ([example](./tests/resources/diff-polarify/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 - `split-explicit`: Merge all dependencies into one table and deduplicate them but split the table into one `explicit` and one `implicit` table ([example](./tests/resources/diff-polarify/merge-split-explicit_hide-False_change-type-True_explicit-False_package-type-False.md)).
 
-The default is `no` when there are less than three environments / platforms and `yes` when there are three or more environments / platforms.
+The default is `no` when there are less than three environments / platforms and `split-explicit` when there are three or more environments / platforms.
 
 ### `hide`
 

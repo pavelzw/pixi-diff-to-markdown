@@ -64,7 +64,7 @@ def main(
         "explicit-column": explicit_column,
         "merge-dependencies": merge_dependencies,
         "hide-tables": hide_tables,
-        "inferred_merge_dependencies": MergeDependencies.yes
+        "inferred_merge_dependencies": MergeDependencies.split_explicit
         if num_environments > 2
         else MergeDependencies.no,
     }
