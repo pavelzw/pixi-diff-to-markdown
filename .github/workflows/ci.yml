@@ -52,5 +52,5 @@ jobs:
         if: matrix.environment == 'py312' && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@125fc84a9a348dbcf27191600683ec096ec9021c
         env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          use_oidc: true
           file: ./coverage.xml
