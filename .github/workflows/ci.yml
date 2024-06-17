@@ -50,7 +50,7 @@ jobs:
         run: pixi run -e ${{ matrix.environment }} test-coverage --color=yes
       - name: Upload coverage reports to Codecov
         if: matrix.environment == 'py312' && matrix.os == 'ubuntu-latest'
-        uses: codecov/codecov-action@125fc84a9a348dbcf27191600683ec096ec9021c
+        uses: codecov/codecov-action@e28ff129e5465c2c0dcc6f003fc735cb6ae0c673
         env:
           use_oidc: true
           file: ./coverage.xml
