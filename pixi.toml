@@ -22,9 +22,11 @@ hatchling = "*"
 
 [feature.test.dependencies]
 pytest = "*"
+pytest-cov = "*"
 mypy = "*"
 [feature.test.tasks]
 test = "pytest"
+test-coverage = "pytest --cov=pixi_diff_to_markdown --cov-report=xml"
 test-write = "pytest --write-results"
 
 [feature.py312.dependencies]
