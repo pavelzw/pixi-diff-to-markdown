@@ -45,7 +45,7 @@ def main(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),
     ] = None,
-):
+) -> int:
     data = "".join(stdin.readlines())
     try:
         data_parsed = Diff.model_validate_json(data)
@@ -81,3 +81,4 @@ def main(
         raise ValueError(msg)
     output = generate_output(data_parsed.environment, settings)
     print(output)
+    return 0
