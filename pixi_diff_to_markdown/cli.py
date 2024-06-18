@@ -3,6 +3,7 @@ from functools import reduce
 from sys import stdin
 from typing import Annotated, Optional
 
+from pydantic import ValidationError
 import typer
 
 from pixi_diff_to_markdown.diff import generate_output
@@ -46,7 +47,11 @@ def main(
     ] = None,
 ):
     data = "".join(stdin.readlines())
-    data_parsed = Diff.model_validate_json(data)
+    try:
+        data_parsed = Diff.model_validate_json(data)
+    except ValidationError as e:
+        print(f"Invalid json passed to executable: \n{e}")
+        return 1
 
     num_environments = len(data_parsed.environment.root) * len(
         reduce(
