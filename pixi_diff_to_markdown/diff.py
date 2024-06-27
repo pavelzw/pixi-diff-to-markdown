@@ -13,6 +13,8 @@ from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 
 def generate_output(data: Environments, settings: Settings) -> str:
+    if not data.root:
+        return ""
     if settings.merge_dependencies == MergeDependencies.no:
         return generate_table_no_merge(data, settings)
     elif settings.merge_dependencies == MergeDependencies.yes:
@@ -99,6 +101,7 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
         return 0
 
     all_environments = set(data.root.keys())
+    assert len(data.root) > 0
     all_platforms: set[str] = reduce(
         set.union,
         (set(environments.root.keys()) for environments in data.root.values()),
