@@ -48,7 +48,6 @@ def main(
     data = "".join(stdin.readlines())
     data_parsed = Diff.model_validate_json(data)
 
-    assert len(data_parsed.environment.root) > 0
     num_environments = len(data_parsed.environment.root) * len(
         reduce(
             set.union,
@@ -56,6 +55,7 @@ def main(
                 set(environments.root.keys())
                 for environments in data_parsed.environment.root.values()
             ),
+            set(),
         )
     )
 

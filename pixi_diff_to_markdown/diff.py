@@ -101,10 +101,10 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
         return 0
 
     all_environments = set(data.root.keys())
-    assert len(data.root) > 0
     all_platforms: set[str] = reduce(
         set.union,
         (set(environments.root.keys()) for environments in data.root.values()),
+        set(),
     )
     merged_update_specs = merge_update_specs(data)
     update_specs_with_envs = []
