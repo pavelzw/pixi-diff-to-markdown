@@ -83,6 +83,7 @@ class SupportMatrix:
         If there are no common elements, the input covers are returned unchanged.
         """
         # get all environments that are covered by every cover
+        assert len(covers) > 0
         common_environments = reduce(
             set.intersection, (set(cover.environments) for cover in covers)
         )
