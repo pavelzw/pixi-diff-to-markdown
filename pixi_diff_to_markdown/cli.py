@@ -3,6 +3,7 @@ from functools import reduce
 from sys import stdin
 from typing import Annotated, Optional
 
+from pydantic import ValidationError
 import typer
 
 from pixi_diff_to_markdown.diff import generate_output
@@ -44,9 +45,13 @@ def main(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),
     ] = None,
-):
+) -> int:
     data = "".join(stdin.readlines())
-    data_parsed = Diff.model_validate_json(data)
+    try:
+        data_parsed = Diff.model_validate_json(data)
+    except ValidationError as e:
+        print(f"Invalid json passed to executable: \n{e}", file=sys.stderr)
+        return 1
 
     num_environments = len(data_parsed.environment.root) * len(
         reduce(
@@ -77,3 +82,4 @@ def main(
         raise ValueError(msg)
     output = generate_output(data_parsed.environment, settings)
     print(output)
+    return 0
