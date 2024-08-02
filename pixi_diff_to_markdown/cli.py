@@ -50,7 +50,7 @@ def main(
     try:
         data_parsed = Diff.model_validate_json(data)
     except ValidationError as e:
-        print(f"Invalid json passed to executable: \n{e}")
+        print(f"Invalid json passed to executable: \n{e}", file=sys.stderr)
         return 1
 
     num_environments = len(data_parsed.environment.root) * len(
