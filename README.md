@@ -22,7 +22,7 @@
 It reads from the standard input and writes to the standard output.
 
 ```bash
-pixi update --json | pixi exec pixi-diff-to-markdown > diff.md
+pixi update --no-install --json | pixi exec pixi-diff-to-markdown > diff.md
 ```
 
 > [!TIP]
