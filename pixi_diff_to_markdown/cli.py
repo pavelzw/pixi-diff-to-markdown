@@ -1,10 +1,10 @@
 # ruff: noqa: UP007
 from functools import reduce
-from sys import stdin
+from sys import stderr, stdin
 from typing import Annotated, Optional
 
-from pydantic import ValidationError
 import typer
+from pydantic import ValidationError
 
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import Diff
@@ -50,8 +50,8 @@ def main(
     try:
         data_parsed = Diff.model_validate_json(data)
     except ValidationError as e:
-        print(f"Invalid json passed to executable: \n{e}")
-        return 1
+        print(f"Invalid json passed to executable: \n{e}", file=stderr)
+        raise typer.Exit(1)
 
     num_environments = len(data_parsed.environment.root) * len(
         reduce(
