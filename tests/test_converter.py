@@ -47,3 +47,29 @@ def test_generate_table(
         with open(file_name) as f:
             expected_output = "".join(f.readlines())
         assert actual_output == expected_output
+
+
+@pytest.mark.parametrize("change_type_column", [False])
+@pytest.mark.parametrize("package_type_column", [False])
+@pytest.mark.parametrize("explicit_column", [True])
+@pytest.mark.parametrize("merge_dependencies", [MergeDependencies.split_explicit])
+@pytest.mark.parametrize("hide_tables", [False])
+def test_empty_update(
+    change_type_column: bool,
+    package_type_column: bool,
+    explicit_column: bool,
+    merge_dependencies: MergeDependencies,
+    hide_tables: bool,
+):
+    settings = settings = Settings.model_validate(
+        {
+            "change-type-column": change_type_column,
+            "package-type-column": package_type_column,
+            "explicit-column": explicit_column,
+            "merge-dependencies": merge_dependencies,
+            "hide-tables": hide_tables,
+        }
+    )
+    data_parsed = Diff.model_validate_json(r'{"version": 1, "environment": {}}')
+    actual_output = generate_output(data_parsed.environment, settings)
+    assert actual_output == ""

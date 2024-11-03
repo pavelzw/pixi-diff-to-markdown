@@ -16,9 +16,9 @@ jobs:
       version-changed: ${{ steps.version-metadata.outputs.changed }}
       new-version: ${{ steps.version-metadata.outputs.newVersion }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Set up pixi
-        uses: prefix-dev/setup-pixi@ba3bb36eb2066252b2363392b7739741bb777659
+        uses: prefix-dev/setup-pixi@ba3bb36eb2066252b2363392b7739741bb777659 # v0.8.1
         with:
           environments: build
       - name: Build project
@@ -26,11 +26,11 @@ jobs:
       - name: Check build
         run: pixi run -e build check-wheel
       - name: Upload package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
           name: artifact
           path: dist/*
-      - uses: Quantco/ui-actions/version-metadata@v1
+      - uses: Quantco/ui-actions/version-metadata@a0653e9fc0ee3c4be9f7cc88e509e40536e9f3c1 # v1.0.15
         id: version-metadata
         with:
           file: ./pyproject.toml
@@ -47,23 +47,23 @@ jobs:
       contents: write
     environment: pypi
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
         with:
           name: artifact
           path: dist
       - name: Publish package on TestPyPi
-        uses: pypa/gh-action-pypi-publish@81e9d935c883d0b210363ab89cf05f3894778450
+        uses: pypa/gh-action-pypi-publish@fb13cb306901256ace3dab689990e13a5550ffaa # v1.11.0
         with:
           repository-url: https://test.pypi.org/legacy/
       - name: Publish package on PyPi
-        uses: pypa/gh-action-pypi-publish@81e9d935c883d0b210363ab89cf05f3894778450
-      - uses: actions/checkout@v4
+        uses: pypa/gh-action-pypi-publish@fb13cb306901256ace3dab689990e13a5550ffaa # v1.11.0
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Push v${{ needs.build.outputs.new-version }} tag
         run: |
           git tag v${{ needs.build.outputs.new-version }}
           git push origin v${{ needs.build.outputs.new-version }}
       - name: Create release
-        uses: softprops/action-gh-release@69320dbe05506a9a39fc8ae11030b214ec2d1f87
+        uses: softprops/action-gh-release@e7a8f85e1c67a31e6ed99a94b41bd0b71bbee6b8 # v2.0.9
         with:
           generate_release_notes: true
           tag_name: v${{ needs.build.outputs.new-version }}
