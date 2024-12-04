@@ -1,9 +1,7 @@
 name: Build
 on:
-  push:
-    branches:
-      - main
   pull_request:
+  push:
     branches:
       - main
 permissions:
@@ -23,7 +21,7 @@ jobs:
           environments: build
       - name: Build project
         run: pixi run -e build build-wheel
-      - name: Check build
+      - name: Check package
         run: pixi run -e build check-wheel
       - name: Upload package
         uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3

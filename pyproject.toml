@@ -6,20 +6,20 @@ build-backend = "hatchling.build"
 name = "pixi-diff-to-markdown"
 version = "0.2.3"
 description = "Tool for converting `pixi update` diffs to markdown"
-readme = "README.md"
 authors = [{ name = "Pavel Zwerschke", email = "pavelzw@gmail.com" }]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">=3.12"
+readme = "README.md"
 dependencies = [
-  "pydantic >=2.7.1,<3",
-  "py-rattler >=0.5.0,<0.6",
-  "ordered-enum >=0.0.8,<0.1",
-  "typer >=0.12.3,<0.13",
-  "pydantic-settings >=2.2.1,<3",
-  "more-itertools >=10.3.0,<11",
+  "pydantic >=2.10.2,<3",
+  "py-rattler >=0.8.2,<0.9",
+  "ordered-enum >=0.0.9,<0.0.10",
+  "typer >=0.15.0,<0.16",
+  "pydantic-settings >=2.6.1,<3",
+  "more-itertools >=10.5.0,<11",
 ]
 
 [project.urls]
@@ -51,6 +51,10 @@ select = [
   "UP",
 ]
 
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
 [tool.mypy]
 python_version = '3.12'
 no_implicit_optional = true
@@ -58,3 +62,13 @@ check_untyped_defs = true
 
 [tool.typos.default.extend-words]
 ba = "ba"
+
+# If you run into `missing library stubs or py.typed marker` errors
+# and no stubs are available for this library, you can add an override
+# to ignore the missing imports.
+# [[tool.mypy.overrides]]
+# module = ["my_module"]
+# ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
