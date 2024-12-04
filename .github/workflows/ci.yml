@@ -1,11 +1,14 @@
 name: CI
 on:
+  pull_request:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+
+# Automatically stop old builds on the same branch/PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   pre-commit:
@@ -21,8 +24,7 @@ jobs:
       - name: pre-commit
         run: pixi run pre-commit-run --color=always --show-diff-on-failure
 
-  unit-tests:
-    name: pytest
+  pytest:
     timeout-minutes: 30
     runs-on: ${{ matrix.os }}
     strategy:
