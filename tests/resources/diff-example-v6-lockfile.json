@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "environment": {
+    "default": {
+      "osx-arm64": [
+        {
+          "name": "polars",
+          "before": {
+            "conda": "https://conda.anaconda.org/conda-forge/osx-arm64/polars-1.15.0-py313hc743ca1_1.conda",
+            "sha256": "5dc4385536e46a47ea9b3f43db430e1c035da7c50bb6c805898a9cc22fb52de5",
+            "md5": "973b8d7684d2706e5de8004ebc77cbae",
+            "size": 22067009,
+            "timestamp": 1732744822961
+          },
+          "after": {
+            "conda": "https://conda.anaconda.org/conda-forge/osx-arm64/polars-1.16.0-py313hc743ca1_0.conda",
+            "sha256": "3399486531d533fdd97bc1a66f731265cf4e91df58b346835a46d052a607a4cc",
+            "md5": "55faee34c0290e119c9626244a60c99a",
+            "timestamp": 1732916138990,
+            "size": 22102382,
+            "arch": "arm64",
+            "platform": "osx"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
+          "name": "my-package",
+          "before": {
+            "conda": "https://conda.anaconda.org/conda-forge/osx-arm64/my-package-1.16.0-py313hc743ca1_0.conda"
+          },
+          "after": {
+            "conda": "https://conda.anaconda.org/conda-forge/osx-arm64/my-package-1.16.0-py313hc743ca1_1.conda"
+          },
+          "type": "conda",
+          "explicit": true
+        }
+      ],
+      "linux-64": [
+        {
+          "name": "pkg",
+          "before": {
+            "conda": "https://artifactory.corp.com/artifactory/conda/noarch/pkg-0.23.0-gcc70d65.conda"
+          },
+          "after": {
+            "conda": "https://conda.registry.hosted.com/prod/noarch/pkg-0.23.0-gcc70d65.conda"
+          },
+          "type": "conda",
+          "explicit": true
+        }
+      ]
+    }
+  }
+}
