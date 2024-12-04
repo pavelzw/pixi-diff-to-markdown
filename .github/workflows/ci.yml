@@ -23,6 +23,8 @@ jobs:
           environments: default lint
       - name: pre-commit
         run: pixi run pre-commit-run --color=always --show-diff-on-failure
+      - name: Check pyproject.toml dependencies
+        run: ./.github/scripts/check-deps.sh
 
   pytest:
     timeout-minutes: 30
