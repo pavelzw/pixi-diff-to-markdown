@@ -59,7 +59,9 @@ class PackageInformation(pydantic.BaseModel):
                 assert isinstance(build, str)
                 version = data.get("version", "0.0.0")
                 assert isinstance(version, str)
-                data["conda"] = f"https://url/to/channel/subdir/placeholder-{version}-{build}.conda"
+                data["conda"] = (
+                    f"https://url/to/channel/subdir/placeholder-{version}-{build}.conda"
+                )
         return data
 
     def _conda_package_name(self):
@@ -94,7 +96,15 @@ class UpdateSpec(pydantic.BaseModel):
         Two elements where the versions are the same but the hashes aren't should be considered the same.
         Thus, don't include before and after in the hash but only `self.change_type` and `self.before_after_str`.
         """
-        return hash((self.name, self.explicit, self.type, self.change_type, *self.before_after_str()))
+        return hash(
+            (
+                self.name,
+                self.explicit,
+                self.type,
+                self.change_type,
+                *self.before_after_str(),
+            )
+        )
 
     @field_validator("explicit", mode="before")
     @classmethod
