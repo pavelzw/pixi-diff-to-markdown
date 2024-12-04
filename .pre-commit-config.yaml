@@ -38,6 +38,7 @@ repos:
         language: system
         types: [text]
         files: \.(md|yml|yaml)$
+        exclude: ^tests/resources/
       # taplo
       - id: taplo
         name: taplo

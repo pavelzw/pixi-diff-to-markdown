@@ -30,13 +30,13 @@ pixi update --no-install --json | pixi exec pixi-diff-to-markdown > diff.md
 
 Example output:
 
-| Dependency | Before | After | Change |
-| - | - | - | - |
-| **new-package** |  | 0.10.1 | Added |
-| **removed-package** | 0.10.1 |  | Removed |
-| **bpy** | 0.10.1 | 2.10.1 | Major Upgrade |
-| **polars** | herads_0 | herads_1 | Only build string |
-| python | 0.10.0 | 0.10.1 | Patch Upgrade |
+| Dependency          | Before   | After    | Change            |
+| ------------------- | -------- | -------- | ----------------- |
+| **new-package**     |          | 0.10.1   | Added             |
+| **removed-package** | 0.10.1   |          | Removed           |
+| **bpy**             | 0.10.1   | 2.10.1   | Major Upgrade     |
+| **polars**          | herads_0 | herads_1 | Only build string |
+| python              | 0.10.0   | 0.10.1   | Patch Upgrade     |
 
 > [!TIP]
 > The sorting of the tables is done by explicit/implicit, change type and alphabetically.
@@ -98,7 +98,7 @@ Whether to enable the `Change` column in the output ([example true](./tests/reso
 Whether to enable the `Explicit` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-True_package-type-False.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 If a dependency is explicitly defined in `pixi.toml`, it will be marked as `Explicit`. Otherwise, it will be marked as `Implicit`.
 
-If this is set to `false`, the `Explicit` column will be omitted and the explicitly defined dependencies will be marked as *cursive*.
+If this is set to `false`, the `Explicit` column will be omitted and the explicitly defined dependencies will be marked as _cursive_.
 
 ### `package-type-column`
 
