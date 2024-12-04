@@ -5,11 +5,18 @@ from typing import Annotated, Optional
 
 import typer
 
+from pixi_diff_to_markdown import __version__
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import Diff
 from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 app = typer.Typer()
+
+
+def version_callback(value: bool):
+    if value:
+        typer.echo(f"pixi-diff-to-markdown {__version__}")
+        raise typer.Exit()
 
 
 @app.command(
@@ -44,6 +51,13 @@ def main(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),
     ] = None,
+    version: bool = typer.Option(
+        None,
+        "--version",
+        help="Display the version of pixi-diff-to-markdown.",
+        callback=version_callback,
+        is_eager=True,
+    ),
 ):
     data = "".join(stdin.readlines())
     data_parsed = Diff.model_validate_json(data)
