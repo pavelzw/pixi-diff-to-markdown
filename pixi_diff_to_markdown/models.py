@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum
 from itertools import zip_longest
-from typing import Self
+from typing import Any
 
 import pydantic
 from ordered_enum import OrderedEnum
@@ -44,19 +44,38 @@ class PackageType(Enum):
 
 
 class PackageInformation(pydantic.BaseModel):
-    version: str | None = None
-    build: str | None = None
+    conda: str
 
-    def __hash__(self):
-        return hash((self.version, self.build))
+    @model_validator(mode="before")
+    @classmethod
+    def transform_before(cls, data: Any) -> Any:
+        # backwards compatibility for lockfile <v6 (pixi <0.39.0)
+        # before v6, the build and version were stored explicitly in the lockfile
+        # after v6, the build and version are stored implicitly in the conda url
+        if isinstance(data, dict):
+            conda = data.get("conda")
+            if not conda:
+                build = data.get("build", "placeholder_0")
+                assert isinstance(build, str)
+                version = data.get("version", "0.0.0")
+                assert isinstance(version, str)
+                data["conda"] = (
+                    f"https://url/to/channel/subdir/placeholder-{version}-{build}.conda"
+                )
+        return data
 
-    # two elements where the versions are the same but the hashes aren't should be considered the same
-    # thus, only include the build string if the version is not set (i.e. no version update)
-    @model_validator(mode="after")
-    def transform(self) -> Self:
-        if self.version is not None:
-            self.build = None
-        return self
+    def _conda_package_name(self):
+        return self.conda.split("/")[-1].removesuffix(".tar.bz2").removesuffix(".conda")
+
+    @computed_field  # type: ignore[misc]
+    @property
+    def build(self) -> str:
+        return self._conda_package_name().split("-")[-1]
+
+    @computed_field  # type: ignore[misc]
+    @property
+    def version(self) -> str:
+        return self._conda_package_name().split("-")[-2]
 
 
 class UpdateSpec(pydantic.BaseModel):
@@ -68,6 +87,24 @@ class UpdateSpec(pydantic.BaseModel):
     explicit: DependencyType = DependencyType.IMPLICIT
 
     model_config = ConfigDict(frozen=True)
+
+    def __eq__(self, other):
+        return isinstance(other, UpdateSpec) and hash(self) == hash(other)
+
+    def __hash__(self):
+        """
+        Two elements where the versions are the same but the hashes aren't should be considered the same.
+        Thus, don't include before and after in the hash but only `self.change_type` and `self.before_after_str`.
+        """
+        return hash(
+            (
+                self.name,
+                self.explicit,
+                self.type,
+                self.change_type,
+                *self.before_after_str(),
+            )
+        )
 
     @field_validator("explicit", mode="before")
     @classmethod
@@ -94,14 +131,12 @@ class UpdateSpec(pydantic.BaseModel):
         if self.after is None:
             assert self.before is not None
             return ChangeType.REMOVED
-        if self.before.version is None:
-            assert self.after.version is None
-            assert self.before.build is not None
-            assert self.after.build is not None
+        if self.before.version == self.after.version:
+            if self.before.build == self.after.build:
+                # this can happen when only the URL to the package changes
+                return ChangeType.OTHER
             return ChangeType.BUILD
 
-        assert self.after.version is not None
-        assert self.before.version != self.after.version
         old_version = Version(self.before.version)
         new_version = Version(self.after.version)
 
