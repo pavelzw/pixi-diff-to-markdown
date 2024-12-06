@@ -71,13 +71,11 @@ class PackageInformation(pydantic.BaseModel):
             data["pypi_version"] = data["version"]
         return data
 
-
     @model_validator(mode="after")
     def validate_after(self) -> Self:
         assert self.conda is not None or self.pypi is not None
         assert (self.pypi is None) == (self.pypi_version is None)
         return self
-
 
     def _conda_package_name(self) -> str:
         assert self.conda is not None
@@ -262,10 +260,13 @@ class TableRow:
                     "robostack-humble",
                     "robostack-staging",
                 ]:
-                    if after_url.startswith(f"https://conda.anaconda.org/{public_channel}"):
+                    if after_url.startswith(
+                        f"https://conda.anaconda.org/{public_channel}"
+                    ):
                         package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{public_channel}/packages/{self.update_spec.name})"
                         break
             else:
+                assert self.update_spec.after.pypi is not None
                 after_url = self.update_spec.after.pypi
                 assert after_url is not None
                 if after_url.startswith("https://files.pythonhosted.org/packages"):
