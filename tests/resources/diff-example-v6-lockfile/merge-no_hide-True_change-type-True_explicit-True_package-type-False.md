@@ -5,8 +5,9 @@
 
 |Dependency|Before|After|Change|Explicit|
 |-|-|-|-|-|
+|[setuptools](https://pypi.org/project/setuptools)|74.1.3|75.6.0|Major Upgrade|true|
 |[polars](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|Minor Upgrade|true|
-|[my-package](https://prefix.dev/channels/conda-forge/packages/my-package)|py313hc743ca1_0|py313hc743ca1_1|Only build string|true|
+|my-package|py313hc743ca1_0|py313hc743ca1_1|Only build string|true|
 
 </details>
 

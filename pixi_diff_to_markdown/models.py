@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum
 from itertools import zip_longest
-from typing import Any
+from typing import Any, Self
 
 import pydantic
 from ordered_enum import OrderedEnum
@@ -45,6 +45,9 @@ class PackageType(Enum):
 
 class PackageInformation(pydantic.BaseModel):
     conda: str | None = None
+    pypi: str | None = None
+    # called version in the lockfile, only used for pypi packages
+    pypi_version: str | None = None
 
     @model_validator(mode="before")
     @classmethod
@@ -52,29 +55,47 @@ class PackageInformation(pydantic.BaseModel):
         # backwards compatibility for lockfile <v6 (pixi <0.39.0)
         # before v6, the build and version were stored explicitly in the lockfile
         # after v6, the build and version are stored implicitly in the conda url
-        if isinstance(data, dict):
-            conda = data.get("conda")
-            if not conda:
-                build = data.get("build", "placeholder_0")
-                assert isinstance(build, str)
-                version = data.get("version", "0.0.0")
-                assert isinstance(version, str)
-                data["conda"] = (
-                    f"https://url/to/channel/subdir/placeholder-{version}-{build}.conda"
-                )
+        assert isinstance(data, dict)
+        if "conda" not in data and "pypi" not in data:
+            # this maps all old lockfiles to conda packages, not pretty but should be fine
+            build = data.get("build", "placeholder_0")
+            assert isinstance(build, str)
+            version = data.get("version", "0.0.0")
+            assert isinstance(version, str)
+            data["conda"] = (
+                f"https://url/to/channel/subdir/placeholder-{version}-{build}.conda"
+            )
+
+        if "pypi" in data:
+            assert "version" in data
+            data["pypi_version"] = data["version"]
         return data
 
-    def _conda_package_name(self):
+
+    @model_validator(mode="after")
+    def validate_after(self) -> Self:
+        assert self.conda is not None or self.pypi is not None
+        assert (self.pypi is None) == (self.pypi_version is None)
+        return self
+
+
+    def _conda_package_name(self) -> str:
+        assert self.conda is not None
         return self.conda.split("/")[-1].removesuffix(".tar.bz2").removesuffix(".conda")
 
     @computed_field  # type: ignore[misc]
     @property
-    def build(self) -> str:
+    def build(self) -> str | None:
+        if self.conda is None:
+            return None
         return self._conda_package_name().split("-")[-1]
 
     @computed_field  # type: ignore[misc]
     @property
     def version(self) -> str:
+        if self.conda is None:
+            assert self.pypi_version is not None
+            return self.pypi_version
         return self._conda_package_name().split("-")[-2]
 
 
@@ -229,21 +250,26 @@ class TableRow:
         if (
             settings.create_links_for_public_channels
             and self.update_spec.after is not None
-            and self.update_spec.after.conda is not None
         ):
-            after_url = self.update_spec.after.conda
-            for public_channel in [
-                "conda-forge",
-                "bioconda",
-                "nvidia",
-                "rapidsai",
-                "robostack",
-                "robostack-humble",
-                "robostack-staging",
-            ]:
-                if after_url.startswith(f"https://conda.anaconda.org/{public_channel}"):
-                    package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{public_channel}/packages/{self.update_spec.name})"
-                    break
+            if self.update_spec.after.conda is not None:
+                after_url = self.update_spec.after.conda
+                for public_channel in [
+                    "conda-forge",
+                    "bioconda",
+                    "nvidia",
+                    "rapidsai",
+                    "robostack",
+                    "robostack-humble",
+                    "robostack-staging",
+                ]:
+                    if after_url.startswith(f"https://conda.anaconda.org/{public_channel}"):
+                        package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{public_channel}/packages/{self.update_spec.name})"
+                        break
+            else:
+                after_url = self.update_spec.after.pypi
+                assert after_url is not None
+                if after_url.startswith("https://files.pythonhosted.org/packages"):
+                    package_name_formatted = f"[{package_name_formatted}](https://pypi.org/project/{self.update_spec.name})"
         columns.extend(
             [
                 package_name_formatted + maybe_downgrade_ref,
