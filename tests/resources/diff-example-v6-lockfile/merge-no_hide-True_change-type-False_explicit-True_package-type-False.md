@@ -5,8 +5,8 @@
 
 |Dependency|Before|After|Explicit|
 |-|-|-|-|
-|polars|1.15.0|1.16.0|true|
-|my-package|py313hc743ca1_0|py313hc743ca1_1|true|
+|[polars](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|true|
+|[my-package](https://prefix.dev/channels/conda-forge/packages/my-package)|py313hc743ca1_0|py313hc743ca1_1|true|
 
 </details>
 

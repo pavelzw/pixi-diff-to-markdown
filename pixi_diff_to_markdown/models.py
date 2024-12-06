@@ -44,7 +44,7 @@ class PackageType(Enum):
 
 
 class PackageInformation(pydantic.BaseModel):
-    conda: str
+    conda: str | None = None
 
     @model_validator(mode="before")
     @classmethod
@@ -226,6 +226,24 @@ class TableRow:
             package_name_formatted = f"**{self.update_spec.name}**"
         else:
             package_name_formatted = self.update_spec.name
+        if (
+            settings.create_links_for_public_channels
+            and self.update_spec.after is not None
+            and self.update_spec.after.conda is not None
+        ):
+            after_url = self.update_spec.after.conda
+            for public_channel in [
+                "conda-forge",
+                "bioconda",
+                "nvidia",
+                "rapidsai",
+                "robostack",
+                "robostack-humble",
+                "robostack-staging",
+            ]:
+                if after_url.startswith(f"https://conda.anaconda.org/{public_channel}"):
+                    package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{public_channel}/packages/{self.update_spec.name})"
+                    break
         columns.extend(
             [
                 package_name_formatted + maybe_downgrade_ref,

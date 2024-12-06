@@ -2,9 +2,9 @@
 
 |Dependency|Before|After|Change|Explicit|Package|Environments|
 |-|-|-|-|-|-|-|
-|polars|1.15.0|1.16.0|Minor Upgrade|true|conda|*all envs* on osx-arm64|
+|[polars](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|Minor Upgrade|true|conda|*all envs* on osx-arm64|
 |pkg|0.23.0|0.23.0|Other|true|conda|*all envs* on linux-64|
-|my-package|py313hc743ca1_0|py313hc743ca1_1|Only build string|true|conda|*all envs* on osx-arm64|
+|[my-package](https://prefix.dev/channels/conda-forge/packages/my-package)|py313hc743ca1_0|py313hc743ca1_1|Only build string|true|conda|*all envs* on osx-arm64|
 
 # Implicit dependencies
 

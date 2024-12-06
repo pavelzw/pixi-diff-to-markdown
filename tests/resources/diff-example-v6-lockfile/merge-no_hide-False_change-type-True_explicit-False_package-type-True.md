@@ -4,8 +4,8 @@
 
 |Dependency[^1]|Before|After|Change|Package|
 |-|-|-|-|-|
-|**polars**|1.15.0|1.16.0|Minor Upgrade|conda|
-|**my-package**|py313hc743ca1_0|py313hc743ca1_1|Only build string|conda|
+|[**polars**](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|Minor Upgrade|conda|
+|[**my-package**](https://prefix.dev/channels/conda-forge/packages/my-package)|py313hc743ca1_0|py313hc743ca1_1|Only build string|conda|
 
 ## linux-64
 
