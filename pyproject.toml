@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pixi-diff-to-markdown"
-version = "0.2.5"
+version = "0.2.6"
 description = "Tool for converting `pixi update` diffs to markdown"
 authors = [{ name = "Pavel Zwerschke", email = "pavelzw@gmail.com" }]
 classifiers = [
