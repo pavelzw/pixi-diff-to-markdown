@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     explicit_column: bool = False
     merge_dependencies: MergeDependencies
     hide_tables: bool = False
+    create_links_for_packages: bool = True
 
     def __init__(
         self, inferred_merge_dependencies: MergeDependencies | None = None, **data

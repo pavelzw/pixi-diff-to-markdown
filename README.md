@@ -30,13 +30,13 @@ pixi update --no-install --json | pixi exec pixi-diff-to-markdown > diff.md
 
 Example output:
 
-| Dependency          | Before   | After    | Change            |
-| ------------------- | -------- | -------- | ----------------- |
-| **new-package**     |          | 0.10.1   | Added             |
-| **removed-package** | 0.10.1   |          | Removed           |
-| **bpy**             | 0.10.1   | 2.10.1   | Major Upgrade     |
-| **polars**          | herads_0 | herads_1 | Only build string |
-| python              | 0.10.0   | 0.10.1   | Patch Upgrade     |
+| Dependency                                                            | Before   | After    | Change            |
+| --------------------------------------------------------------------- | -------- | -------- | ----------------- |
+| **new-package**                                                       |          | 0.10.1   | Added             |
+| **removed-package**                                                   | 0.10.1   |          | Removed           |
+| **bpy**                                                               | 0.10.1   | 2.10.1   | Major Upgrade     |
+| [**polars**](https://prefix.dev/channels/conda-forge/packages/polars) | herads_0 | herads_1 | Only build string |
+| python                                                                | 0.10.0   | 0.10.1   | Patch Upgrade     |
 
 > [!TIP]
 > The sorting of the tables is done by explicit/implicit, change type and alphabetically.
@@ -65,6 +65,7 @@ hide = false
 change-type-column = true
 explicit-column = false
 package-type-column = false
+create-links-for-packages = true
 ```
 
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
@@ -104,3 +105,8 @@ If this is set to `false`, the `Explicit` column will be omitted and the explici
 
 Whether to enable the `Package Type` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-True.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 This column will show whether the dependency is a `conda` or `pypi` package.
+
+### `create-links-for-packages`
+
+Whether to create links for packages from public channels (i.e., `conda-forge` or `bioconda`, etc.) or channels on [prefix.dev](https://prefix.dev) ([example](./tests/resources/diff-example-v6-lockfile/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
+Defaults to `true`.
