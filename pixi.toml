@@ -8,13 +8,13 @@ postinstall = "pip install --no-build-isolation --no-deps --disable-pip-version-
 pixi-diff-to-markdown = "pixi-diff-to-markdown"
 
 [dependencies]
-python = ">=3.12"
-pydantic = ">=2.10.2,<3"
-py-rattler = ">=0.8.2,<0.9"
+python = ">=3.13"
+pydantic = ">=2.10.5,<3"
+py-rattler = ">=0.9.0,<0.10"
 ordered_enum = ">=0.0.9,<0.0.10"
-typer = ">=0.15.0,<0.16"
-pydantic-settings = ">=2.6.1,<3"
-more-itertools = ">=10.5.0,<11"
+typer = ">=0.15.1,<0.16"
+pydantic-settings = ">=2.7.1,<3"
+more-itertools = ">=10.6.0,<11"
 
 [host-dependencies]
 pip = "*"
@@ -48,11 +48,11 @@ typos = "*"
 pre-commit-install = "pre-commit install"
 pre-commit-run = "pre-commit run -a"
 
-[feature.py312.dependencies]
-python = "3.12.*"
+[feature.py313.dependencies]
+python = "3.13.*"
 
 [environments]
 default = ["test"]
-py312 = ["py312", "test"]
+py313 = ["py313", "test"]
 build = ["build"]
 lint = { features = ["lint"], no-default-feature = true }
