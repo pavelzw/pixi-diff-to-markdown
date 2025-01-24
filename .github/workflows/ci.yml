@@ -33,7 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         environment:
-          - py312
+          - py313
         os:
           - ubuntu-latest
           - macos-latest
