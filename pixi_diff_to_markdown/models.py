@@ -245,10 +245,7 @@ class TableRow:
             package_name_formatted = f"**{self.update_spec.name}**"
         else:
             package_name_formatted = self.update_spec.name
-        if (
-            settings.create_links_for_packages
-            and self.update_spec.after is not None
-        ):
+        if settings.create_links_for_packages and self.update_spec.after is not None:
             if self.update_spec.after.conda is not None:
                 after_url = self.update_spec.after.conda
                 for public_channel in [
