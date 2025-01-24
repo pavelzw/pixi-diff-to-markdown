@@ -36,6 +36,17 @@
           "explicit": true
         },
         {
+          "name": "private-package",
+          "before": {
+            "conda": "https://repo.prefix.dev/setup-pixi-test/noarch/private-package-0.0.1-0.tar.bz2"
+          },
+          "after": {
+            "conda": "https://prefix.dev/setup-pixi-test/noarch/private-package-0.0.1-0.tar.bz2"
+          },
+          "type": "conda",
+          "explicit": true
+        },
+        {
           "name": "setuptools",
           "before": {
             "pypi": "https://files.pythonhosted.org/packages/14/37/166aba5a70924e574eb0aec9f7ec227ac0d7ae72dd2f823675365172120d/setuptools-74.1.3-py3-none-any.whl",

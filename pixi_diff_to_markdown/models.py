@@ -265,6 +265,13 @@ class TableRow:
                     ):
                         package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{public_channel}/packages/{self.update_spec.name})"
                         break
+                if (
+                    after_url.startswith("https://prefix.dev/")
+                    or after_url.startswith("https://repo.prefix.dev/")
+                    or after_url.startswith("https://fast.prefix.dev/")
+                ):
+                    channel_name = after_url.split("/")[3]
+                    package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{channel_name}/packages/{self.update_spec.name})"
             else:
                 assert self.update_spec.after.pypi is not None
                 after_url = self.update_spec.after.pypi
