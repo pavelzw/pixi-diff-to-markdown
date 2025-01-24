@@ -65,6 +65,7 @@ hide = false
 change-type-column = true
 explicit-column = false
 package-type-column = false
+create-links-for-packages = true
 ```
 
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
@@ -105,7 +106,7 @@ If this is set to `false`, the `Explicit` column will be omitted and the explici
 Whether to enable the `Package Type` column in the output ([example true](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-True.md), [example false](./tests/resources/diff-example/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 This column will show whether the dependency is a `conda` or `pypi` package.
 
-### `create-links-for-public-channels`
+### `create-links-for-packages`
 
-Whether to create links for packages from public channels (i.e., `conda-forge` or `bioconda`, etc.) ([example true](TODO), [example false](TODO)).
+Whether to create links for packages from public channels (i.e., `conda-forge` or `bioconda`, etc.) or channels on [prefix.dev](https://prefix.dev) ([example](./tests/resources/diff-example-v6-lockfile/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 Defaults to `true`.

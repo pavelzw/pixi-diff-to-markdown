@@ -51,10 +51,10 @@ def main(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),
     ] = None,
-    create_links_for_public_channels: Annotated[
+    create_links_for_packages: Annotated[
         Optional[bool],
         typer.Option(
-            help="Create links for public channels like conda-forge.",
+            help="Create links for packages.",
             show_default=False,
         ),
     ] = None,
@@ -86,7 +86,7 @@ def main(
         "explicit-column": explicit_column,
         "merge-dependencies": merge_dependencies,
         "hide-tables": hide_tables,
-        "create-links-for-public-channels": create_links_for_public_channels,
+        "create-links-for-packages": create_links_for_packages,
         "inferred_merge_dependencies": MergeDependencies.split_explicit
         if num_environments > 2
         else MergeDependencies.no,
