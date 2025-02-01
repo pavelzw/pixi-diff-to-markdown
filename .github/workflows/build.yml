@@ -24,11 +24,11 @@ jobs:
       - name: Check package
         run: pixi run -e build check-wheel
       - name: Upload package
-        uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5.0
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: artifact
           path: dist/*
-      - uses: Quantco/ui-actions/version-metadata@8c5c674fd27fb05a436387a14e98b386e0a01d78 # v1.0.17
+      - uses: Quantco/ui-actions/version-metadata@cd71d2a0e30b25569f6d723e57acca83347e58fc # v1.0.18
         id: version-metadata
         with:
           file: ./pyproject.toml
@@ -50,13 +50,13 @@ jobs:
           name: artifact
           path: dist
       - name: Publish package on TestPyPi
-        uses: pypa/gh-action-pypi-publish@67339c736fd9354cd4f8cb0b744f2b82a74b5c70 # v1.12.3
+        uses: pypa/gh-action-pypi-publish@76f52bc884231f62b9a034ebfe128415bbaabdfc # v1.12.4
         with:
           repository-url: https://test.pypi.org/legacy/
           # https://github.com/pypa/gh-action-pypi-publish/issues/283
           attestations: false
       - name: Publish package on PyPi
-        uses: pypa/gh-action-pypi-publish@67339c736fd9354cd4f8cb0b744f2b82a74b5c70 # v1.12.3
+        uses: pypa/gh-action-pypi-publish@76f52bc884231f62b9a034ebfe128415bbaabdfc # v1.12.4
         with:
           # https://github.com/pypa/gh-action-pypi-publish/issues/283
           attestations: false
@@ -66,7 +66,7 @@ jobs:
           git tag v${{ needs.build.outputs.new-version }}
           git push origin v${{ needs.build.outputs.new-version }}
       - name: Create release
-        uses: softprops/action-gh-release@7b4da11513bf3f43f9999e90eabced41ab8bb048 # v2.2.0
+        uses: softprops/action-gh-release@c95fe1489396fe8a9eb87c0abf8aa5b2ef267fda # v2.2.1
         with:
           generate_release_notes: true
           tag_name: v${{ needs.build.outputs.new-version }}
