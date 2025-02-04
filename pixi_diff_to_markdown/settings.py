@@ -17,6 +17,11 @@ class MergeDependencies(str, Enum):
     split_explicit = "split-explicit"
 
 
+class HideTables(str, Enum):
+    never = False
+    always = True
+
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         # pixi.toml has higher priority if it exists

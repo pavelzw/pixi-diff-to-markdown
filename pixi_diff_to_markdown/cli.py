@@ -3,68 +3,56 @@ from functools import reduce
 from sys import stdin
 from typing import Annotated, Optional
 
-import typer
+import cyclopts
 
 from pixi_diff_to_markdown import __version__
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import Diff
-from pixi_diff_to_markdown.settings import MergeDependencies, Settings
+from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settings
 
-app = typer.Typer()
-
-
-def version_callback(value: bool):
-    if value:
-        typer.echo(f"pixi-diff-to-markdown {__version__}")
-        raise typer.Exit()
-
-
-@app.command(
-    help="Convert `pixi update --json` diff to markdown. Reads from stdin and writes to stdout: `pixi --json | pixi diff-to-markdown > output.md`"
+app = cyclopts.App(
+    version=f"pixi-diff-to-markdown {__version__}",
+    help="Convert `pixi update --json` diff to markdown. Reads from stdin and writes to stdout: `pixi --json | pixi diff-to-markdown > output.md`",
 )
+
+
+@app.default
 def main(
     change_type_column: Annotated[
         Optional[bool],
-        typer.Option(help="Enable the change type column.", show_default=False),
+        cyclopts.Parameter(help="Enable the change type column.", show_default=False),
     ] = None,
     package_type_column: Annotated[
         Optional[bool],
-        typer.Option(
+        cyclopts.Parameter(
             help="Enable the package type (conda/pypi) column.", show_default=False
         ),
     ] = None,
     explicit_column: Annotated[
         Optional[bool],
-        typer.Option(
+        cyclopts.Parameter(
             help="Enable the explicit (explicit/implicit) column.", show_default=False
         ),
     ] = None,
     merge_dependencies: Annotated[
         Optional[MergeDependencies],
-        typer.Option(
+        cyclopts.Parameter(
             help="Whether or not to merge all updates in one table.", show_default=False
         ),
     ] = None,
     hide_tables: Annotated[
-        Optional[bool | int],
-        typer.Option(
-            help="Whether to hide tables in a collapsible element.", show_default=False
+        Optional[HideTables | int],
+        cyclopts.Parameter(
+            help="When to hide tables in a collapsible element.", show_default=True
         ),
-    ] = None,
+    ] = 10,
     create_links_for_packages: Annotated[
         Optional[bool],
-        typer.Option(
+        cyclopts.Parameter(
             help="Create links for packages.",
             show_default=False,
         ),
     ] = None,
-    version: bool = typer.Option(
-        None,
-        "--version",
-        help="Display the version of pixi-diff-to-markdown.",
-        callback=version_callback,
-        is_eager=True,
-    ),
 ):
     data = "".join(stdin.readlines())
     data_parsed = Diff.model_validate_json(data)
