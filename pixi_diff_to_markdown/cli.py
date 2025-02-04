@@ -46,7 +46,7 @@ def main(
         ),
     ] = None,
     hide_tables: Annotated[
-        Optional[bool],
+        Optional[bool | int],
         typer.Option(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),

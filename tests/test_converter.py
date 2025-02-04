@@ -22,7 +22,7 @@ from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 @pytest.mark.parametrize("package_type_column", [True, False])
 @pytest.mark.parametrize("explicit_column", [True, False])
 @pytest.mark.parametrize("merge_dependencies", MergeDependencies.__members__.values())
-@pytest.mark.parametrize("hide_tables", [True, False])
+@pytest.mark.parametrize("hide_tables", [True, False, 3])
 def test_generate_table(
     diff_file: str,
     change_type_column: bool,

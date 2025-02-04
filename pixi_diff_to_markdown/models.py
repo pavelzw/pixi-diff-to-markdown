@@ -331,6 +331,9 @@ class DependencyTable:
 class Dependencies(pydantic.RootModel):
     root: list[UpdateSpec]
 
+    def __len__(self):
+        return len(self.root)
+
     def to_table(self) -> DependencyTable:
         rows: list[TableRow] = []
         for update_spec in self.root:

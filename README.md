@@ -88,7 +88,8 @@ The default is `no` when there are less than three environments / platforms and 
 
 ### `hide`
 
-Whether to hide the tables in a collapsible object ([example 1 true](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md), [example 2 true](./tests/resources/diff-example/merge-split-explicit_hide-True_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md))
+Whether to hide the tables in a collapsible object ([example 1 true](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md), [example 2 true](./tests/resources/diff-example/merge-split-explicit_hide-True_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
+If this is set to an integer `n`, all tables will be hidden in collapsible objects, but those with fewer than `n` dependencies will be expanded by default.
 
 ### `change-type-column`
 
