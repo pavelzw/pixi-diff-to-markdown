@@ -127,12 +127,22 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
 
 
 def generate_table_merge_all(data: Environments, settings: Settings) -> str:
+    max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
     rows = [
         TableRow(update_spec, updated_environments=updated_envs_str)
         for update_spec, updated_envs_str in get_sorted_update_specs(data)
     ]
     dependency_table = DependencyTable(rows, use_updated_environment_column=True)
     table_str = dependency_table.to_string(settings)
+    if settings.hide_tables is not False:
+        table_str = "\n".join(
+            [
+                f"<details{' open' if len(rows) <= max_expanded_rows else ''}>",
+                "<summary>Dependencies</summary>",
+                table_str,
+                "</details>",
+            ]
+        )
     footnote = generate_footnotes()
     return table_str + "\n\n" + footnote
 
@@ -146,6 +156,7 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
     update_specs_implicit = filter(
         lambda x: x[0].explicit == DependencyType.IMPLICIT, sorted_update_specs
     )
+    max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
 
     lines = []
     if settings.hide_tables is not False:
@@ -160,7 +171,6 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
             for update_spec, updated_envs_str in update_specs
         ]
         dependency_table = DependencyTable(rows, use_updated_environment_column=True)
-        max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
         table_str = dependency_table.to_string(settings)
         if settings.hide_tables is not False:
             lines.append(
