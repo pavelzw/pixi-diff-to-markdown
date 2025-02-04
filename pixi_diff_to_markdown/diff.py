@@ -9,7 +9,7 @@ from pixi_diff_to_markdown.models import (
     UpdatedEnvironments,
     UpdateSpec,
 )
-from pixi_diff_to_markdown.settings import MergeDependencies, Settings
+from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settings
 
 
 def generate_output(data: Environments, settings: Settings) -> str:
@@ -30,16 +30,28 @@ def generate_footnotes() -> str:
 """
 
 
+def details_opener(open: bool) -> str:
+    return "<details open>" if open else "<details>"
+
+
 def generate_table_no_merge(data: Environments, settings: Settings) -> str:
-    max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
+    longest_table = max(
+        len(dependencies)
+        for platforms in data.root.values()
+        for dependencies in platforms.root.values()
+    )
+    collapsible_tables = settings.hide_tables == HideTables.yes or (
+        settings.hide_tables == HideTables.auto
+        and longest_table > settings.max_expanded_rows
+    )
     lines = []
     for environment, platforms in data.root.items():
         lines.append(f"# {environment}")
         lines.append("")
         for platform, dependencies in platforms.root.items():
-            if settings.hide_tables is not False:
+            if collapsible_tables:
                 lines.append(
-                    f"<details{' open' if len(dependencies) <= max_expanded_rows else ''}>"
+                    details_opener(len(dependencies) <= settings.max_expanded_rows),
                 )
                 lines.append(f"<summary>{platform}</summary>")
             else:
@@ -47,7 +59,7 @@ def generate_table_no_merge(data: Environments, settings: Settings) -> str:
             lines.append("")
             dependency_table = dependencies.to_table()
             lines.append(dependency_table.to_string(settings))
-            if settings.hide_tables is not False:
+            if collapsible_tables:
                 lines.append("")
                 lines.append("</details>")
             lines.append("")
@@ -127,17 +139,19 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
 
 
 def generate_table_merge_all(data: Environments, settings: Settings) -> str:
-    max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
     rows = [
         TableRow(update_spec, updated_environments=updated_envs_str)
         for update_spec, updated_envs_str in get_sorted_update_specs(data)
     ]
     dependency_table = DependencyTable(rows, use_updated_environment_column=True)
     table_str = dependency_table.to_string(settings)
-    if settings.hide_tables is not False:
+    if settings.hide_tables == HideTables.yes or (
+        settings.hide_tables == HideTables.auto
+        and len(rows) > settings.max_expanded_rows
+    ):
         table_str = "\n".join(
             [
-                f"<details{' open' if len(rows) <= max_expanded_rows else ''}>",
+                details_opener(len(rows) <= settings.max_expanded_rows),
                 "<summary>Dependencies</summary>",
                 "",
                 table_str,
@@ -152,16 +166,20 @@ def generate_table_merge_all(data: Environments, settings: Settings) -> str:
 def generate_table_split_explicit(data: Environments, settings: Settings) -> str:
     # TODO: ordereddict
     sorted_update_specs = get_sorted_update_specs(data)
-    update_specs_explicit = filter(
-        lambda x: x[0].explicit == DependencyType.EXPLICIT, sorted_update_specs
+    update_specs_explicit = list(
+        filter(lambda x: x[0].explicit == DependencyType.EXPLICIT, sorted_update_specs)
     )
-    update_specs_implicit = filter(
-        lambda x: x[0].explicit == DependencyType.IMPLICIT, sorted_update_specs
+    update_specs_implicit = list(
+        filter(lambda x: x[0].explicit == DependencyType.IMPLICIT, sorted_update_specs)
     )
-    max_expanded_rows = -1 if settings.hide_tables is True else settings.hide_tables
+    collapsible_tables = settings.hide_tables == HideTables.yes or (
+        settings.hide_tables == HideTables.auto
+        and max(len(update_specs_explicit), len(update_specs_implicit))
+        > settings.max_expanded_rows
+    )
 
     lines = []
-    if settings.hide_tables is not False:
+    if collapsible_tables:
         lines.append("# Dependencies\n")
 
     for dependency_type, update_specs in [
@@ -174,15 +192,15 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
         ]
         dependency_table = DependencyTable(rows, use_updated_environment_column=True)
         table_str = dependency_table.to_string(settings)
-        if settings.hide_tables is not False:
+        if collapsible_tables:
             lines.append(
-                f"<details{' open' if len(rows) <= max_expanded_rows else ''}>"
+                details_opener(len(rows) <= settings.max_expanded_rows),
             )
             lines.append(f"<summary>{dependency_type} dependencies</summary>\n")
         else:
             lines.append(f"# {dependency_type} dependencies\n")
         lines.append(table_str)
-        if settings.hide_tables is not False:
+        if collapsible_tables is not False:
             lines.append("")
             lines.append("</details>")
         lines.append("")

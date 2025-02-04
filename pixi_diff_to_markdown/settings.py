@@ -17,6 +17,12 @@ class MergeDependencies(str, Enum):
     split_explicit = "split-explicit"
 
 
+class HideTables(str, Enum):
+    no = "no"
+    yes = "yes"
+    auto = "auto"
+
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         # pixi.toml has higher priority if it exists
@@ -28,7 +34,8 @@ class Settings(BaseSettings):
     package_type_column: bool = False
     explicit_column: bool = False
     merge_dependencies: MergeDependencies
-    hide_tables: bool | int = False
+    hide_tables: HideTables = HideTables.auto
+    max_expanded_rows: int = 10
     create_links_for_packages: bool = True
 
     def __init__(

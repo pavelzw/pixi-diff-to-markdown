@@ -61,7 +61,8 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 # defaults
 [tool.pixi-diff-to-markdown]
 merge-dependencies = "no" # or "split-explicit" when there are three or more environments / platforms
-hide = false
+hide = "auto"
+max-expanded-rows = 10
 change-type-column = true
 explicit-column = false
 package-type-column = false
@@ -88,8 +89,17 @@ The default is `no` when there are less than three environments / platforms and 
 
 ### `hide`
 
-Whether to hide the tables in a collapsible object ([example 1 true](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md), [example 2 true](./tests/resources/diff-example/merge-split-explicit_hide-True_change-type-True_explicit-False_package-type-False.md), [example false](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
-If this is set to an integer `n`, all tables will be hidden in collapsible objects, but those with fewer than `n` dependencies will be expanded by default.
+Whether to hide the tables in a collapsible object.
+`hide` can be set to one of the following values:
+
+- `no`: Don't hide the tables ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
+- `yes`: Put the tables in collapsible objects ([example](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md)).
+- `auto`: Put the tables in collapsible objects if there are at most `max-expanded-rows` rows in each table.
+
+### `max-expanded-rows`
+
+The maximum amount of rows in a table before it is hidden.
+Defaults to `10`.
 
 ### `change-type-column`
 
