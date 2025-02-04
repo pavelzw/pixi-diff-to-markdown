@@ -1,5 +1,6 @@
 <details>
 <summary>Dependencies</summary>
+
 |Dependency[^1]|Before|After|Environments|
 |-|-|-|-|
 |**new-package**||0.10.1|default on linux-64|
@@ -10,6 +11,7 @@
 |**python**|0.10.0|0.10.1|default on osx-arm64|
 |**polars**|herads_0|herads_1|default on linux-64|
 |python|0.10.0|0.10.1|*all envs* on linux-64|
+
 </details>
 
 [^1]: **Bold** means explicit dependency.

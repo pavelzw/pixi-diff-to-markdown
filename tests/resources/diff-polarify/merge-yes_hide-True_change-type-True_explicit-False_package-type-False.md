@@ -1,5 +1,6 @@
 <details>
 <summary>Dependencies</summary>
+
 |Dependency[^1]|Before|After|Change|Environments|
 |-|-|-|-|-|
 |**pip**|23.3.2|24.0|Major Upgrade|*all envs* on {linux-64, osx-64, win-64}<br/>{lint, pl014, pl015, pl016, pl017, pl018, pl019, pl020, py310, py311, py312, py39} on osx-arm64|
@@ -90,6 +91,7 @@
 |liblapack|21_linux64_openblas|22_linux64_openblas|Only build string|*all envs* on linux-64|
 |libstdcxx-ng|h7e041cc_4|hc0a3c3a_9|Only build string|*all envs* on linux-64|
 |vc|hcf57466_18|h8a93ad2_20|Only build string|*all envs* on win-64|
+
 </details>
 
 [^1]: **Bold** means explicit dependency.

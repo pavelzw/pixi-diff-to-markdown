@@ -139,7 +139,9 @@ def generate_table_merge_all(data: Environments, settings: Settings) -> str:
             [
                 f"<details{' open' if len(rows) <= max_expanded_rows else ''}>",
                 "<summary>Dependencies</summary>",
+                "",
                 table_str,
+                "",
                 "</details>",
             ]
         )
