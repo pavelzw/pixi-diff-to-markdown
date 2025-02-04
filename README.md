@@ -90,7 +90,7 @@ The default is `no` when there are less than three environments / platforms and 
 ### `hide`
 
 Whether to hide the tables in a collapsible object.
-`hide` can be set to one of the following values:
+`hide` can be set to one of the following values (defaults to `auto`):
 
 - `no`: Don't hide the tables ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
 - `yes`: Put the tables in collapsible objects ([example](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md)).
