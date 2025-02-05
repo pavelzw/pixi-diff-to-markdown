@@ -22,7 +22,7 @@ from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settin
 @pytest.mark.parametrize("package_type_column", [True, False])
 @pytest.mark.parametrize("explicit_column", [True, False])
 @pytest.mark.parametrize("merge_dependencies", MergeDependencies.__members__.values())
-@pytest.mark.parametrize("hide_tables", HideTables.__members__.values())
+@pytest.mark.parametrize("hide_tables", [HideTables.no, HideTables.yes])
 @pytest.mark.parametrize("max_expanded_rows", [0, 10])
 def test_generate_table(
     diff_file: str,

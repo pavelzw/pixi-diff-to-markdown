@@ -200,7 +200,7 @@ def generate_table_split_explicit(data: Environments, settings: Settings) -> str
         else:
             lines.append(f"# {dependency_type} dependencies\n")
         lines.append(table_str)
-        if collapsible_tables is not False:
+        if collapsible_tables:
             lines.append("")
             lines.append("</details>")
         lines.append("")
