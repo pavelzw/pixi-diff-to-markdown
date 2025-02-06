@@ -8,7 +8,7 @@ import typer
 from pixi_diff_to_markdown import __version__
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import Diff
-from pixi_diff_to_markdown.settings import MergeDependencies, Settings
+from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settings
 
 app = typer.Typer()
 
@@ -46,9 +46,16 @@ def main(
         ),
     ] = None,
     hide_tables: Annotated[
-        Optional[bool],
+        Optional[HideTables],
         typer.Option(
             help="Whether to hide tables in a collapsible element.", show_default=False
+        ),
+    ] = None,
+    max_expanded_rows: Annotated[
+        Optional[int],
+        typer.Option(
+            help="Expand tables with less than or equal to this number of rows.",
+            show_default=False,
         ),
     ] = None,
     create_links_for_packages: Annotated[
@@ -86,6 +93,7 @@ def main(
         "explicit-column": explicit_column,
         "merge-dependencies": merge_dependencies,
         "hide-tables": hide_tables,
+        "max-expanded-rows": max_expanded_rows,
         "create-links-for-packages": create_links_for_packages,
         "inferred_merge_dependencies": MergeDependencies.split_explicit
         if num_environments > 2

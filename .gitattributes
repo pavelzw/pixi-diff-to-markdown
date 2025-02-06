@@ -1,1 +1,2 @@
-pixi.lock linguist-language=YAML linguist-generated=true
+pixi.lock merge=binary linguist-language=YAML linguist-generated=true
+tests/resources/*/*.md linguist-generated=true
