@@ -69,7 +69,7 @@ class PackageInformation(pydantic.BaseModel):
         if "pypi" in data:
             if data["pypi"].startswith("git+https://"):
                 # in case of a direct git dependency, we don't have a version
-                data["version"] = "#.#.#"
+                data["version"] = "0.0.0"
             assert "version" in data
             data["pypi_version"] = data["version"]
         return data
