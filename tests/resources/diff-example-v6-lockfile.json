@@ -81,7 +81,17 @@
           },
           "type": "conda",
           "explicit": true
-        }
+        },
+        {
+            "name": "microsoft_python_type_stubs",
+            "before": {
+              "pypi": "git+https://github.com/microsoft/python-type-stubs.git#3d1d1d24e5d56e021a7162deba084cd8b299bf7c"
+            },
+            "after": {
+              "pypi": "git+https://github.com/microsoft/python-type-stubs.git#dcb5c8c2a61a2e4653b4becc9f20f6c42858a701"
+            },
+            "type": "pypi"
+          }
       ]
     }
   }
