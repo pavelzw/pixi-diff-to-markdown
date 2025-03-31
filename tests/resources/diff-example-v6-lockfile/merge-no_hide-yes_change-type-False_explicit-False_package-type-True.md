@@ -18,6 +18,7 @@
 |Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**pkg**|0.23.0|0.23.0|conda|
+|microsoft_python_type_stubs|0.0.0|0.0.0|pypi|
 
 </details>
 

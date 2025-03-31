@@ -18,6 +18,7 @@
 |Dependency[^1]|Before|After|
 |-|-|-|
 |**pkg**|0.23.0|0.23.0|
+|microsoft_python_type_stubs|0.0.0|0.0.0|
 
 </details>
 

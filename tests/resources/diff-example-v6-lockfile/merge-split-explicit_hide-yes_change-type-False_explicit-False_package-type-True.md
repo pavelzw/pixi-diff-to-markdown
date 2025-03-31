@@ -18,7 +18,7 @@
 
 |Dependency[^1]|Before|After|Package|Environments|
 |-|-|-|-|-|
-
+|microsoft_python_type_stubs|0.0.0|0.0.0|pypi|*all envs* on linux-64|
 
 </details>
 

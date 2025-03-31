@@ -14,6 +14,7 @@
 |Dependency|Before|After|Change|Explicit|
 |-|-|-|-|-|
 |pkg|0.23.0|0.23.0|Other|true|
+|microsoft_python_type_stubs|0.0.0|0.0.0|Other|false|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
