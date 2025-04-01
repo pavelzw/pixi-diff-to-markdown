@@ -12,7 +12,7 @@
 
 |Dependency[^1]|Before|After|Change|Environments|
 |-|-|-|-|-|
-
+|microsoft_python_type_stubs|none|none|Other|*all envs* on linux-64|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

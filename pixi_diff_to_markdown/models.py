@@ -67,6 +67,9 @@ class PackageInformation(pydantic.BaseModel):
             )
 
         if "pypi" in data:
+            if data["pypi"].startswith("git+https://"):
+                # in case of a git dependency, we don't have a version
+                data["version"] = None
             assert "version" in data
             data["pypi_version"] = data["version"]
         return data
@@ -74,7 +77,8 @@ class PackageInformation(pydantic.BaseModel):
     @model_validator(mode="after")
     def validate_after(self) -> Self:
         assert self.conda is not None or self.pypi is not None
-        assert (self.pypi is None) == (self.pypi_version is None)
+        if self.pypi is None:
+            assert self.pypi_version is None
         return self
 
     def _conda_package_name(self) -> str:
@@ -92,8 +96,8 @@ class PackageInformation(pydantic.BaseModel):
     @property
     def version(self) -> str:
         if self.conda is None:
-            assert self.pypi_version is not None
-            return self.pypi_version
+            # pypi_version can be none for git dependencies
+            return self.pypi_version or "none"
         return self._conda_package_name().split("-")[-2]
 
 
