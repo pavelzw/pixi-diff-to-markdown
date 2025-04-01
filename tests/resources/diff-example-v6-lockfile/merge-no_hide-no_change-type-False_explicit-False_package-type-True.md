@@ -14,7 +14,7 @@
 |Dependency[^1]|Before|After|Package|
 |-|-|-|-|
 |**pkg**|0.23.0|0.23.0|conda|
-|microsoft_python_type_stubs|0.0.0|0.0.0|pypi|
+|microsoft_python_type_stubs|none|none|pypi|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
