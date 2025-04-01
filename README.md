@@ -2,7 +2,8 @@
 
 [![License][license-badge]](LICENSE)
 [![Build Status][build-badge]][build]
-[![conda-forge][conda-forge-badge]][conda-forge]
+[![Conda Platform][conda-badge]][conda-url]
+[![Conda Downloads][conda-downloads-badge]][conda-url]
 [![pypi-version][pypi-badge]][pypi]
 [![python-version][python-version-badge]][pypi]
 [![codecov][codecov-badge]][codecov]
@@ -10,8 +11,9 @@
 [license-badge]: https://img.shields.io/github/license/pavelzw/pixi-diff-to-markdown?style=flat-square
 [build-badge]: https://img.shields.io/github/actions/workflow/status/pavelzw/pixi-diff-to-markdown/ci.yml?style=flat-square&branch=main
 [build]: https://github.com/pavelzw/pixi-diff-to-markdown/actions/
-[conda-forge]: https://prefix.dev/channels/conda-forge/packages/pixi-diff-to-markdown
-[conda-forge-badge]: https://img.shields.io/conda/pn/conda-forge/pixi-diff-to-markdown?style=flat-square&logoColor=white&logo=conda-forge
+[conda-url]: https://prefix.dev/channels/conda-forge/packages/pixi-diff-to-markdown
+[conda-badge]: https://img.shields.io/conda/pn/conda-forge/pixi-diff-to-markdown?style=flat-square&logoColor=white&logo=conda-forge
+[conda-downloads-badge]: https://img.shields.io/conda/dn/conda-forge/pixi-diff-to-markdown?style=flat-square
 [pypi]: https://pypi.org/project/pixi-diff-to-markdown
 [pypi-badge]: https://img.shields.io/pypi/v/pixi-diff-to-markdown.svg?style=flat-square&logo=pypi&logoColor=white
 [python-version-badge]: https://img.shields.io/pypi/pyversions/pixi-diff-to-markdown?style=flat-square&logoColor=white&logo=python
