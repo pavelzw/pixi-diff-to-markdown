@@ -77,6 +77,8 @@ class PackageInformation(pydantic.BaseModel):
     @model_validator(mode="after")
     def validate_after(self) -> Self:
         assert self.conda is not None or self.pypi is not None
+        if self.pypi is None:
+            assert self.pypi_version is None
         return self
 
     def _conda_package_name(self) -> str:
