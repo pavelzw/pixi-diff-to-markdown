@@ -1,5 +1,5 @@
 from pydantic_settings import BaseSettings, TomlConfigSettingsSource
-from pydantic_settings.sources import DEFAULT_PATH, PathType
+from pydantic_settings.sources.types import DEFAULT_PATH, PathType
 
 
 class TomlWithTableHeaderConfigSettingsSource(TomlConfigSettingsSource):
