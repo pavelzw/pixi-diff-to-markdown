@@ -85,14 +85,14 @@ class PackageInformation(pydantic.BaseModel):
         assert self.conda is not None
         return self.conda.split("/")[-1].removesuffix(".tar.bz2").removesuffix(".conda")
 
-    @computed_field  # type: ignore[misc]
+    @computed_field
     @property
     def build(self) -> str | None:
         if self.conda is None:
             return None
         return self._conda_package_name().split("-")[-1]
 
-    @computed_field  # type: ignore[misc]
+    @computed_field
     @property
     def version(self) -> str:
         if self.conda is None:
@@ -145,7 +145,7 @@ class UpdateSpec(pydantic.BaseModel):
             return change_type_self < change_type_other
         return self.name < other.name
 
-    @computed_field  # type: ignore[misc]
+    @computed_field
     @property
     def change_type(self) -> ChangeType:
         if self.before is None:
@@ -169,6 +169,8 @@ class UpdateSpec(pydantic.BaseModel):
         for idx_vers_element_differs, vers_element in enumerate(padded_vers):
             if vers_element[0] != vers_element[1]:
                 break
+        else:
+            assert False, "padded_vars is not empty"
         if old_version > new_version:
             if idx_vers_element_differs == 0:
                 return ChangeType.MAJOR_DOWN
@@ -194,16 +196,16 @@ class UpdateSpec(pydantic.BaseModel):
         after: str | None
         if change_type == ChangeType.ADDED:
             before = ""
-            after = self.after.version  # type: ignore[union-attr]
+            after = self.after.version
         elif change_type == ChangeType.REMOVED:
-            before = self.before.version  # type: ignore[union-attr]
+            before = self.before.version
             after = ""
         elif change_type == ChangeType.BUILD:
-            before = self.before.build  # type: ignore[union-attr]
-            after = self.after.build  # type: ignore[union-attr]
+            before = self.before.build
+            after = self.after.build
         else:
-            before = self.before.version  # type: ignore[union-attr]
-            after = self.after.version  # type: ignore[union-attr]
+            before = self.before.version
+            after = self.after.version
         assert before is not None
         assert after is not None
         return before, after
