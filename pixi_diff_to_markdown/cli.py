@@ -78,7 +78,7 @@ def main(
 
     num_environments = len(data_parsed.environment.root) * len(
         reduce(
-            set.union,  # type: ignore[arg-type]
+            set.union,
             (
                 set(environments.root.keys())
                 for environments in data_parsed.environment.root.values()
