@@ -55,11 +55,6 @@ select = [
 quote-style = "double"
 indent-style = "space"
 
-[tool.mypy]
-python_version = '3.12'
-no_implicit_optional = true
-check_untyped_defs = true
-
 [tool.typos.default.extend-words]
 ba = "ba"
 
