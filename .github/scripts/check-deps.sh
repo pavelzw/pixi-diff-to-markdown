@@ -9,10 +9,6 @@ while read -r package version; do
         continue
     fi
 
-    if [[ $package == "ordered_enum" ]]; then
-        package="ordered-enum"
-    fi
-
     dependency="${package} ${version}"
 
     contains_dependency=$(yq -r ".project.dependencies | map(. == \"${dependency}\") | any" pyproject.toml)
