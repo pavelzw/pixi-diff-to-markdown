@@ -27,8 +27,7 @@ repos:
       # ty
       - id: ty
         name: ty
-        # TODO: remove --python=... once https://github.com/astral-sh/ty/issues/265 is resolved
-        entry: pixi run -e default ty check --python=.pixi/envs/default/bin/python
+        entry: pixi run -e default ty check
         language: system
         types: [python]
         require_serial: true
