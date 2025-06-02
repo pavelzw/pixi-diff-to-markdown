@@ -29,7 +29,9 @@ jobs:
           body-path: diff.md
           branch: update-pixi
           base: main
-          labels: pixi
+          labels: |
+            pixi
+            dependencies
           delete-branch: true
           add-paths: |
             pixi.toml
