@@ -20,7 +20,7 @@ def version_callback(value: bool):
 
 
 @app.command(
-    help="Convert `pixi update --json` diff to markdown. Reads from stdin and writes to stdout: `pixi --json | pixi diff-to-markdown > output.md`"
+    help="Convert `pixi update --json` diff to markdown. Reads from stdin and writes to stdout: `pixi update --json | pixi diff-to-markdown > output.md`."
 )
 def main(
     change_type_column: Annotated[
