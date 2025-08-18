@@ -247,6 +247,7 @@ class TableRow:
         if (
             not settings.explicit_column
             and self.update_spec.explicit == DependencyType.EXPLICIT
+            and not settings.merge_dependencies == MergeDependencies.split_explicit
         ):
             package_name_formatted = f"**{self.update_spec.name}**"
         else:
