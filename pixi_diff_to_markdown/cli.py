@@ -1,7 +1,6 @@
-# ruff: noqa: UP007
 from functools import reduce
 from sys import stdin
-from typing import Annotated, Optional
+from typing import Annotated
 
 import typer
 
@@ -24,42 +23,42 @@ def version_callback(value: bool):
 )
 def main(
     change_type_column: Annotated[
-        Optional[bool],
+        bool | None,
         typer.Option(help="Enable the change type column.", show_default=False),
     ] = None,
     package_type_column: Annotated[
-        Optional[bool],
+        bool | None,
         typer.Option(
             help="Enable the package type (conda/pypi) column.", show_default=False
         ),
     ] = None,
     explicit_column: Annotated[
-        Optional[bool],
+        bool | None,
         typer.Option(
             help="Enable the explicit (explicit/implicit) column.", show_default=False
         ),
     ] = None,
     merge_dependencies: Annotated[
-        Optional[MergeDependencies],
+        MergeDependencies | None,
         typer.Option(
             help="Whether or not to merge all updates in one table.", show_default=False
         ),
     ] = None,
     hide_tables: Annotated[
-        Optional[HideTables],
+        HideTables | None,
         typer.Option(
             help="Whether to hide tables in a collapsible element.", show_default=False
         ),
     ] = None,
     max_expanded_rows: Annotated[
-        Optional[int],
+        int | None,
         typer.Option(
             help="Expand tables with less than or equal to this number of rows.",
             show_default=False,
         ),
     ] = None,
     create_links_for_packages: Annotated[
-        Optional[bool],
+        bool | None,
         typer.Option(
             help="Create links for packages.",
             show_default=False,

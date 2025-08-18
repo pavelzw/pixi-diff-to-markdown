@@ -12,7 +12,7 @@ from pixi_diff_to_markdown.markdown import (
     generate_markdown_table_header,
     generate_table_line,
 )
-from pixi_diff_to_markdown.settings import Settings
+from pixi_diff_to_markdown.settings import MergeDependencies, Settings
 
 UpdatedEnvironments = list[tuple[str, str]]
 
@@ -246,6 +246,7 @@ class TableRow:
             columns.append(self.environment_platform)
         if (
             not settings.explicit_column
+            and not settings.merge_dependencies == MergeDependencies.split_explicit
             and self.update_spec.explicit == DependencyType.EXPLICIT
         ):
             package_name_formatted = f"**{self.update_spec.name}**"
@@ -310,7 +311,7 @@ class DependencyTable:
         columns = []
         columns.extend(
             [
-                f"Dependency{'[^1]' if not settings.explicit_column else ''}",
+                f"Dependency{'[^1]' if not settings.explicit_column and not settings.merge_dependencies == MergeDependencies.split_explicit else ''}",
                 "Before",
                 "After",
             ]

@@ -3,21 +3,21 @@
 <details open>
 <summary>Explicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
-|**typos**|1.21.0|1.22.7|Minor Upgrade|conda|lint on *all platforms*|
-|**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|{build, default, py312} on *all platforms*|
-|**pydantic**|2.7.1|2.7.4|Patch Upgrade|conda|{build, default, py312} on *all platforms*|
-|**pytest**|8.2.1|8.2.2|Patch Upgrade|conda|{default, py312} on *all platforms*|
-|**ruff**|0.4.4|0.4.9|Patch Upgrade|conda|lint on *all platforms*|
-|**py-rattler**|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|{default, py312} on osx-arm64|
+|typos|1.21.0|1.22.7|Minor Upgrade|conda|lint on *all platforms*|
+|ordered_enum|0.0.8|0.0.9|Patch Upgrade|conda|{build, default, py312} on *all platforms*|
+|pydantic|2.7.1|2.7.4|Patch Upgrade|conda|{build, default, py312} on *all platforms*|
+|pytest|8.2.1|8.2.2|Patch Upgrade|conda|{default, py312} on *all platforms*|
+|ruff|0.4.4|0.4.9|Patch Upgrade|conda|lint on *all platforms*|
+|py-rattler|py312h1a1520d_0|py312had01cb0_0|Only build string|conda|{default, py312} on osx-arm64|
 
 </details>
 
 <details>
 <summary>Implicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|*all*|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|conda|build on *all platforms*|
