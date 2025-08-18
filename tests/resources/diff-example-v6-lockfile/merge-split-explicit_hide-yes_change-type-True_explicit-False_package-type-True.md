@@ -3,7 +3,7 @@
 <details open>
 <summary>Explicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |[**setuptools**](https://pypi.org/project/setuptools)|74.1.3|75.6.0|Major Upgrade|pypi|*all envs* on osx-arm64|
 |[**polars**](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|Minor Upgrade|conda|*all envs* on osx-arm64|
@@ -16,7 +16,7 @@
 <details open>
 <summary>Implicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |microsoft_python_type_stubs|none|none|Other|pypi|*all envs* on linux-64|
 

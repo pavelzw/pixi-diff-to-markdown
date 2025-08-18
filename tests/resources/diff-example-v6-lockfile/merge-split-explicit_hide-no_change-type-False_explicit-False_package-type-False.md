@@ -1,6 +1,6 @@
 # Explicit dependencies
 
-|Dependency[^1]|Before|After|Environments|
+|Dependency|Before|After|Environments|
 |-|-|-|-|
 |[**setuptools**](https://pypi.org/project/setuptools)|74.1.3|75.6.0|*all envs* on osx-arm64|
 |[**polars**](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|*all envs* on osx-arm64|
@@ -10,7 +10,7 @@
 
 # Implicit dependencies
 
-|Dependency[^1]|Before|After|Environments|
+|Dependency|Before|After|Environments|
 |-|-|-|-|
 |microsoft_python_type_stubs|none|none|*all envs* on linux-64|
 

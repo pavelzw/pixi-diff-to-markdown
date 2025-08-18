@@ -1,6 +1,6 @@
 # Explicit dependencies
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |**typos**|1.21.0|1.22.7|Minor Upgrade|conda|lint on *all platforms*|
 |**ordered_enum**|0.0.8|0.0.9|Patch Upgrade|conda|{build, default, py312} on *all platforms*|
@@ -11,7 +11,7 @@
 
 # Implicit dependencies
 
-|Dependency[^1]|Before|After|Change|Package|Environments|
+|Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |ca-certificates|2024.2.2|2024.6.2|Minor Upgrade|conda|*all*|
 |certifi|2024.2.2|2024.6.2|Minor Upgrade|conda|build on *all platforms*|

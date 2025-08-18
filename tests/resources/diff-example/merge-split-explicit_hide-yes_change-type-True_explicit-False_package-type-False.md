@@ -3,7 +3,7 @@
 <details open>
 <summary>Explicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Environments|
+|Dependency|Before|After|Change|Environments|
 |-|-|-|-|-|
 |**new-package**||0.10.1|Added|default on linux-64|
 |**removed-package**|0.10.1||Removed|default on linux-64|
@@ -18,7 +18,7 @@
 <details open>
 <summary>Implicit dependencies</summary>
 
-|Dependency[^1]|Before|After|Change|Environments|
+|Dependency|Before|After|Change|Environments|
 |-|-|-|-|-|
 |python|0.10.0|0.10.1|Patch Upgrade|*all envs* on linux-64|
 
