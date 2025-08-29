@@ -8,6 +8,8 @@
 |[**polars**](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|Minor Upgrade|
 |[**private-package**](https://prefix.dev/channels/setup-pixi-test/packages/private-package)|0.0.1|0.0.1|Other|
 |**my-package**|py313hc743ca1_0|py313hc743ca1_1|Only build string|
+|my-package2||0.0.0|Added|
+|my-package3|pyh4616a5c_0|pyhabaa311_0|Only build string|
 
 ## linux-64
 
