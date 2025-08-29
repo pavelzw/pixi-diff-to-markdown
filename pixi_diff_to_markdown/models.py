@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 from itertools import zip_longest
 from typing import Any, Self
+from urllib.parse import urlparse
 
 import pydantic
 from ordered_enum import OrderedEnum
@@ -48,6 +49,9 @@ class PackageInformation(pydantic.BaseModel):
     pypi: str | None = None
     # called version in the lockfile, only used for pypi packages
     pypi_version: str | None = None
+    # usually encoded in the conda url
+    conda_version: str | None = None
+    conda_build: str | None = None
 
     @model_validator(mode="before")
     @classmethod
@@ -72,6 +76,11 @@ class PackageInformation(pydantic.BaseModel):
                 data["version"] = None
             assert "version" in data
             data["pypi_version"] = data["version"]
+        # this can happen in case of conda source dependencies
+        if "version" in data:
+            data["conda_version"] = data["version"]
+        if "build" in data:
+            data["conda_build"] = data["build"]
         return data
 
     @model_validator(mode="after")
@@ -83,13 +92,23 @@ class PackageInformation(pydantic.BaseModel):
 
     def _conda_package_name(self) -> str:
         assert self.conda is not None
-        return self.conda.split("/")[-1].removesuffix(".tar.bz2").removesuffix(".conda")
+        url = urlparse(self.conda)
+        if url.scheme == "":
+            # can happen for source conda dependencies
+            return self.conda
+        else:
+            return (
+                url.path.split("/")[-1].removesuffix(".tar.bz2").removesuffix(".conda")
+            )
 
     @computed_field
     @property
     def build(self) -> str | None:
         if self.conda is None:
             return None
+        if self.conda_build is not None:
+            # can happen for source conda dependencies
+            return self.conda_build
         return self._conda_package_name().split("-")[-1]
 
     @computed_field
@@ -98,6 +117,9 @@ class PackageInformation(pydantic.BaseModel):
         if self.conda is None:
             # pypi_version can be none for git dependencies
             return self.pypi_version or "none"
+        if self.conda_version is not None:
+            # can happen for source conda dependencies
+            return self.conda_version
         return self._conda_package_name().split("-")[-2]
 
 

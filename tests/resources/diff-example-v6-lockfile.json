@@ -25,6 +25,34 @@
           "explicit": true
         },
         {
+          "name": "my-package2",
+          "before": null,
+          "after": {
+            "conda": ".",
+            "name": "my-package2",
+            "version": "0.0.0",
+            "build": "pyh4616a5c_0",
+            "subdir": "noarch",
+            "depends": ["python >=3.13", "python *", "slack-bolt >=1.22.0,<2"],
+            "license": "MIT",
+            "input": {
+              "hash": "bf430754af6eb8a45159ef9766016860a8c8ad269d126a5c76a879958c4eca79",
+              "globs": ["pyproject.toml"]
+            }
+          },
+          "type": "conda"
+        },
+        {
+          "name": "my-package3",
+          "before": {
+            "build": "pyh4616a5c_0"
+          },
+          "after": {
+            "build": "pyhabaa311_0"
+          },
+          "type": "conda"
+        },
+        {
           "name": "my-package",
           "before": {
             "conda": "https://conda.anaconda.org/my-channel/osx-arm64/my-package-1.16.0-py313hc743ca1_0.conda"

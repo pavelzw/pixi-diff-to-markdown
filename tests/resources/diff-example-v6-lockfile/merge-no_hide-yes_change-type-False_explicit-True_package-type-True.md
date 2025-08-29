@@ -9,6 +9,8 @@
 |[polars](https://prefix.dev/channels/conda-forge/packages/polars)|1.15.0|1.16.0|true|conda|
 |[private-package](https://prefix.dev/channels/setup-pixi-test/packages/private-package)|0.0.1|0.0.1|true|conda|
 |my-package|py313hc743ca1_0|py313hc743ca1_1|true|conda|
+|my-package2||0.0.0|false|conda|
+|my-package3|pyh4616a5c_0|pyhabaa311_0|false|conda|
 
 </details>
 

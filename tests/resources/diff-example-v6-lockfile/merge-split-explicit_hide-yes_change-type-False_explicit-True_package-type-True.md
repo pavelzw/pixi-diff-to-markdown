@@ -18,7 +18,9 @@
 
 |Dependency|Before|After|Explicit|Package|Environments|
 |-|-|-|-|-|-|
+|my-package2||0.0.0|false|conda|*all envs* on osx-arm64|
 |microsoft_python_type_stubs|none|none|false|pypi|*all envs* on linux-64|
+|my-package3|pyh4616a5c_0|pyhabaa311_0|false|conda|*all envs* on osx-arm64|
 
 </details>
 

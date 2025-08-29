@@ -8,7 +8,9 @@
 |**pkg**|0.23.0|0.23.0|conda|*all envs* on linux-64|
 |[**private-package**](https://prefix.dev/channels/setup-pixi-test/packages/private-package)|0.0.1|0.0.1|conda|*all envs* on osx-arm64|
 |**my-package**|py313hc743ca1_0|py313hc743ca1_1|conda|*all envs* on osx-arm64|
+|my-package2||0.0.0|conda|*all envs* on osx-arm64|
 |microsoft_python_type_stubs|none|none|pypi|*all envs* on linux-64|
+|my-package3|pyh4616a5c_0|pyhabaa311_0|conda|*all envs* on osx-arm64|
 
 </details>
 
