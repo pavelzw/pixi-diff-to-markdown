@@ -63,7 +63,7 @@ You can do this by creating a configuration section in `pixi.toml` or `pyproject
 # defaults
 [tool.pixi-diff-to-markdown]
 merge-dependencies = "no" # or "split-explicit" when there are three or more environments / platforms
-hide = "auto"
+hide-tables = "auto"
 max-expanded-rows = 10
 change-type-column = true
 explicit-column = false
@@ -89,10 +89,10 @@ For a large amount of `environments` and `platforms`, it is recommended to merge
 
 The default is `no` when there are less than three environments / platforms and `split-explicit` when there are three or more environments / platforms.
 
-### `hide`
+### `hide-tables`
 
 Whether to hide the tables in a collapsible object.
-`hide` can be set to one of the following values (defaults to `auto`):
+`hide-tables` can be set to one of the following values (defaults to `auto`):
 
 - `no`: Don't hide the tables ([example](./tests/resources/diff-example/merge-no_hide-False_change-type-True_explicit-False_package-type-False.md)).
 - `yes`: Put the tables in collapsible objects ([example](./tests/resources/diff-example/merge-no_hide-True_change-type-True_explicit-False_package-type-False.md)).
