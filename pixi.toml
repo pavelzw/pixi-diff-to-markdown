@@ -9,10 +9,10 @@ pixi-diff-to-markdown = "pixi-diff-to-markdown"
 
 [dependencies]
 python = ">=3.13"
-pydantic = ">=2.11.9,<3"
-py-rattler = ">=0.15.0,<0.16"
+pydantic = ">=2.12.3,<3"
+py-rattler = ">=0.16.0,<0.17"
 ordered-enum = ">=0.0.10,<0.0.11"
-typer = ">=0.19.2,<0.20"
+typer = ">=0.20.0,<0.21"
 pydantic-settings = ">=2.11.0,<3"
 more-itertools = ">=10.8.0,<11"
 
@@ -21,29 +21,29 @@ pip = "*"
 hatchling = "*"
 
 [feature.test.dependencies]
-pytest = "*"
-pytest-cov = "*"
-ty = "*"
+pytest = ">=8.4.2,<9"
+pytest-cov = ">=7.0.0,<8"
+ty = ">=0.0.1a25,<0.0.1a26"
 [feature.test.tasks]
 test = "pytest"
 test-coverage = "pytest --cov=pixi_diff_to_markdown --cov-report=xml --cov-report=term-missing"
 test-write = "pytest --write-results"
 
 [feature.build.dependencies]
-python-build = "*"
-twine = "*"
-wheel = "*"
+python-build = ">=1.3.0,<2"
+twine = ">=6.2.0,<7"
+wheel = ">=0.45.1,<0.46"
 [feature.build.tasks]
 build-wheel = "python -m build --no-isolation ."
 check-wheel = "twine check dist/*"
 
 [feature.lint.dependencies]
-pre-commit = "*"
-ruff = "*"
-prettier = "*"
-taplo = "*"
-pre-commit-hooks = "*"
-typos = "*"
+pre-commit = ">=4.3.0,<5"
+ruff = ">=0.14.3,<0.15"
+prettier = ">=3.6.2,<4"
+taplo = ">=0.10.0,<0.11"
+pre-commit-hooks = ">=5.0.0,<6"
+typos = ">=1.39.0,<2"
 [feature.lint.tasks]
 pre-commit-install = "pre-commit install"
 pre-commit-run = "pre-commit run -a"
