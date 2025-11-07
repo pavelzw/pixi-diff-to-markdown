@@ -38,7 +38,7 @@ class Cover:
     def __len__(self) -> int:
         return len(self.environments) * len(self.platforms)
 
-    def __lt__(self, other: "Cover") -> bool:
+    def __lt__(self, other: Cover) -> bool:
         return len(self) < len(other)
 
     def __eq__(self, other: object) -> bool:

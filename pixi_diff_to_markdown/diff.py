@@ -14,7 +14,7 @@ from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settin
 
 def generate_output(data: Environments, settings: Settings) -> str:
     if not data.root:
-        return ""
+        return "No diff"
     if settings.merge_dependencies == MergeDependencies.no:
         return generate_table_no_merge(data, settings)
     elif settings.merge_dependencies == MergeDependencies.yes:
