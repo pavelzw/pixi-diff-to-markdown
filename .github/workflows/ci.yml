@@ -33,7 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         environment:
-          - py313
+          - py314
         os:
           - ubuntu-latest
           - macos-latest
@@ -45,8 +45,6 @@ jobs:
         uses: prefix-dev/setup-pixi@28eb668aafebd9dede9d97c4ba1cd9989a4d0004 # v0.9.2
         with:
           environments: ${{ matrix.environment }}
-      - name: Install repository
-        run: pixi run -e ${{ matrix.environment }} postinstall
       - name: Run pytest
         run: pixi run -e ${{ matrix.environment }} test-coverage --color=yes
       - name: Upload coverage reports to Codecov

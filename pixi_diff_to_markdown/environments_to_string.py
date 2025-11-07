@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from functools import cache, reduce
+from typing import Self
 
 import more_itertools
 
@@ -38,7 +39,7 @@ class Cover:
     def __len__(self) -> int:
         return len(self.environments) * len(self.platforms)
 
-    def __lt__(self, other: "Cover") -> bool:
+    def __lt__(self, other: Self) -> bool:
         return len(self) < len(other)
 
     def __eq__(self, other: object) -> bool:

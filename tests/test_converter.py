@@ -77,4 +77,4 @@ def test_empty_update(
     )
     data_parsed = Diff.model_validate_json(r'{"version": 1, "environment": {}}')
     actual_output = generate_output(data_parsed.environment, settings)
-    assert actual_output == ""
+    assert actual_output == "No diff"
