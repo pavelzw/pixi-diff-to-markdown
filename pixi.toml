@@ -46,6 +46,7 @@ test-write = "pytest --write-results"
 python-build = ">=1.3.0,<2"
 twine = ">=6.2.0,<7"
 wheel = ">=0.45.1,<0.46"
+hatchling = "*"
 [feature.build.tasks]
 build-wheel = "python -m build --no-isolation ."
 check-wheel = "twine check dist/*"
