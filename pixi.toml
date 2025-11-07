@@ -4,10 +4,6 @@ channels = ["conda-forge", "conda-forge/label/ty_alpha"]
 platforms = ["osx-arm64", "osx-64", "linux-64", "win-64"]
 preview = ["pixi-build"]
 
-[tasks]
-postinstall = "pip install --no-build-isolation --no-deps --disable-pip-version-check -e ."
-pixi-diff-to-markdown = "pixi-diff-to-markdown"
-
 [package]
 name = "pixi-diff-to-markdown"
 version = "0.3.6"
