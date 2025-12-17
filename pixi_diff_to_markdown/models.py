@@ -214,22 +214,28 @@ class UpdateSpec(pydantic.BaseModel):
 
     def before_after_str(self) -> tuple[str, str]:
         change_type = self.change_type
-        before: str | None
-        after: str | None
+        before: str
+        after: str
         if change_type == ChangeType.ADDED:
             before = ""
+            assert self.after is not None
             after = self.after.version
         elif change_type == ChangeType.REMOVED:
+            assert self.before is not None
             before = self.before.version
             after = ""
         elif change_type == ChangeType.BUILD:
+            assert self.before is not None
+            assert self.before.build is not None
+            assert self.after is not None
+            assert self.after.build is not None
             before = self.before.build
             after = self.after.build
         else:
+            assert self.before is not None
+            assert self.after is not None
             before = self.before.version
             after = self.after.version
-        assert before is not None
-        assert after is not None
         return before, after
 
 
