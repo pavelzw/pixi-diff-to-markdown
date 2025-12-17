@@ -85,8 +85,8 @@ class SupportMatrix:
         """
         # get all environments that are covered by every cover
         assert len(covers) > 0
-        common_environments = reduce(
-            set.intersection, (set(cover.environments) for cover in covers)
+        common_environments = set.intersection(
+            *(set(cover.environments) for cover in covers)
         )
         if not common_environments:
             # unmergeable
