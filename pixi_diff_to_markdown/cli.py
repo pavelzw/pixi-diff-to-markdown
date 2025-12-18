@@ -1,8 +1,9 @@
 from functools import reduce
-from sys import stdin
+from sys import stderr, stdin
 from typing import Annotated
 
 import typer
+from pydantic import ValidationError
 
 from pixi_diff_to_markdown import __version__
 from pixi_diff_to_markdown.diff import generate_output
@@ -73,7 +74,11 @@ def main(
     ),
 ):
     data = "".join(stdin.readlines())
-    data_parsed = Diff.model_validate_json(data)
+    try:
+        data_parsed = Diff.model_validate_json(data)
+    except ValidationError as e:
+        print(f"Error: Invalid input - {e}", file=stderr)
+        raise typer.Exit(code=1)
 
     num_environments = len(data_parsed.environment.root) * len(
         reduce(

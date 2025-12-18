@@ -6,7 +6,7 @@ preview = ["pixi-build"]
 
 [package]
 name = "pixi-diff-to-markdown"
-version = "0.3.6"
+version = "0.3.7"
 license = "BSD-3-Clause"
 [package.build.backend]
 name = "pixi-build-python"
