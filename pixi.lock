@@ -2347,7 +2347,7 @@ packages:
   timestamp: 1763655398280
 - conda: .
   name: pixi-diff-to-markdown
-  version: 0.3.6
+  version: 0.3.7
   build: pyh4616a5c_0
   subdir: noarch
   variants:
