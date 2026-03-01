@@ -32,7 +32,7 @@ pixi-diff-to-markdown = { path = "." }
 [feature.test.dependencies]
 pytest = ">=9.0.2,<10"
 pytest-cov = ">=7.0.0,<8"
-ty = ">=0.0.14,<0.0.15"
+ty = ">=0.0.18,<0.0.19"
 [feature.test.tasks]
 test = "pytest"
 test-coverage = "pytest --cov=pixi_diff_to_markdown --cov-report=xml --cov-report=term-missing"
@@ -49,11 +49,11 @@ check-wheel = "twine check dist/*"
 
 [feature.lint.dependencies]
 pre-commit = ">=4.5.1,<5"
-ruff = ">=0.14.14,<0.15"
+ruff = ">=0.15.4,<0.16"
 prettier = ">=3.8.1,<4"
 taplo = ">=0.10.0,<0.11"
 pre-commit-hooks = ">=5.0.0,<6"
-typos = ">=1.42.3,<2"
+typos = ">=1.44.0,<2"
 [feature.lint.tasks]
 pre-commit-install = "pre-commit install"
 pre-commit-run = "pre-commit run -a"
