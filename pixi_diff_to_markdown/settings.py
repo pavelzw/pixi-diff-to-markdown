@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import StrEnum
 
 from pydantic_settings import (
     BaseSettings,
@@ -11,13 +11,13 @@ from pixi_diff_to_markdown.pydantic_settings_extension import (
 )
 
 
-class MergeDependencies(str, Enum):
+class MergeDependencies(StrEnum):
     no = "no"
     yes = "yes"
     split_explicit = "split-explicit"
 
 
-class HideTables(str, Enum):
+class HideTables(StrEnum):
     no = "no"
     yes = "yes"
     auto = "auto"
