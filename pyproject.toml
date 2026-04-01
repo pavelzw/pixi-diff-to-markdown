@@ -57,6 +57,7 @@ indent-style = "space"
 
 [tool.typos.default.extend-words]
 ba = "ba"
+certifi = "certifi"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
