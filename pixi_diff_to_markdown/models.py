@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from enum import Enum
 from itertools import zip_longest
 from typing import Any, Self
 from urllib.parse import urlparse
@@ -36,7 +35,7 @@ class DependencyType(OrderedEnum):
     IMPLICIT = "Implicit"
 
 
-class PackageType(Enum):
+class PackageType(OrderedEnum):
     CONDA = "conda"
     PYPI = "pypi"
 
