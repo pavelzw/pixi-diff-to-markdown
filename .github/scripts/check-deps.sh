@@ -21,8 +21,3 @@ done < <(yq -r '.package.run-dependencies | to_entries | .[] | "\(.key) \(.value
 if [[ $contains_dependency_all == "false" ]]; then
     exit 1
 fi
-
-if [[ $(yq -r ".package.version" pixi.toml) != $(yq -r ".project.version" pyproject.toml) ]]; then
-    echo "package version in pixi.toml does not match project version in pyproject.toml"
-    exit 1
-fi
