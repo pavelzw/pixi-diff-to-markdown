@@ -18,12 +18,12 @@ hatchling = "*"
 
 [package.run-dependencies]
 python = ">=3.14"
-pydantic = ">=2.12.3,<3"
-py-rattler = ">=0.16.0,<0.17"
+pydantic = ">=2.13.4,<3"
+py-rattler = ">=0.23.2,<0.24"
 ordered-enum = ">=0.0.10,<0.0.11"
-typer = ">=0.20.0,<0.21"
-pydantic-settings = ">=2.11.0,<3"
-more-itertools = ">=10.8.0,<11"
+typer = ">=0.25.1,<0.26"
+pydantic-settings = ">=2.14.1,<3"
+more-itertools = ">=11.0.2,<12"
 
 [dependencies]
 pixi-diff-to-markdown = { path = "." }
