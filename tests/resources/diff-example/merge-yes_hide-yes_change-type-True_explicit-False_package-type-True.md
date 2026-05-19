@@ -11,6 +11,7 @@
 |**python**|0.10.0|0.10.1|Patch Upgrade|conda|default on osx-arm64|
 |**polars**|herads_0|herads_1|Only build string|conda|default on linux-64|
 |python|0.10.0|0.10.1|Patch Upgrade|conda|*all envs* on linux-64|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|Other|pypi|lint on linux-64|
 
 </details>
 

@@ -21,6 +21,7 @@
 |Dependency|Before|After|Environments|
 |-|-|-|-|
 |python|0.10.0|0.10.1|*all envs* on linux-64|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|lint on linux-64|
 
 </details>
 

@@ -25,6 +25,7 @@
 |-|-|-|-|
 |**polars**|0.10.0|0.10.1|Patch Upgrade|
 |python|0.10.0|0.10.1|Patch Upgrade|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|Other|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

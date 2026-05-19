@@ -5,6 +5,7 @@ import pytest
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import (
     Diff,
+    PackageInformation,
 )
 from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settings
 
@@ -62,6 +63,17 @@ def test_mixed_package_types_same_name(merge_dependencies: MergeDependencies):
     diff_path = Path("tests/resources/diff-mixed-package-types.json")
     data_parsed = Diff.model_validate_json(diff_path.read_text())
     generate_output(data_parsed.environment, settings)
+
+
+def test_pypi_package_information_accepts_missing_version():
+    package = PackageInformation.model_validate(
+        {
+            "pypi": "https://files.pythonhosted.org/packages/5d/ba/459f18c16f2b3fc1a1ca871f72f07d70c07bf768ad0a507a698b8052ac58/msgpack-1.1.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": "fac4be746328f90caa3cd4bc67e6fe36ca2bf61d5c6eb6d895b6527e3f05071e",
+        }
+    )
+
+    assert package.version == "unknown"
 
 
 @pytest.mark.parametrize("change_type_column", [False])

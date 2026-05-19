@@ -21,6 +21,7 @@
 |Dependency|Before|After|Change|Explicit|Environments|
 |-|-|-|-|-|-|
 |python|0.10.0|0.10.1|Patch Upgrade|false|*all envs* on linux-64|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|Other|false|lint on linux-64|
 
 </details>
 

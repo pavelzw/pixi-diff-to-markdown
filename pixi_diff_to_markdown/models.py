@@ -70,8 +70,10 @@ class PackageInformation(pydantic.BaseModel):
             )
 
         if "pypi" in data:
-            if data["pypi"].startswith("git+https://"):
-                # in case of a git dependency, we don't have a version
+            pypi_url = data["pypi"]
+            assert isinstance(pypi_url, str)
+            if pypi_url.startswith("git+https://") or "version" not in data:
+                # in case of a git dependency or artifact-only record, we don't have a version
                 data["version"] = None
             assert "version" in data
             data["pypi_version"] = data["version"]
@@ -115,7 +117,7 @@ class PackageInformation(pydantic.BaseModel):
     def version(self) -> str:
         if self.conda is None:
             # pypi_version can be none for git dependencies
-            return self.pypi_version or "none"
+            return self.pypi_version or "unknown"
         if self.conda_version is not None:
             # can happen for source conda dependencies
             return self.conda_version

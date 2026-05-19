@@ -110,6 +110,18 @@
           },
           "type": "conda",
           "explicit": false
+        },
+        {
+          "name": "msgpack",
+          "before": {
+            "pypi": "https://files.pythonhosted.org/packages/5d/ba/459f18c16f2b3fc1a1ca871f72f07d70c07bf768ad0a507a698b8052ac58/msgpack-1.1.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": "fac4be746328f90caa3cd4bc67e6fe36ca2bf61d5c6eb6d895b6527e3f05071e"
+          },
+          "after": {
+            "pypi": "https://files.pythonhosted.org/packages/2f/40/dc34d1a8d5f1e51fc64640b62b191684da52ca469da9cd74e84936ffa4a6/msgpack-1.1.2-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": "180759d89a057eab503cf62eeec0aa61c4ea1200dee709f3a8e9397dbb3b6931"
+          },
+          "type": "pypi"
         }
       ]
     }

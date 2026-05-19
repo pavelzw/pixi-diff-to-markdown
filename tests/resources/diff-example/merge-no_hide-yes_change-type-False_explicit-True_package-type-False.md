@@ -32,6 +32,7 @@
 |-|-|-|-|
 |polars|0.10.0|0.10.1|true|
 |python|0.10.0|0.10.1|false|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|false|
 
 </details>
 
