@@ -32,6 +32,7 @@
 |-|-|-|-|
 |**polars**|0.10.0|0.10.1|Patch Upgrade|
 |python|0.10.0|0.10.1|Patch Upgrade|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|Other|
 
 </details>
 

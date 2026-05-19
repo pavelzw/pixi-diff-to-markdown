@@ -13,7 +13,7 @@
 |Dependency|Before|After|Change|Package|Environments|
 |-|-|-|-|-|-|
 |my-package2||0.0.0|Added|conda|*all envs* on osx-arm64|
-|microsoft_python_type_stubs|none|none|Other|pypi|*all envs* on linux-64|
+|microsoft_python_type_stubs|unknown|unknown|Other|pypi|*all envs* on linux-64|
 |my-package3|pyh4616a5c_0|pyhabaa311_0|Only build string|conda|*all envs* on osx-arm64|
 
 [^1]: **Bold** means explicit dependency.

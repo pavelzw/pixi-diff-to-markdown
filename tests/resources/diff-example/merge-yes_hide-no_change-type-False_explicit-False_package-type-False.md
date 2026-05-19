@@ -8,6 +8,7 @@
 |**python**|0.10.0|0.10.1|default on osx-arm64|
 |**polars**|herads_0|herads_1|default on linux-64|
 |python|0.10.0|0.10.1|*all envs* on linux-64|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|lint on linux-64|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.

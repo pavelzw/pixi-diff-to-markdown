@@ -20,7 +20,7 @@
 |Dependency[^1]|Before|After|Change|
 |-|-|-|-|
 |**pkg**|0.23.0|0.23.0|Other|
-|microsoft_python_type_stubs|none|none|Other|
+|microsoft_python_type_stubs|unknown|unknown|Other|
 
 </details>
 

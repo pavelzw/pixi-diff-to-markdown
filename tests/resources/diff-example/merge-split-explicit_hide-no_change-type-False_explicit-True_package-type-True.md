@@ -15,6 +15,7 @@
 |Dependency|Before|After|Explicit|Package|Environments|
 |-|-|-|-|-|-|
 |python|0.10.0|0.10.1|false|conda|*all envs* on linux-64|
+|[msgpack](https://pypi.org/project/msgpack)|unknown|unknown|false|pypi|lint on linux-64|
 
 [^1]: **Bold** means explicit dependency.
 [^2]: Dependency got downgraded.
