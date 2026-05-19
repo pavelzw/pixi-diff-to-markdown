@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from functools import cache, reduce
-from typing import Self
+from typing import Self, cast
 
 import more_itertools
 
@@ -105,7 +105,7 @@ class SupportMatrix:
         # start out with all all columns as groups
         # then merge the groups with the best objective
         # repeat until we cannot find a better merge greedily
-        covers = {
+        covers: set[Cover] = {
             Cover(self.platforms[platform], frozenset((platform,)))
             for platform in self.all_platforms
             if self.platforms[platform]
@@ -121,8 +121,9 @@ class SupportMatrix:
 
         while True:
             minimal_objective = objective
-            best_merge = None
-            for subset in more_itertools.powerset_of_sets(covers):
+            best_merge: set[Cover] | None = None
+            for raw_subset in more_itertools.powerset_of_sets(covers):
+                subset = cast(set[Cover], raw_subset)
                 if len(subset) < 2:
                     continue
                 # merged_covers = common cover + residuals
