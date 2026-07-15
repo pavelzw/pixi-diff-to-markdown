@@ -26,7 +26,7 @@ class HideTables(StrEnum):
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         # pixi.toml has higher priority if it exists
-        toml_file=["pyproject.toml", "pixi.toml"],
+        # toml_file=["pyproject.toml", "pixi.toml"],
         env_prefix="PIXI_DIFF_TO_MARKDOWN_",
         alias_generator=lambda x: x.replace("_", "-"),
     )
