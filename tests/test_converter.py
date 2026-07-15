@@ -76,6 +76,24 @@ def test_pypi_package_information_accepts_missing_version():
     assert package.version == "unknown"
 
 
+def test_conda_source_package_information():
+    source = (
+        "pixi-diff-to-markdown @ git+https://github.com/pavelzw/pixi-diff-to-markdown"
+    )
+    package = PackageInformation.model_validate(
+        {
+            "conda_source": source,
+            "conda": None,
+            "version": "0.3.9",
+            "build": "pyh4616a5c_0",
+        }
+    )
+
+    assert package.conda == source
+    assert package.version == "0.3.9"
+    assert package.build == "pyh4616a5c_0"
+
+
 @pytest.mark.parametrize("change_type_column", [False])
 @pytest.mark.parametrize("package_type_column", [False])
 @pytest.mark.parametrize("explicit_column", [True])
