@@ -65,6 +65,17 @@ def test_mixed_package_types_same_name(merge_dependencies: MergeDependencies):
     generate_output(data_parsed.environment, settings)
 
 
+def test_conda_source_after_does_not_assert():
+    """Regression test for #110: a package whose `after` entry is a conda
+    source dependency (git/path spec, `conda: null` + `conda_source: ...`)
+    must not crash the `conda is not None or pypi is not None` invariant."""
+    settings = Settings.model_validate({"merge-dependencies": "no"})
+    diff_path = Path("tests/resources/diff-conda-source.json")
+    data_parsed = Diff.model_validate_json(diff_path.read_text())
+    output = generate_output(data_parsed.environment, settings)
+    assert "pixi-diff-to-markdown" in output
+
+
 def test_pypi_package_information_accepts_missing_version():
     package = PackageInformation.model_validate(
         {
