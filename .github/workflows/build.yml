@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Set up pixi
-        uses: prefix-dev/setup-pixi@a09b6247153796b190642a2b53fac4241043cf6f # v0.10.0
+        uses: prefix-dev/setup-pixi@d3f436a425481402e6a95a1d1fc10331c708cd9e # v0.10.2
         with:
           environments: build
       - name: Build project
@@ -57,7 +57,7 @@ jobs:
           git tag v${{ needs.build.outputs.new-version }}
           git push origin v${{ needs.build.outputs.new-version }}
       - name: Create release
-        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           generate_release_notes: true
           tag_name: v${{ needs.build.outputs.new-version }}
