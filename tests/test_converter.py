@@ -76,14 +76,17 @@ def test_pypi_package_information_accepts_missing_version():
     assert package.version == "unknown"
 
 
-def test_conda_source_package_information():
+@pytest.mark.parametrize(
+    "conda_field", [{"conda": None}, {}], ids=["explicit-none", "missing-key"]
+)
+def test_conda_source_package_information(conda_field):
     source = (
         "pixi-diff-to-markdown @ git+https://github.com/pavelzw/pixi-diff-to-markdown"
     )
     package = PackageInformation.model_validate(
         {
             "conda_source": source,
-            "conda": None,
+            **conda_field,
             "version": "0.3.9",
             "build": "pyh4616a5c_0",
         }
