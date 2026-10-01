@@ -193,7 +193,12 @@ class UpdateSpec(pydantic.BaseModel):
             if vers_element[0] != vers_element[1]:
                 break
         else:
-            assert False, "padded_vars is not empty"
+            # zip_longest's fillvalue ([0]) can coincide with a real
+            # trailing-zero segment the shorter version lacks (e.g.
+            # "2.32" -> "2.32.0"), so no parsed segment ever differs even
+            # though the version strings do. Treat that as a metadata-only
+            # change, same as the explicit build-only case above.
+            return ChangeType.OTHER
         if old_version > new_version:
             if idx_vers_element_differs == 0:
                 return ChangeType.MAJOR_DOWN
