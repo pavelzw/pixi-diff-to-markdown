@@ -4,8 +4,12 @@ import pytest
 
 from pixi_diff_to_markdown.diff import generate_output
 from pixi_diff_to_markdown.models import (
+    ChangeType,
+    DependencyType,
     Diff,
     PackageInformation,
+    PackageType,
+    UpdateSpec,
 )
 from pixi_diff_to_markdown.settings import HideTables, MergeDependencies, Settings
 
@@ -63,6 +67,27 @@ def test_mixed_package_types_same_name(merge_dependencies: MergeDependencies):
     diff_path = Path("tests/resources/diff-mixed-package-types.json")
     data_parsed = Diff.model_validate_json(diff_path.read_text())
     generate_output(data_parsed.environment, settings)
+
+
+def test_change_type_trailing_zero_segment_does_not_assert():
+    """Regression test for #112: a version string change where the parsed
+    segments only differ by a trailing zero (e.g. "2.32" -> "2.32.0") must
+    not hit the `assert False` in `change_type` — it should be classified
+    as `OTHER`, same as any other metadata-only version change."""
+    before = PackageInformation.model_validate(
+        {"conda": "https://url/to/channel/subdir/pkg-2.32-0.conda"}
+    )
+    after = PackageInformation.model_validate(
+        {"conda": "https://url/to/channel/subdir/pkg-2.32.0-0.conda"}
+    )
+    spec = UpdateSpec(
+        name="pkg",
+        before=before,
+        after=after,
+        type=PackageType.CONDA,
+        explicit=DependencyType.EXPLICIT,
+    )
+    assert spec.change_type == ChangeType.OTHER
 
 
 def test_pypi_package_information_accepts_missing_version():
