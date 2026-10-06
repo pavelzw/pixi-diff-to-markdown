@@ -51,6 +51,8 @@ class PackageInformation(pydantic.BaseModel):
     # usually encoded in the conda url
     conda_version: str | None = None
     conda_build: str | None = None
+    # set instead of `conda` for conda source dependencies (built from a git/path spec)
+    conda_source: str | None = None
 
     @model_validator(mode="before")
     @classmethod
@@ -86,7 +88,11 @@ class PackageInformation(pydantic.BaseModel):
 
     @model_validator(mode="after")
     def validate_after(self) -> Self:
-        assert self.conda is not None or self.pypi is not None
+        assert (
+            self.conda is not None
+            or self.pypi is not None
+            or self.conda_source is not None
+        )
         if self.pypi is None:
             assert self.pypi_version is None
         return self
@@ -105,22 +111,22 @@ class PackageInformation(pydantic.BaseModel):
     @computed_field
     @property
     def build(self) -> str | None:
+        if self.conda_build is not None:
+            # explicit build, e.g. from a <v6 lockfile or a conda source dependency
+            return self.conda_build
         if self.conda is None:
             return None
-        if self.conda_build is not None:
-            # can happen for source conda dependencies
-            return self.conda_build
         return self._conda_package_name().split("-")[-1]
 
     @computed_field
     @property
     def version(self) -> str:
+        if self.conda_version is not None:
+            # explicit version, e.g. from a <v6 lockfile or a conda source dependency
+            return self.conda_version
         if self.conda is None:
             # pypi_version can be none for git dependencies
             return self.pypi_version or "unknown"
-        if self.conda_version is not None:
-            # can happen for source conda dependencies
-            return self.conda_version
         return self._conda_package_name().split("-")[-2]
 
 
@@ -305,10 +311,8 @@ class TableRow:
                 ):
                     channel_name = after_url.split("/")[3]
                     package_name_formatted = f"[{package_name_formatted}](https://prefix.dev/channels/{channel_name}/packages/{self.update_spec.name})"
-            else:
-                assert self.update_spec.after.pypi is not None
+            elif self.update_spec.after.pypi is not None:
                 after_url = self.update_spec.after.pypi
-                assert after_url is not None
                 if after_url.startswith("https://files.pythonhosted.org/packages"):
                     package_name_formatted = f"[{package_name_formatted}](https://pypi.org/project/{self.update_spec.name})"
         columns.extend(
