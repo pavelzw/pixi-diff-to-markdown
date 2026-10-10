@@ -59,6 +59,8 @@ class PackageInformation(pydantic.BaseModel):
         # before v6, the build and version were stored explicitly in the lockfile
         # after v6, the build and version are stored implicitly in the conda url
         assert isinstance(data, dict)
+        if data.get("conda") is None and data.get("conda_source") is not None:
+            data["conda"] = data["conda_source"]
         if "conda" not in data and "pypi" not in data:
             # this maps all old lockfiles to conda packages, not pretty but should be fine
             build = data.get("build", "placeholder_0")
