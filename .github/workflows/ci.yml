@@ -10,19 +10,23 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
-  pre-commit:
+  lint:
+    name: Lint
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: Check out branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Set up pixi
-        uses: prefix-dev/setup-pixi@d3f436a425481402e6a95a1d1fc10331c708cd9e # v0.10.2
-        with:
-          environments: default lint
-      - name: pre-commit
-        run: pixi run pre-commit-run --color=always --show-diff-on-failure
+        uses: prefix-dev/setup-pixi@ad1da6449d9e506fd127fd67ab2d054a769f6a94 # v0.11.2
+      - name: Run linting
+        run: pixi run lint
+        env:
+          CLICOLOR_FORCE: 1
       - name: Check pyproject.toml dependencies
         run: ./.github/scripts/check-deps.sh
 
@@ -39,10 +43,12 @@ jobs:
           - macos-latest
           - windows-latest
     steps:
-      - name: Checkout branch
+      - name: Check out branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
       - name: Set up pixi
-        uses: prefix-dev/setup-pixi@d3f436a425481402e6a95a1d1fc10331c708cd9e # v0.10.2
+        uses: prefix-dev/setup-pixi@ad1da6449d9e506fd127fd67ab2d054a769f6a94 # v0.11.2
         with:
           environments: ${{ matrix.environment }}
       - name: Run pytest

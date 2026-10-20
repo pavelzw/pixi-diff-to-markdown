@@ -1,12 +1,14 @@
 [workspace]
 name = "pixi-diff-to-markdown"
 channels = ["conda-forge"]
+exclude-newer = "7d"
 platforms = ["osx-arm64", "osx-64", "linux-64", "win-64"]
 preview = ["pixi-build"]
 
 [package]
 name = "pixi-diff-to-markdown"
 license = "BSD-3-Clause"
+
 [package.build.backend]
 name = "pixi-build-python"
 version = "*"
@@ -32,6 +34,7 @@ pixi-diff-to-markdown = { path = "." }
 pytest = ">=9.1.1,<10"
 pytest-cov = ">=7.1.0,<8"
 ty = ">=0.0.77,<0.0.78"
+
 [feature.test.tasks]
 test = "pytest"
 test-coverage = "pytest --cov=pixi_diff_to_markdown --cov-report=xml --cov-report=term-missing"
@@ -42,26 +45,27 @@ python-build = ">=1.6.0,<2"
 twine = ">=7.0.0,<8"
 wheel = ">=0.48.0,<0.49"
 hatchling = ">=1.32.0,<2"
+
 [feature.build.tasks]
 build-wheel = "python -m build --no-isolation ."
 check-wheel = "twine check dist/*"
 
 [feature.lint.dependencies]
-pre-commit = ">=4.6.2,<5"
 ruff = ">=0.16.5,<0.17"
 prettier = ">=3.9.6,<4"
-taplo = ">=0.10.0,<0.11"
 pre-commit-hooks = ">=6.0.0,<7"
 typos = ">=1.50.0,<2"
+lefthook = ">=2.2.1,<3"
+tombi = ">=1.8.4,<2"
+zizmor = ">=1.30.1,<2"
+
 [feature.lint.tasks]
-pre-commit-install = "pre-commit install"
-pre-commit-run = "pre-commit run -a"
+pre-commit-install = "lefthook install"
+lint = "lefthook run pre-commit --all-files"
 
 [feature.py314.dependencies]
 python = "3.14.*"
 
 [environments]
-default = ["test"]
+default = ["test", "build", "lint"]
 py314 = ["py314", "test"]
-build = ["build"]
-lint = { features = ["lint"], no-default-feature = true }
