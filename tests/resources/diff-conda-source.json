@@ -1,0 +1,60 @@
+{
+    "version": 1,
+    "environment": {
+        "default": {
+            "linux-64": [
+                {
+                    "name": "pixi-diff-to-markdown",
+                    "before": {
+                        "conda": "https://conda.anaconda.org/conda-forge/noarch/pixi-diff-to-markdown-0.3.9-pyhc364b38_0.conda",
+                        "sha256": "6d6ba55a5082b1e60bea444ecad175d563772d393d2eaa1a9c1e5cc8984a58da",
+                        "md5": "03db6e8bd6fb1a688a33ad60fd0532d0",
+                        "depends": [
+                            "python >=3.14",
+                            "pydantic >=2.13.4,<3",
+                            "py-rattler >=0.23.2,<0.24",
+                            "ordered-enum >=0.0.10,<0.0.11",
+                            "typer >=0.25.1,<0.26",
+                            "pydantic-settings >=2.14.1,<3",
+                            "more-itertools >=11.0.2,<12",
+                            "python"
+                        ],
+                        "license_family": "BSD",
+                        "run_exports": {},
+                        "size": 21199,
+                        "timestamp": 1779222549721
+                    },
+                    "after": {
+                        "conda_source": "pixi-diff-to-markdown[ad38027f] @ git+https://github.com/pavelzw/pixi-diff-to-markdown?branch=toml1.1#7127733bdc1047b7b94c18f290e3ff9b692dccbf",
+                        "version": "0.3.9",
+                        "build": "pyh4616a5c_0",
+                        "subdir": "noarch",
+                        "noarch": "python",
+                        "variants": {
+                            "target_platform": "noarch"
+                        },
+                        "depends": [
+                            "python >=3.14",
+                            "python *",
+                            "pydantic >=2.13.4,<3",
+                            "py-rattler >=0.23.2,<0.24",
+                            "ordered-enum >=0.0.10,<0.0.11",
+                            "typer >=0.25.1,<0.26",
+                            "pydantic-settings >=2.14.1,<3",
+                            "more-itertools >=11.0.2,<12"
+                        ],
+                        "md5": null,
+                        "conda": null,
+                        "sha256": null,
+                        "license_family": null,
+                        "run_exports": null,
+                        "size": null,
+                        "timestamp": null
+                    },
+                    "type": "conda",
+                    "explicit": true
+                }
+            ]
+        }
+    }
+}
