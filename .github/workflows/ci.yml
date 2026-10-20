@@ -37,7 +37,7 @@ jobs:
       fail-fast: false
       matrix:
         environment:
-          - py314
+          - py315
         os:
           - ubuntu-latest
           - macos-latest
@@ -54,7 +54,7 @@ jobs:
       - name: Run pytest
         run: pixi run -e ${{ matrix.environment }} test-coverage --color=yes
       - name: Upload coverage reports to Codecov
-        if: matrix.environment == 'py313' && matrix.os == 'ubuntu-latest'
+        if: matrix.environment == 'py315' && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

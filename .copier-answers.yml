@@ -15,7 +15,7 @@ author_email: pavelzw@gmail.com
 author_name: Pavel Zwerschke
 github_url: https://github.com/pavelzw/pixi-diff-to-markdown
 github_user: pavelzw
-minimal_python_version: py312
+minimal_python_version: py315
 project_short_description: Tool for converting `pixi update` diffs to markdown
 project_slug: pixi-diff-to-markdown
 use_devcontainer: false

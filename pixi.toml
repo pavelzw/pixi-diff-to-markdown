@@ -14,12 +14,12 @@ name = "pixi-build-python"
 version = "*"
 
 [package.host-dependencies]
-python = ">=3.14"
+python = ">=3.15"
 pip = "*"
 hatchling = "*"
 
 [package.run-dependencies]
-python = ">=3.14"
+python = ">=3.15"
 pydantic = ">=2.13.4,<3"
 py-rattler = ">=0.23.2,<0.24"
 ordered-enum = ">=0.0.10,<0.0.11"
@@ -63,9 +63,9 @@ zizmor = ">=1.30.1,<2"
 pre-commit-install = "lefthook install"
 lint = "lefthook run pre-commit --all-files"
 
-[feature.py314.dependencies]
-python = "3.14.*"
+[feature.py315.dependencies]
+python = "3.15.*"
 
 [environments]
 default = ["test", "build", "lint"]
-py314 = ["py314", "test"]
+py315 = ["py315", "test"]
