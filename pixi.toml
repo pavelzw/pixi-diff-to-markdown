@@ -2,7 +2,7 @@
 name = "pixi-diff-to-markdown"
 channels = ["conda-forge"]
 exclude-newer = "7d"
-platforms = ["osx-arm64", "osx-64", "linux-64", "win-64"]
+platforms = ["osx-arm64", "osx-64", "linux-64", "win-64", "win-arm64"]
 preview = ["pixi-build"]
 
 [package]
@@ -20,12 +20,12 @@ hatchling = "*"
 
 [package.run-dependencies]
 python = ">=3.15"
-pydantic = ">=2.13.4,<3"
-py-rattler = ">=0.23.2,<0.24"
+pydantic = ">=2.14.1,<3"
+py-rattler = ">=0.27.1,<0.28"
 ordered-enum = ">=0.0.10,<0.0.11"
-typer = ">=0.27.2,<0.28"
-pydantic-settings = ">=2.14.1,<3"
-more-itertools = ">=11.0.2,<12"
+typer = ">=0.27.3,<0.28"
+pydantic-settings = ">=2.15.0,<3"
+more-itertools = ">=11.1.0,<12"
 
 [dependencies]
 pixi-diff-to-markdown = { path = "." }
@@ -33,7 +33,7 @@ pixi-diff-to-markdown = { path = "." }
 [feature.test.dependencies]
 pytest = ">=9.1.1,<10"
 pytest-cov = ">=7.1.0,<8"
-ty = ">=0.0.77,<0.0.78"
+ty = ">=0.0.86,<0.0.87"
 
 [feature.test.tasks]
 test = "pytest"
@@ -41,23 +41,35 @@ test-coverage = "pytest --cov=pixi_diff_to_markdown --cov-report=xml --cov-repor
 test-write = "pytest --write-results"
 
 [feature.build.dependencies]
-python-build = ">=1.6.0,<2"
-twine = ">=7.0.0,<8"
+python-build = ">=1.6.1,<2"
 wheel = ">=0.48.0,<0.49"
-hatchling = ">=1.32.0,<2"
+hatchling = ">=1.32.4,<2"
+
+# twine is not available on win-arm64
+[feature.build.target.unix.dependencies]
+twine = ">=7.0.0,<8"
+
+[feature.build.target.win-64.dependencies]
+twine = ">=7.0.0,<8"
 
 [feature.build.tasks]
 build-wheel = "python -m build --no-isolation ."
 check-wheel = "twine check dist/*"
 
 [feature.lint.dependencies]
-ruff = ">=0.16.5,<0.17"
-prettier = ">=3.9.6,<4"
+ruff = ">=0.17.0,<0.18"
 pre-commit-hooks = ">=6.0.0,<7"
-typos = ">=1.50.0,<2"
+typos = ">=1.51.1,<2"
 lefthook = ">=2.2.1,<3"
 tombi = ">=1.8.4,<2"
 zizmor = ">=1.30.1,<2"
+
+# prettier is not available on win-arm64
+[feature.lint.target.unix.dependencies]
+prettier = ">=3.9.6,<4"
+
+[feature.lint.target.win-64.dependencies]
+prettier = ">=3.9.6,<4"
 
 [feature.lint.tasks]
 pre-commit-install = "lefthook install"
