@@ -138,8 +138,8 @@ class UpdateSpec(pydantic.BaseModel):
         return isinstance(other, UpdateSpec) and hash(self) == hash(other)
 
     def __hash__(self):
-        """
-        Two elements where the versions are the same but the hashes aren't should be considered the same.
+        """Two elements where the versions are the same but the hashes aren't should be considered the same.
+
         Thus, don't include before and after in the hash but only `self.change_type` and `self.before_after_str`.
         """
         return hash(

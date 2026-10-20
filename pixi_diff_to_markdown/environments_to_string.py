@@ -52,9 +52,7 @@ class Cover:
 
 
 class SupportMatrix:
-    """
-    A list of environment / platform combination that were updated by a package.
-    """
+    """A list of environment / platform combination that were updated by a package."""
 
     all_environments: set[str]
     all_platforms: set[str]
@@ -75,8 +73,8 @@ class SupportMatrix:
         self.platforms = {k: frozenset(v) for k, v in platforms_set.items()}
 
     def merge_covers(self, covers: set[Cover]) -> set[Cover]:
-        """
-        Construct one cover that includes all common elements of all covers.
+        """Construct one cover that includes all common elements of all covers.
+
         The remaining elements are put into separate covers.
         For each input cover, all elements that are not included in the common elements form a residual cover.
         Returns the set of all residual covers and the merged cover.

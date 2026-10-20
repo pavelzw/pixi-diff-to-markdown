@@ -3,9 +3,7 @@ from pydantic_settings.sources.types import DEFAULT_PATH, PathType
 
 
 class TomlWithTableHeaderConfigSettingsSource(TomlConfigSettingsSource):
-    """
-    A source class that loads variables from a TOML file but only inside a header.
-    """
+    """A source class that loads variables from a TOML file but only inside a header."""
 
     def __init__(
         self,

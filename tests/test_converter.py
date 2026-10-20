@@ -57,8 +57,11 @@ def test_generate_table(
 
 @pytest.mark.parametrize("merge_dependencies", MergeDependencies.__members__.values())
 def test_mixed_package_types_same_name(merge_dependencies: MergeDependencies):
-    """Regression test: a package that appears as both conda and pypi across
-    environments must not crash the sort comparator."""
+    """Regression test for packages that are both conda and pypi.
+
+    A package that appears as both conda and pypi across environments must not
+    crash the sort comparator.
+    """
     settings = Settings.model_validate({"merge-dependencies": merge_dependencies})
     diff_path = Path("tests/resources/diff-mixed-package-types.json")
     data_parsed = Diff.model_validate_json(diff_path.read_text())

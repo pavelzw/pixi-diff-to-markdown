@@ -1,12 +1,21 @@
 # This file is managed by Copier; DO NOT EDIT OR REMOVE.
-_commit: v0.2.1-8-ga5bba24
+#
+# If you want to change any of the copier answers, run one of the following:
+# 1. If you want to answer _all_ questions again:
+#   `copier update --trust --vcs-ref=:current: .`
+# 2. If you want to answer a _specific_ question again:
+#   `copier update --trust --defaults --vcs-ref=:current: --data answer_name=answer_value .`
+#
+# If you want to run this as a one-off command, prefix with:
+#   `pixi exec --spec copier --spec ruamel.yaml -- {command}`
+_commit: v0.6.0
 _src_path: https://github.com/quantco/copier-template-python-open-source
 add_autobump_workflow: true
 author_email: pavelzw@gmail.com
 author_name: Pavel Zwerschke
 github_url: https://github.com/pavelzw/pixi-diff-to-markdown
 github_user: pavelzw
-minimal_python_version: py312
+minimal_python_version: py315
 project_short_description: Tool for converting `pixi update` diffs to markdown
 project_slug: pixi-diff-to-markdown
 use_devcontainer: false

@@ -4,22 +4,22 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pixi-diff-to-markdown"
-version = "0.3.10"
+version = "0.3.11"
 description = "Tool for converting `pixi update` diffs to markdown"
 authors = [{ name = "Pavel Zwerschke", email = "pavelzw@gmail.com" }]
 classifiers = [
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.15"
 readme = "README.md"
 dependencies = [
-  "pydantic >=2.13.4,<3",
-  "py-rattler >=0.23.2,<0.24",
+  "pydantic >=2.14.1,<3",
+  "py-rattler >=0.27.1,<0.28",
   "ordered-enum >=0.0.10,<0.0.11",
-  "typer >=0.27.2,<0.28",
-  "pydantic-settings >=2.14.1,<3",
-  "more-itertools >=11.0.2,<12",
+  "typer >=0.27.3,<0.28",
+  "pydantic-settings >=2.15.0,<3",
+  "more-itertools >=11.1.0,<12",
 ]
 
 [project.urls]
@@ -33,9 +33,10 @@ line-length = 88
 
 [tool.ruff.lint]
 ignore = [
-  "N803", # https://docs.astral.sh/ruff/rules/invalid-argument-name
-  "N806", # https://docs.astral.sh/ruff/rules/non-lowercase-variable-in-function
-  "E501", # https://docs.astral.sh/ruff/faq/#is-the-ruff-linter-compatible-with-black
+  "N803",  # https://docs.astral.sh/ruff/rules/invalid-argument-name
+  "N806",  # https://docs.astral.sh/ruff/rules/non-lowercase-variable-in-function
+  "E501",  # https://docs.astral.sh/ruff/faq/#is-the-ruff-linter-compatible-with-black
+  "D1",  # https://docs.astral.sh/ruff/rules/#pydocstyle-d
 ]
 select = [
   # pyflakes
@@ -49,7 +50,12 @@ select = [
   "N",
   # pyupgrade
   "UP",
+  # pydocstyle
+  "D",
 ]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.ruff.format]
 quote-style = "double"
@@ -58,6 +64,9 @@ indent-style = "space"
 [tool.typos.default.extend-words]
 ba = "ba"
 certifi = "certifi"
+
+[tool.tombi]
+schema.enabled = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -83,8 +83,8 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
         a: tuple[UpdateSpec, int, str],
         b: tuple[UpdateSpec, int, str],
     ) -> int:
-        """
-        Custom sorting for merged update specs.
+        """Custom sorting for merged update specs.
+
         1. Sort by explicit
         2. Sort by change type
         3. Sort by name
