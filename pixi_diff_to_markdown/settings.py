@@ -1,4 +1,5 @@
 from enum import StrEnum
+from pathlib import Path
 
 from pydantic_settings import (
     BaseSettings,
@@ -37,6 +38,10 @@ class Settings(BaseSettings):
     hide_tables: HideTables = HideTables.auto
     max_expanded_rows: int = 10
     create_links_for_packages: bool = True
+    # Path to a pixi.toml / pixi.lock (or its directory) used to determine the
+    # full set of environments and platforms; if None, the diff is used with
+    # the implicit ``default`` environment as the only anchor.
+    manifest_path: Path | None = None
 
     def __init__(
         self, inferred_merge_dependencies: MergeDependencies | None = None, **data
