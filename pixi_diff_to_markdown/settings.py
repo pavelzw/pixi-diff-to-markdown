@@ -1,6 +1,7 @@
 from enum import StrEnum
 from pathlib import Path
 
+from pydantic import AliasChoices, Field
 from pydantic_settings import (
     BaseSettings,
     PydanticBaseSettingsSource,
@@ -40,8 +41,17 @@ class Settings(BaseSettings):
     create_links_for_packages: bool = True
     # Path to a pixi.toml / pixi.lock (or its directory) used to determine the
     # full set of environments and platforms; if None, the diff is used with
-    # the implicit ``default`` environment as the only anchor.
-    manifest_path: Path | None = None
+    # the implicit ``default`` environment as the only anchor. The first alias
+    # is the CLI/TOML key, the second the (prefix-aware) environment variable;
+    # underscores cannot be generated from the hyphenated alias, so the full
+    # variable name is listed explicitly.
+    manifest_path: Path | None = Field(
+        default=None,
+        validation_alias=AliasChoices(
+            "manifest-path",
+            "PIXI_DIFF_TO_MARKDOWN_MANIFEST_PATH",
+        ),
+    )
 
     def __init__(
         self, inferred_merge_dependencies: MergeDependencies | None = None, **data

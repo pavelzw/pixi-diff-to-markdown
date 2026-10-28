@@ -133,7 +133,8 @@ The `pixi update --json` diff only contains the environments and platforms for w
 Using only that subset, `pixi-diff-to-markdown` can mistakenly label an update that covers all _changed_ environments/platforms as `*all*`, even though the project defines additional, unaffected environments or platforms.
 For example, a change in only the `lint` environment would otherwise be reported as `*all*` environments.
 
-When `manifest-path` is provided, the full set of environments and platforms is read from a sibling `pixi.lock` (parsed with `py-rattler`), or, when no lockfile exists, from the `pixi.toml`.
+When `manifest-path` is provided, the full set of environments and platforms is read from a sibling `pixi.lock` (parsed with `py-rattler`), or, when no lockfile exists, from the `pixi.toml` (a `pyproject.toml` is understood as well).
+When both are present, their environment/platform sets are merged, so a `pixi.toml` change that has not been re-locked yet is still taken into account.
 This fixes the false `*all*` labels described in [this issue](https://github.com/pavelzw/pixi-diff-to-markdown/issues/79).
 Passing it is especially useful in CI:
 

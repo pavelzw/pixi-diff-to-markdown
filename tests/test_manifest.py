@@ -1,5 +1,6 @@
 import io
 import json
+import shutil
 from pathlib import Path
 from unittest import mock
 
@@ -188,6 +189,48 @@ platforms = ["linux-64", "osx-arm64"]
     universe = load_manifest_universe(pyproject)
     assert universe.platforms == frozenset({"linux-64", "osx-arm64"})
     assert {"default", "lint"} <= universe.environments
+
+
+def test_pyproject_only_project_directory(tmp_path: Path):
+    project_dir = tmp_path / "project"
+    project_dir.mkdir()
+    (project_dir / "pyproject.toml").write_text(
+        '[tool.pixi.workspace]\nplatforms = ["linux-64"]\n'
+        "[tool.pixi.environments.lint]\n"
+    )
+    universe = load_manifest_universe(project_dir)
+    assert "default" in universe.environments
+    assert "lint" in universe.environments
+    assert universe.platforms == frozenset({"linux-64"})
+
+
+def test_stale_lock_union_with_manifest(tmp_path: Path):
+    # The lock declares default/py315 and 5 platforms; the manifest additionally
+    # introduces a `future` environment (and restricts platforms), simulating a
+    # manifest that has not been re-locked yet.
+    shutil.copy(REPO_ROOT / "pixi.lock", tmp_path / "pixi.lock")
+    (tmp_path / "pixi.toml").write_text(
+        '[workspace]\nplatforms = ["linux-64", "osx-arm64"]\n\n'
+        "[environments]\nfuture = []\n"
+    )
+    universe = load_manifest_universe(tmp_path / "pixi.toml")
+    assert {"default", "py315", "future"} <= universe.environments
+    assert {"linux-64", "osx-arm64", "win-arm64"} <= universe.platforms
+
+
+def test_manifest_path_environment_variable(monkeypatch, tmp_path: Path):
+    monkeypatch.setenv(
+        "PIXI_DIFF_TO_MARKDOWN_MANIFEST_PATH", str(tmp_path / "pixi.toml")
+    )
+    settings = Settings.model_validate({"merge-dependencies": MergeDependencies.no})
+    assert settings.manifest_path == tmp_path / "pixi.toml"
+
+
+def test_manifest_path_init_alias(tmp_path: Path):
+    settings = Settings.model_validate(
+        {"merge-dependencies": MergeDependencies.no, "manifest-path": tmp_path}
+    )
+    assert settings.manifest_path == tmp_path
 
 
 def test_invalid_lockfile_raises_value_error(tmp_path: Path):

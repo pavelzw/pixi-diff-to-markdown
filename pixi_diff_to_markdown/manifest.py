@@ -23,15 +23,26 @@ class ManifestUniverse:
     platforms: frozenset[str]
 
 
-def _lockfile_path(path: Path) -> Path:
-    """Return the ``pixi.lock`` path for a manifest, lockfile or directory.
+def _resolve_paths(path: Path) -> tuple[Path | None, Path | None]:
+    """Return the ``(manifest, lockfile)`` paths for a file, directory or lock.
 
-    An explicit lockfile is returned as-is; anything else resolves to the
-    ``pixi.lock`` sibling (next to a manifest) or child (inside a directory).
+    Either element can be ``None``: a lockfile-only input has no manifest, and a
+    plain manifest has an optional sibling lock. A project directory without a
+    ``pixi.toml`` falls back to ``pyproject.toml``.
     """
+    if path.is_dir():
+        manifest = path / "pixi.toml"
+        if not manifest.is_file():
+            pyproject = path / "pyproject.toml"
+            manifest = pyproject if pyproject.is_file() else None
+        return manifest, path / "pixi.lock"
+    if path.suffix == ".toml":
+        return path, path.parent / "pixi.lock"
     if path.suffix == ".lock" or path.name == "pixi.lock":
-        return path
-    return path.parent / "pixi.lock" if path.is_file() else path / "pixi.lock"
+        return None, path
+    raise ValueError(
+        f"Unsupported manifest file '{path}'. Provide a pixi.toml, pixi.lock or its directory."
+    )
 
 
 def universe_from_lockfile(path: Path) -> ManifestUniverse:
@@ -68,26 +79,38 @@ def universe_from_manifest(path: Path) -> ManifestUniverse:
 
 
 def load_manifest_universe(manifest_path: Path) -> ManifestUniverse:
-    """Load the universe from a lockfile if present, otherwise from the manifest."""
-    path = manifest_path.expanduser()
-    lockfile = _lockfile_path(path)
-    if lockfile.is_file():
+    """Load the universe from the lockfile and/or the manifest next to it.
+
+    When both a manifest (``pixi.toml``/``pyproject.toml``) and a ``pixi.lock``
+    exist, their declarations are merged. Pixi allows a lockfile to be out of
+    date with its manifest, e.g. when a new environment was added but not yet
+    locked, so the manifest's platforms/environments are combined with the
+    lockfile ones to keep the universe complete.
+    """
+    manifest_file, lock_file = _resolve_paths(manifest_path.expanduser())
+
+    if (manifest_file is None or not manifest_file.is_file()) and (
+        lock_file is None or not lock_file.is_file()
+    ):
+        raise FileNotFoundError(f"Could not find pixi manifest at '{manifest_path}'.")
+
+    environments: set[str] = set()
+    platforms: set[str] = set()
+    if manifest_file is not None and manifest_file.is_file():
+        declared = universe_from_manifest(manifest_file)
+        environments |= declared.environments
+        platforms |= declared.platforms
+    if lock_file is not None and lock_file.is_file():
         try:
-            return universe_from_lockfile(lockfile)
+            locked = universe_from_lockfile(lock_file)
         except FileNotFoundError, ValueError:
             raise
         except Exception as e:  # py-rattler raises its own parse error type
-            raise ValueError(f"Could not parse pixi lockfile '{lockfile}': {e}") from e
+            raise ValueError(f"Could not parse pixi lockfile '{lock_file}': {e}") from e
+        environments |= locked.environments
+        platforms |= locked.platforms
 
-    if not path.exists():
-        raise FileNotFoundError(f"Could not find pixi manifest at '{manifest_path}'.")
-    if path.is_dir():
-        path = path / "pixi.toml"
-    if path.suffix != ".toml":
-        raise ValueError(
-            f"Unsupported manifest file '{path}'. Provide a pixi.toml, pixi.lock or its directory."
-        )
-    return universe_from_manifest(path)
+    return ManifestUniverse(frozenset(environments), frozenset(platforms))
 
 
 def resolve_universes(
