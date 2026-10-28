@@ -69,6 +69,7 @@ change-type-column = true
 explicit-column = false
 package-type-column = false
 create-links-for-packages = true
+# manifest-path = "pixi.toml" # point at pixi.toml, pixi.lock or the project directory
 ```
 
 You can also override the configuration options by passing them as arguments to `pixi-diff-to-markdown`.
@@ -123,3 +124,23 @@ This column will show whether the dependency is a `conda` or `pypi` package.
 
 Whether to create links for packages from public channels (i.e., `conda-forge` or `bioconda`, etc.) or channels on [prefix.dev](https://prefix.dev) ([example](./tests/resources/diff-example-v6-lockfile/merge-yes_hide-False_change-type-True_explicit-False_package-type-False.md)).
 Defaults to `true`.
+
+### `manifest-path`
+
+Path to a `pixi.toml`, `pixi.lock` or the project directory the diff was generated from.
+
+The `pixi update --json` diff only contains the environments and platforms for which at least one package changed.
+Using only that subset, `pixi-diff-to-markdown` can mistakenly label an update that covers all _changed_ environments/platforms as `*all*`, even though the project defines additional, unaffected environments or platforms.
+For example, a change in only the `lint` environment would otherwise be reported as `*all*` environments.
+
+When `manifest-path` is provided, the full set of environments and platforms is read from a sibling `pixi.lock` (parsed with `py-rattler`), or, when no lockfile exists, from the `pixi.toml` (a `pyproject.toml` is understood as well).
+When both are present, their environment/platform sets are merged, so a `pixi.toml` change that has not been re-locked yet is still taken into account.
+This fixes the false `*all*` labels described in [this issue](https://github.com/pavelzw/pixi-diff-to-markdown/issues/79).
+Passing it is especially useful in CI:
+
+```bash
+pixi update --json --no-install | pixi exec pixi-diff-to-markdown --manifest-path pixi.toml > diff.md
+```
+
+It can also be set via the `manifest-path` key in the configuration file or the `PIXI_DIFF_TO_MARKDOWN_MANIFEST_PATH` environment variable.
+When no manifest is configured, the subset from the diff is used, except that pixi's implicit `default` environment is always assumed to exist, which already prevents incorrectly labelling an update without `default` as `*all*` environments (platforms still require the manifest for an exact answer).

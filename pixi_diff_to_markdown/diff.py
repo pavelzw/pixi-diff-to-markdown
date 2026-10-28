@@ -1,6 +1,7 @@
 from functools import cmp_to_key, reduce
 
 from pixi_diff_to_markdown.environments_to_string import SupportMatrix
+from pixi_diff_to_markdown.manifest import resolve_universes
 from pixi_diff_to_markdown.models import (
     DependencyTable,
     DependencyType,
@@ -78,7 +79,9 @@ def merge_update_specs(data: Environments) -> dict[UpdateSpec, UpdatedEnvironmen
     return update_specs
 
 
-def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
+def get_sorted_update_specs(
+    data: Environments, settings: Settings
+) -> list[tuple[UpdateSpec, str]]:
     def compare_merged_update_specs(
         a: tuple[UpdateSpec, int, str],
         b: tuple[UpdateSpec, int, str],
@@ -115,11 +118,16 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
             return cmp(a[0].type, b[0].type)
         return 0
 
-    all_environments = set(data.root.keys())
-    all_platforms: set[str] = reduce(
+    observed_environments = set(data.root.keys())
+    observed_platforms: set[str] = reduce(
         set.union,
         (set(environments.root.keys()) for environments in data.root.values()),
         set(),
+    )
+    # Only the environments/platforms with a change appear in the diff, so it is
+    # not sufficient to use those as the universe (see issue #79).
+    all_environments, all_platforms = resolve_universes(
+        observed_environments, observed_platforms, settings.manifest_path
     )
     merged_update_specs = merge_update_specs(data)
     update_specs_with_envs = []
@@ -141,7 +149,7 @@ def get_sorted_update_specs(data: Environments) -> list[tuple[UpdateSpec, str]]:
 def generate_table_merge_all(data: Environments, settings: Settings) -> str:
     rows = [
         TableRow(update_spec, updated_environments=updated_envs_str)
-        for update_spec, updated_envs_str in get_sorted_update_specs(data)
+        for update_spec, updated_envs_str in get_sorted_update_specs(data, settings)
     ]
     dependency_table = DependencyTable(rows, use_updated_environment_column=True)
     table_str = dependency_table.to_string(settings)
@@ -165,7 +173,7 @@ def generate_table_merge_all(data: Environments, settings: Settings) -> str:
 
 def generate_table_split_explicit(data: Environments, settings: Settings) -> str:
     # TODO: ordereddict
-    sorted_update_specs = get_sorted_update_specs(data)
+    sorted_update_specs = get_sorted_update_specs(data, settings)
     update_specs_explicit = list(
         filter(lambda x: x[0].explicit == DependencyType.EXPLICIT, sorted_update_specs)
     )

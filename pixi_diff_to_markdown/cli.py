@@ -1,4 +1,5 @@
 from functools import reduce
+from pathlib import Path
 from sys import stderr, stdin
 from typing import Annotated
 
@@ -65,6 +66,15 @@ def main(
             show_default=False,
         ),
     ] = None,
+    manifest_path: Annotated[
+        Path | None,
+        typer.Option(
+            "--manifest-path",
+            help="Path to the pixi.toml, pixi.lock or project directory used to determine the full set of environments and platforms. This avoids incorrect '*all*' labels when only some environments/platforms received an update.",
+            show_default=False,
+            exists=False,
+        ),
+    ] = None,
     version: bool = typer.Option(
         None,
         "--version",
@@ -99,6 +109,7 @@ def main(
         "hide-tables": hide_tables,
         "max-expanded-rows": max_expanded_rows,
         "create-links-for-packages": create_links_for_packages,
+        "manifest-path": manifest_path,
         "inferred_merge_dependencies": MergeDependencies.split_explicit
         if num_environments > 2
         else MergeDependencies.no,
@@ -109,5 +120,9 @@ def main(
     if data_parsed.version != 1:
         msg = f"Only version 1 diffs are supported. Got version {data_parsed.version}."
         raise ValueError(msg)
-    output = generate_output(data_parsed.environment, settings)
+    try:
+        output = generate_output(data_parsed.environment, settings)
+    except (FileNotFoundError, ValueError) as e:
+        print(f"Error: {e}", file=stderr)
+        raise typer.Exit(code=1)
     print(output)
